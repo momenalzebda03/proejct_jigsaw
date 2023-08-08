@@ -11,6 +11,10 @@ body {
   background: #2D337B;
 }
 
+.tag_transition {
+  transition: 0.4s;
+}
+
 body .section_index {
   z-index: 3;
 }
@@ -39,31 +43,69 @@ body section .container_respons nav div ul .a_padding:hover {
   background-color: #1A1E4D;
 }
 
-.section_main {
-  height: 110vh;
+body .section_main {
+  height: 100vh;
   background: linear-gradient(-180deg, #1A1E4D, #4149A0);
 }
 
-.span_all {
+body .section_main::before {
+  bottom: 0;
+  background-image: url("/folder_image/image_main/image_main_left.png");
+  width: 500px;
+  height: 400px;
+}
+
+body .section_main .div_box {
+  height: 87%;
+}
+
+body .section_main .div_box .container .row div div h1 .span_all {
   color: #F94F72;
 }
 
-.text_gold {
+body .section_main .div_box .container .row div div .text_gold {
   color: Yellow;
 }
 
-.div_image_back::before {
+body .section_main::before,
+body .section_main .div_box .container .row div div .before_image::before,
+body .section_main .div_box .container .row div .div_image_back::before,
+body .section_main .div_box .container .row div .div_image_back::after {
   content: "";
-  position: absolute;
-  background-image: url("/folder_image/image_main/image_main_right.png");
-  background-position: center center;
-  width: 37%;
-  height: 650px;
-  background-size: cover;
   animation: image_animation 3s infinite;
+  position: absolute;
+  background-position: center center;
+  background-size: cover;
 }
 
-.image_zindex {
+body .section_main .div_box .container .row div .div_image_back::before {
+  background-image: url("/folder_image/image_main/image_main_right.png");
+  width: 600px;
+  height: 650px;
+}
+
+body .section_main .div_box .container .row div .div_image_back::after {
+  background-image: url("/folder_image/image_main/image_iphone_left.png");
+  width: 200px;
+  height: 250px;
+  margin-top: 150px;
+  border-radius: 20px;
+  margin-left: -300px;
+  z-index: 3;
+}
+
+body .section_main .div_box .container .row div .div_image_back .before_image::before {
+  background-image: url("/folder_image/image_main/image_iphone_right.png");
+  width: 170px;
+  height: 140px;
+  margin-top: 150px;
+  border-radius: 20px;
+  margin-left: 200px;
+  margin-top: 360px;
+  z-index: 3;
+}
+
+body .section_main .div_box .container .row div .div_image_back .image_zindex {
   z-index: 1;
 }
 
@@ -78,26 +120,58 @@ body section .container_respons nav div ul .a_padding:hover {
     transform: translate(0, -30px);
   }
 }
-.viedo_center {
+body .section_main .div_box .container .row div div div .viedo_center {
   outline: 2px solid white;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+body .section_main .div_box .container .row div div div .viedo_center:hover {
+  outline: 0px solid white;
+  background-color: #CCCDDF !important;
+}
+
+body .section_main .div_box .container .row div div div .button_background {
+  background-color: #F94F72;
+}
+
+body .section_main .div_box .container .row div div div .button_background:hover {
+  background-color: #AD2685;
+}
+
+body .section_main .div_box .container .row div div div .button_background:hover .text_download {
+  font-size: 17px;
+}
+
+body .section_main .div_box .container .row div div div .button_background:hover .image_hover {
+  margin-top: 5px;
+}
+
+body .section_main div a .icon_animation {
+  animation: image_animation 1s infinite;
 }
 
 @media (max-width: 1200px) and (min-width: 990px) {
+  body .section_main .div_box .container .row div .div_image_back::before {
+    width: 50%;
+    height: 650px;
+  }
   body section .container_respons nav div ul .a_padding {
     padding-left: 5px !important;
     padding-right: 5px !important;
   }
 }
 @media (max-width: 990px) {
-  .image_zindex {
-    min-width: 55%;
+  body .section_main {
+    height: 1100px;
+    padding-top: 110px;
   }
-  .section_main {
-    padding-top: 100px;
-  }
-  .div_image_back::before {
+  body .section_main::before,
+  body .section_main .div_box .container .row div div .before_image::before,
+  body .section_main .div_box .container .row div .div_image_back::after,
+  body .section_main .div_box .container .row div .div_image_back::before {
     display: none;
   }
   body section .container_respons nav div ul li .button_active_demo:hover,
@@ -110,7 +184,7 @@ body section .container_respons nav div ul .a_padding:hover {
   body section .container_respons nav div ul li .button_active_language:hover {
     background-color: #E51148;
   }
-  .container_respons {
+  body section .container_respons {
     min-width: 100%;
   }
   body section .container_respons nav div ul .a_padding:hover,
@@ -120,5 +194,10 @@ body section .container_respons nav div ul .a_padding:hover {
   }
   body section .container_respons nav div ul {
     height: 100vh;
+  }
+}
+@media (max-width: 400px) {
+  body .section_main .div_box .container .row div .div_image_back .image_zindex {
+    width: 70%;
   }
 }/*# sourceMappingURL=index.css.map */
