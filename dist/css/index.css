@@ -1,0 +1,124 @@
+body {
+  text-transform: capitalize;
+  font-family: "Merriweather", serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D337B;
+}
+
+body .section_index {
+  z-index: 3;
+}
+
+body section .container_respons nav div ul li .active {
+  color: white !important;
+  background-color: #1A1E4D;
+}
+
+body section .container_respons nav div ul li .button_active_demo {
+  background-color: #AD2685;
+}
+
+body section .container_respons nav div ul li .button_active_language {
+  background-color: #E51148;
+}
+
+body section .container_respons nav div ul .a_padding {
+  color: #2D337B;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+body section .container_respons nav div ul .a_padding:hover {
+  color: white !important;
+  background-color: #1A1E4D;
+}
+
+.section_main {
+  height: 110vh;
+  background: linear-gradient(-180deg, #1A1E4D, #4149A0);
+}
+
+.span_all {
+  color: #F94F72;
+}
+
+.text_gold {
+  color: Yellow;
+}
+
+.div_image_back::before {
+  content: "";
+  position: absolute;
+  background-image: url("/folder_image/image_main/image_main_right.png");
+  background-position: center center;
+  width: 37%;
+  height: 650px;
+  background-size: cover;
+  animation: image_animation 3s infinite;
+}
+
+.image_zindex {
+  z-index: 1;
+}
+
+@keyframes image_animation {
+  0% {
+    transform: translate(0, -30px);
+  }
+  50% {
+    transform: translate(0, 0px);
+  }
+  100% {
+    transform: translate(0, -30px);
+  }
+}
+.viedo_center {
+  outline: 2px solid white;
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 1200px) and (min-width: 990px) {
+  body section .container_respons nav div ul .a_padding {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
+@media (max-width: 990px) {
+  .image_zindex {
+    min-width: 55%;
+  }
+  .section_main {
+    padding-top: 100px;
+  }
+  .div_image_back::before {
+    display: none;
+  }
+  body section .container_respons nav div ul li .button_active_demo:hover,
+  body section .container_respons nav div ul li .button_active_language:hover {
+    color: white !important;
+  }
+  body section .container_respons nav div ul li .button_active_demo:hover {
+    background-color: #AD2685;
+  }
+  body section .container_respons nav div ul li .button_active_language:hover {
+    background-color: #E51148;
+  }
+  .container_respons {
+    min-width: 100%;
+  }
+  body section .container_respons nav div ul .a_padding:hover,
+  body section .container_respons nav div ul li .active {
+    color: red !important;
+    background-color: transparent;
+  }
+  body section .container_respons nav div ul {
+    height: 100vh;
+  }
+}/*# sourceMappingURL=index.css.map */
