@@ -62,14 +62,8 @@ body .section_main .container .row div .div_image_back::after {
     cursor: pointer;
 }
 
-.image_click {
-    width: 100%;
-    height: 100vh;
-    transition: 0.5s;
-}
-
-.active_image {
-    width: 140%;
+.text_color_reverse {
+    color: $color_services_back;
 }
 
 // end everyone
@@ -484,12 +478,23 @@ body section main div div div .text_letter {
     letter-spacing: 2px;
 }
 
-body main section #div_none {
-    display: block;
+.div_none_reverse {
+    display: none;
 }
 
-body main section #div_none_reverse {
-    display: none;
+.image_click {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    transition: 1s;
+}
+
+.active_image {
+    width: 250%;
+}
+
+.div_absolute_width {
+    width: 390px;
 }
 
 // end features
@@ -532,7 +537,7 @@ body main section #div_none_reverse {
     body .section_main div .container .row div div .before_image::before,
     body .section_main div .container .row div .div_image_back::after,
     body .section_main div .container .row div .div_image_back::before {
-        display: none;
+        display: none !important;
     }
 
     body section .container_respons nav div ul li .button_active_demo:hover,

@@ -79,33 +79,32 @@ window.addEventListener("load", function () {
 
 var tag_header = document.querySelectorAll(".image_click");
 var div_none = document.getElementById("div_none");
-var div_none_reverse = document.getElementById("div_none_reverse");
+var div_none_reverse = document.querySelectorAll(".div_none_reverse");
 var bollen = true;
 for (let i = 0; i < tag_header.length; i++) {
   var chekd = tag_header[i];
   chekd.addEventListener("click", function () {
     if (bollen == true) {
       for (let i = 0; i < tag_header.length; i++) {
+        div_none_reverse[i].style.display = "none";
         tag_header[i].classList.remove("active_image");
       }
+      div_none_reverse[i].style.display = "block";
       this.classList.add("active_image");
       bollen = false;
     } else {
       for (let i = 0; i < tag_header.length; i++) {
+        div_none_reverse[i].style.display = "none";
         tag_header[i].classList.remove("active_image");
       }
       bollen = true;
     }
-  });
-}
-tag_header.forEach((element) => {
-  element.onclick = () => {
-    if (element.classList == "image_click active_image") {
+    if (tag_header[i].classList == "overflow-hidden image_click active_image") {
       div_none.style.display = "none";
-      div_none_reverse.style.display = "block";
+      div_none_reverse[i].style.display = "block";
     } else {
       div_none.style.display = "block";
-      div_none_reverse.style.display = "none";
+      div_none_reverse[i].style.display = "none";
     }
-  };
-});
+  });
+}
