@@ -3,7 +3,7 @@
 // start everyone
 body {
     text-transform: capitalize;
-    font-family: 'Merriweather', serif;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -30,6 +30,8 @@ body {
     z-index: 4;
 }
 
+body main section .container .div_content::after,
+body main section .container .div_content::before,
 body main .section_services .container .div_anmai_end::before,
 body main .section_services .container .div_before_anmai_next::after,
 body main .section_services .container .div_before_anmai_next::before,
@@ -50,6 +52,24 @@ body .section_main .container .row div .div_image_back::after {
 
 .button_active_demo {
     background-color: $color_navbar_demo;
+}
+
+.div_height {
+    height: 10vh;
+}
+
+.mouse_caro {
+    cursor: pointer;
+}
+
+.image_click {
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.active_image {
+    width: 140%;
 }
 
 // end everyone
@@ -76,6 +96,10 @@ body section .container_respons nav div ul .a_padding:hover {
 
 // end navbar
 // start main
+body .section_main div .container .row div .div_index .size_Jigsaw {
+    font-size: 50px;
+}
+
 body .section_main {
     height: 100vh;
     background: -webkit-linear-gradient(-180deg, $color_main_one, $color_main_tow);
@@ -159,6 +183,8 @@ body .section_main div .container .row div div div .button_background {
 }
 
 body .section_main div .container .row div div div .button_background:hover {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
     background-color: $color_navbar_demo;
 }
 
@@ -171,7 +197,7 @@ body .section_main div .container .row div div div .button_background:hover .ima
 }
 
 body .section_main div a .icon_animation {
-    animation: image_animation 1s infinite;
+    animation: image_animation 4s infinite;
 }
 
 // end main
@@ -279,20 +305,16 @@ body main .section_services {
     background-color: $color_services_back;
 }
 
-body main .section_services .container .row_nth:nth-child(even) {
+body main .section_services .container .row_nth:nth-child(odd) {
     flex-direction: row-reverse;
 }
 
-body main .section_services .container .row_nth:nth-child(odd) {
+body main .section_services .container .row_nth:nth-child(even) {
     flex-direction: row;
 }
 
 body main .section_services .container .row_nth .col_overflow div .div_mouse .acitve_background {
     background-color: $color_navbar_text !important;
-}
-
-body main .section_services .container .row_nth .col_overflow div .div_mouse {
-    cursor: pointer;
 }
 
 body main .section_services .container .row_nth .col_overflow div .div_mouse .icon_padding {
@@ -302,10 +324,6 @@ body main .section_services .container .row_nth .col_overflow div .div_mouse .ic
 
 body main .section_services .container .row_nth .col_overflow div .text_active {
     color: $color_navbar_text;
-}
-
-body main .section_services .container .row_nth .col_overflow {
-    height: 34vh;
 }
 
 body main .section_services .container .row_nth .col_overflow div .div_mouse .icon_padding .icon_active {
@@ -350,7 +368,131 @@ body main .section_services .container .row div a .button_hover:hover .image_hov
     margin-left: 20px;
 }
 
+body main .section_services .container .row_nth div div .border_right {
+    border-right: 4px solid $color_navbar_text;
+}
+
 // end services
+// start benefits
+body main .section_minheight {
+    min-height: 900px;
+}
+
+body main section div .div_animation {
+    animation: left_animation 8s infinite !important;
+}
+
+body main section div .container .row .accordion .accordion-item .accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+    background-image: unset;
+}
+
+.accordion:nth-child(odd) .accordion-button::after {
+    content: url("/folder_image/image_benefits/icon_arrow_right.svg");
+    margin-left: auto;
+}
+
+.accordion:nth-child(even) .accordion-button::after {
+    content: url("/folder_image/image_benefits/icon_arrow.svg");
+    margin-left: auto;
+}
+
+.accordion:nth-child(odd) .accordion-button:not(.collapsed)::after,
+.accordion:nth-child(even) .accordion-button:not(.collapsed)::after {
+    content: url("/folder_image/image_benefits/icon_bottom.svg");
+    transform: rotate(0deg);
+}
+
+body main section div .container .row .accordion:nth-child(odd) .accordion-item:last-of-type .accordion-button.collapsed,
+body main section div .container .row .accordion:nth-child(even) .accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 20px;
+}
+
+body main section div .container .row .accordion:nth-child(odd) .accordion-item:last-of-type .accordion-button.collapsed {
+    color: $color_aboutandservices_title;
+    background-color: $color_benefits;
+}
+
+body main section div .container .row .accordion:nth-child(even) .accordion-item:last-of-type .accordion-button.collapsed {
+    color: $color_aboutandservices_text;
+    background-color: $color_benefits;
+}
+
+body main section div .container .row .accordion:nth-child(odd) .accordion-item .accordion-button {
+    background-color: $color_aboutandservices_title;
+}
+
+body main section div .container .row .accordion:nth-child(even) .accordion-item .accordion-button {
+    background-color: $color_aboutandservices_text;
+}
+
+body main section div .container .row .accordion .accordion-item .accordion-button {
+    border-radius: 20px 20px 0 0;
+    color: $color_white;
+}
+
+// end benefits
+// start features
+.col:nth-child(odd) .div_none_color,
+.col:nth-child(even) .div_none_color {
+    top: 100%;
+    left: 50%;
+    width: 0%;
+    height: 0vh;
+    transition: 1s;
+}
+
+.col:nth-child(odd) .div_none_color {
+    background-color: $color_aboutandservices_title;
+
+}
+
+.col:nth-child(even) .div_none_color {
+    background-color: $color_aboutandservices_text;
+}
+
+body main section .container .row .col .div_hover:hover .div_none_color {
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 195px;
+}
+
+body main section .container .row .col .div_hover .div_none_color .container .p_line::before {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 2px;
+    top: 45px;
+    left: 65px;
+    background-color: $color_white;
+}
+
+body main section .container .div_content::before {
+    content: url("/folder_image/image_services/image_background_left.svg");
+    left: 0;
+    top: 5600px;
+}
+
+body main section .container .div_content::after {
+    content: url("/folder_image/image_services/image_background_right.svg");
+    right: 0;
+    top: 6000px;
+}
+
+body section main div div div .text_letter {
+    letter-spacing: 2px;
+}
+
+body main section #div_none {
+    display: block;
+}
+
+body main section #div_none_reverse {
+    display: none;
+}
+
+// end features
 // start media
 @media (max-width: 1200px) and (min-width: 990px) {
     body .section_main div .container .row div .div_image_back::before {
@@ -365,10 +507,17 @@ body main .section_services .container .row div a .button_hover:hover .image_hov
 }
 
 @media (max-width: 990px) {
+    body .section_main div .container .row div .div_index .size_Jigsaw {
+        font-size: 25px;
+    }
+
     body .section_main {
         padding-top: 1100px;
     }
 
+    body main section #div_none,
+    body main section .container .div_content::after,
+    body main section .container .div_content::before,
     body main .section_services .container .div_anmai_end::before,
     body main .section_services .container .div_before_anmai_next::after,
     body main .section_services .container .div_before_anmai_next::before,
@@ -415,6 +564,10 @@ body main .section_services .container .row div a .button_hover:hover .image_hov
 
     .div_width {
         width: 100% !important;
+    }
+
+    .image_click {
+        height: 40vh !important;
     }
 }
 
