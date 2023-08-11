@@ -30,6 +30,8 @@ body {
     z-index: 4;
 }
 
+body main section .container .div_works::after,
+body main section .container .div_works::before,
 body main section .container .div_content::after,
 body main section .container .div_content::before,
 body main .section_services .container .div_anmai_end::before,
@@ -63,7 +65,64 @@ body .section_main .container .row div .div_image_back::after {
 }
 
 .text_color_reverse {
-    color: $color_services_back;
+    color: #ffffffb5;
+}
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+    background-image: unset;
+}
+
+.accordion:nth-child(odd) .accordion-button::after {
+    content: url("/folder_image/image_benefits/icon_arrow_right.svg");
+    margin-left: auto;
+}
+
+.accordion:nth-child(even) .accordion-button::after {
+    content: url("/folder_image/image_benefits/icon_arrow.svg");
+    margin-left: auto;
+}
+
+.accordion:nth-child(odd) .accordion-button:not(.collapsed)::after,
+.accordion:nth-child(even) .accordion-button:not(.collapsed)::after {
+    content: url("/folder_image/image_benefits/icon_bottom.svg");
+    transform: rotate(0deg);
+}
+
+.accordion:nth-child(odd) .accordion-item:last-of-type .accordion-button.collapsed,
+.accordion:nth-child(even) .accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 20px;
+}
+
+.accordion:nth-child(odd) .accordion-item:last-of-type .accordion-button.collapsed {
+    color: $color_aboutandservices_title;
+    background-color: $color_benefits;
+}
+
+.accordion:nth-child(even) .accordion-item:last-of-type .accordion-button.collapsed {
+    color: $color_aboutandservices_text;
+    background-color: $color_benefits;
+}
+
+.accordion:nth-child(odd) .accordion-item .accordion-button {
+    background-color: $color_aboutandservices_title;
+}
+
+.accordion:nth-child(even) .accordion-item .accordion-button {
+    background-color: $color_aboutandservices_text;
+}
+
+.accordion .accordion-item .accordion-button {
+    border-radius: 20px 20px 0 0;
+    color: $color_white;
+}
+
+.image_fit {
+    object-fit: cover;
+}
+
+.div_background {
+    background-color: #F4F4F4;
 }
 
 // end everyone
@@ -376,55 +435,6 @@ body main section div .div_animation {
     animation: left_animation 8s infinite !important;
 }
 
-body main section div .container .row .accordion .accordion-item .accordion-button::after,
-.accordion-button:not(.collapsed)::after {
-    background-image: unset;
-}
-
-.accordion:nth-child(odd) .accordion-button::after {
-    content: url("/folder_image/image_benefits/icon_arrow_right.svg");
-    margin-left: auto;
-}
-
-.accordion:nth-child(even) .accordion-button::after {
-    content: url("/folder_image/image_benefits/icon_arrow.svg");
-    margin-left: auto;
-}
-
-.accordion:nth-child(odd) .accordion-button:not(.collapsed)::after,
-.accordion:nth-child(even) .accordion-button:not(.collapsed)::after {
-    content: url("/folder_image/image_benefits/icon_bottom.svg");
-    transform: rotate(0deg);
-}
-
-body main section div .container .row .accordion:nth-child(odd) .accordion-item:last-of-type .accordion-button.collapsed,
-body main section div .container .row .accordion:nth-child(even) .accordion-item:last-of-type .accordion-button.collapsed {
-    border-radius: 20px;
-}
-
-body main section div .container .row .accordion:nth-child(odd) .accordion-item:last-of-type .accordion-button.collapsed {
-    color: $color_aboutandservices_title;
-    background-color: $color_benefits;
-}
-
-body main section div .container .row .accordion:nth-child(even) .accordion-item:last-of-type .accordion-button.collapsed {
-    color: $color_aboutandservices_text;
-    background-color: $color_benefits;
-}
-
-body main section div .container .row .accordion:nth-child(odd) .accordion-item .accordion-button {
-    background-color: $color_aboutandservices_title;
-}
-
-body main section div .container .row .accordion:nth-child(even) .accordion-item .accordion-button {
-    background-color: $color_aboutandservices_text;
-}
-
-body main section div .container .row .accordion .accordion-item .accordion-button {
-    border-radius: 20px 20px 0 0;
-    color: $color_white;
-}
-
 // end benefits
 // start features
 .col:nth-child(odd) .div_none_color,
@@ -478,26 +488,259 @@ body section main div div div .text_letter {
     letter-spacing: 2px;
 }
 
-.div_none_reverse {
+body main section .div_inline_none div .div_absolute_width {
+    width: 390px;
+}
+
+body main section .div_inline_none div .div_absolute_width .div_none_reverse {
     display: none;
 }
 
-.image_click {
-    object-fit: cover;
+body main section .div_inline_none .image_click {
     width: 100%;
     height: 100vh;
     transition: 1s;
 }
 
-.active_image {
+body main section .div_inline_none .active_image {
     width: 250%;
 }
 
-.div_absolute_width {
-    width: 390px;
+body main section section .container .row .accordion .accordion-header div .image_respons {
+    height: 20vh;
+}
+
+body main section section .container .row .accordion .accordion-header div .div_center {
+    transform: translate(0, 50px);
+}
+
+body main section section .container .row .accordion .accordion-header div .div_center .active_image_arraow {
+    transform: rotate(180deg);
+}
+
+body main section section .container .row .accordion .accordion-header div .div_center .image_arraow {
+    transition: 0.5s;
 }
 
 // end features
+// start work
+body main section .container .div_works::before {
+    content: url("/folder_image/image_services/image_background_right.svg");
+    right: 0;
+    top: 7800px;
+}
+
+body main section .container .div_works::after {
+    content: url("/folder_image/image_services/image_background_left.svg");
+    left: 0;
+    top: 8000px;
+}
+
+body main section .container .div_border {
+    border-top: 5px dashed $color_navbar_text;
+}
+
+body main section .container .row div .col_circle::before {
+    content: "";
+    position: absolute;
+    margin-top: -68px;
+    border-radius: 50px;
+    border: 2px solid $color_white;
+    outline: 2px solid $color_navbar_text;
+    width: 25px;
+    height: 25px;
+}
+
+body main section .container .row div:nth-child(even) .col_circle::before {
+    background-color: $color_navbar_text;
+}
+
+body main section .container .row :nth-child(odd) .col_circle::before {
+    background-color: $color_navbar_demo;
+}
+
+body main section .container div .div_width_line {
+    width: 85%;
+}
+
+// end work
+// start integration
+body main section .container .row .col .shadow_radius {
+    border-radius: 50px;
+}
+
+// start integration
+// start customers
+$time: 500ms;
+$delay: $time/2;
+$mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(0);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.slider-container {
+    margin: 0 auto;
+    width: 400px;
+    height: 500px;
+
+    .slider-content {
+        .slider-single {
+            position: absolute;
+            z-index: 0;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transition: z-index 0ms $delay;
+
+            .slider-single-image {
+                position: relative;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+                transition: $time $mode;
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            &.preactive {
+                z-index: 1;
+
+                .slider-single-image {
+                    opacity: 0.3;
+                    transform: translateX(-25%) scale(0.8);
+                }
+
+                .slider-single-download {
+                    transform: translateX(-150px);
+                }
+
+                .slider-single-title {
+                    transform: translateX(-150px);
+                }
+
+                .slider-single-likes {
+                    transform: translateX(-150px);
+                }
+            }
+
+            &.proactive {
+                z-index: 1;
+
+                .slider-single-image {
+                    opacity: 0.3;
+                    transform: translateX(25%) scale(0.8);
+                }
+
+                .slider-single-download {
+                    transform: translateX(150px);
+                }
+
+                .slider-single-title {
+                    transform: translateX(150px);
+                }
+
+                .slider-single-likes {
+                    transform: translateX(150px);
+                }
+            }
+
+            &.active {
+                z-index: 2;
+
+                .slider-single-image {
+                    opacity: 1;
+                    transform: translateX(0%) scale(1);
+                }
+
+                .slider-single-download {
+                    opacity: 1;
+                    transition-delay: 100ms;
+                    transform: translateX(0px);
+                }
+
+                .slider-single-title {
+                    opacity: 1;
+                    transition-delay: 200ms;
+                    transform: translateX(0px);
+                }
+
+                .slider-single-likes {
+                    opacity: 1;
+                    transition-delay: 300ms;
+                    transform: translateX(0px);
+
+                    i {
+                        animation-name: heartbeat;
+                        animation-duration: 500ms;
+                        animation-delay: 900ms;
+                        animation-interation: 1;
+                        animation-fill-mode: forwards;
+                    }
+                }
+            }
+        }
+    }
+
+    .slider-left {
+        position: absolute;
+        z-index: 3;
+        display: block;
+        right: 85%;
+        top: 50%;
+        color: #ffffff;
+        transform: translateY(-50%);
+        padding: 20px 15px;
+        border-top: 2px solid #fdc84b;
+        border-right: 2px solid #fdc84b;
+        border-bottom: 2px solid #fdc84b;
+        border-left: 2px solid #fdc84b;
+        margin-right: -2px;
+    }
+
+    .slider-right {
+        position: absolute;
+        z-index: 3;
+        display: block;
+        left: 85%;
+        top: 50%;
+        color: #ffffff;
+        transform: translateY(-50%);
+        padding: 20px 15px;
+        border-top: 2px solid #fdc84b;
+        border-right: 2px solid #fdc84b;
+        border-bottom: 2px solid #fdc84b;
+        border-left: 2px solid #fdc84b;
+        margin-left: -2px;
+    }
+
+    .not-visible {
+        display: none !important;
+    }
+}
+
+// end customers
 // start media
 @media (max-width: 1200px) and (min-width: 990px) {
     body .section_main div .container .row div .div_image_back::before {
@@ -520,6 +763,10 @@ body section main div div div .text_letter {
         padding-top: 1100px;
     }
 
+    body main section .container .div_works::after,
+    body main section .container .div_works::before,
+    body main section .container .row div .col_circle::before,
+    body main section .div_inline_none,
     body main section #div_none,
     body main section .container .div_content::after,
     body main section .container .div_content::before,
@@ -535,8 +782,8 @@ body section main div div div .text_letter {
     body main section .container .image_beforeandafter::before,
     body .section_main div div .image_left_back,
     body .section_main div .container .row div div .before_image::before,
-    body .section_main div .container .row div .div_image_back::after,
-    body .section_main div .container .row div .div_image_back::before {
+    body .section_main div .container .row div .div_image_back::before,
+    body .section_main div .container .row div .div_image_back::after {
         display: none !important;
     }
 
@@ -572,7 +819,16 @@ body section main div div div .text_letter {
     }
 
     .image_click {
-        height: 40vh !important;
+        height: 30vh !important;
+    }
+
+    body main .section_minheight {
+        min-height: 0px;
+    }
+
+    .active_owl {
+        width: 20%;
+        height: 80vh;
     }
 }
 
