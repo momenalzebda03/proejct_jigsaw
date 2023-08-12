@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="dist/css/index.css">
     <title>JIGSAW</title>
 </head>
@@ -1213,37 +1215,79 @@
                     <h2 class="title_about fw-bold">Our Customers</h2>
                     <p class="text_about fs-4">Jigsaw® is Trusted by Thousands of customers</p>
                 </div>
-                <div class="mt-5 position-relative slider-container">
-                    <div class="slider-content">
-                        <div class="slider-single">
-                            <img class="slider-single-image" src="folder_image/image_customers/image_customers1.gif" />
-                        </div>
-                        <div class="slider-single">
-                            <img class="slider-single-image" src="folder_image/image_customers/image_customers1.gif" />
-                        </div>
-                        <div class="slider-single">
-                            <img class="slider-single-image" src="folder_image/image_customers/image_customers1.gif" />
-                        </div>
-                        <div class="slider-single">
-                            <img class="slider-single-image" src="folder_image/image_customers/image_customers1.gif" />
-                        </div>
-                        <div class="slider-single">
-                            <img class="slider-single-image" src="folder_image/image_customers/image_customers1.gif" />
-                        </div>
-                        <div class="slider-single">
-                            <img class="slider-single-image" src="folder_image/image_customers/image_customers1.gif" />
-                        </div>
-                        <div class="slider-single">
-                            <img class="slider-single-image" src="folder_image/image_customers/image_customers1.gif" />
-                        </div>
+                <!-- <div class="owl-carousel owl-theme">
+                    <img class="slider-single-image" src="folder_image/image_customers/image_customers1.gif" />
+                    <img class="slider-single-image" src="folder_image/image_customers/image_customers2.gif" />
+                    <img class="slider-single-image" src="folder_image/image_customers/image_customers3.gif" />
+                    <img class="slider-single-image" src="folder_image/image_customers/image_customers4.gif" />
+                    <img class="slider-single-image" src="folder_image/image_customers/image_customers5.gif" />
+                    <img class="slider-single-image" src="folder_image/image_customers/image_customers6.gif" />
+                    <img class="slider-single-image" src="folder_image/image_customers/image_customers7.gif" />
+                </div> -->
+            </div>
+            <div class="mt-5 position-relative slider-container">
+                <div class="slider-content">
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="folder_image/image_customers/image_customers1.gif" />
+                    </div>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="folder_image/image_customers/image_customers2.gif" />
+                    </div>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="folder_image/image_customers/image_customers3.gif" />
+                    </div>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="folder_image/image_customers/image_customers4.gif" />
+                    </div>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="folder_image/image_customers/image_customers5.gif" />
+                    </div>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="folder_image/image_customers/image_customers6.gif" />
+                    </div>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="folder_image/image_customers/image_customers7.gif" />
                     </div>
                 </div>
+            </div>
+            <div class="pt-5 mt-5 text-center">
+                <h6 class="fs-4 mt-5">Terrace No.09 app</h6>
+                <div class="d-flex flex-column flex-sm-row justify-content-center gap-4">
+                    <a href="#">
+                        <img src="folder_image/image_customers/image_google.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="folder_image/image_customers/imagea_app.png" alt="">
+                    </a>
+                </div>
+            </div>
         </section>
         <!-- end customers -->
     </main>
 </body>
+<script src="bootstrap-5.2.2-dist/js/jquery.min.js"></script>
 <script src="bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
 <script src="bootstrap-5.2.2-dist/js/index.js"></script>
 <script src="bootstrap-5.2.2-dist/js/all.min.js"></script>
+<script src="bootstrap-5.2.2-dist/js/owl.carousel.js"></script>
+<script src="bootstrap-5.2.2-dist/js/owl.carousel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    })
+</script>
 
 </html>

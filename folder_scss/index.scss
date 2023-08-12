@@ -572,37 +572,23 @@ body main section .container .row .col .shadow_radius {
 // start integration
 // start customers
 $time: 500ms;
-$delay: $time/2;
+$delay: $time / 2;
 $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
 
-@keyframes heartbeat {
-    0% {
-        transform: scale(0);
-    }
-
-    25% {
-        transform: scale(1.2);
-    }
-
-    50% {
-        transform: scale(1);
-    }
-
-    75% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
 .slider-container {
-    margin: 0 auto;
-    width: 400px;
-    height: 500px;
+    margin: 0px auto;
+    width: 232px;
+    height: 510px;
 
     .slider-content {
+        .active::before {
+            content: url("/folder_image/image_customers/image_background.png");
+            position: absolute;
+            top: -27px;
+            left: -30px;
+            z-index: 1;
+        }
+
         .slider-single {
             position: absolute;
             z-index: 0;
@@ -613,6 +599,7 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
             transition: z-index 0ms $delay;
 
             .slider-single-image {
+                border-radius: 5%;
                 position: relative;
                 left: 0;
                 top: 0;
@@ -629,19 +616,7 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
 
                 .slider-single-image {
                     opacity: 0.3;
-                    transform: translateX(-25%) scale(0.8);
-                }
-
-                .slider-single-download {
-                    transform: translateX(-150px);
-                }
-
-                .slider-single-title {
-                    transform: translateX(-150px);
-                }
-
-                .slider-single-likes {
-                    transform: translateX(-150px);
+                    transform: translateX(-50%) scale(0.8);
                 }
             }
 
@@ -650,7 +625,7 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
 
                 .slider-single-image {
                     opacity: 0.3;
-                    transform: translateX(25%) scale(0.8);
+                    transform: translateX(50%) scale(0.8);
                 }
 
                 .slider-single-download {
@@ -695,7 +670,7 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
                         animation-name: heartbeat;
                         animation-duration: 500ms;
                         animation-delay: 900ms;
-                        animation-interation: 1;
+                        animation-iteration-count: 1;
                         animation-fill-mode: forwards;
                     }
                 }
@@ -703,36 +678,38 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
         }
     }
 
-    .slider-left {
-        position: absolute;
-        z-index: 3;
-        display: block;
-        right: 85%;
-        top: 50%;
-        color: #ffffff;
-        transform: translateY(-50%);
-        padding: 20px 15px;
-        border-top: 2px solid #fdc84b;
-        border-right: 2px solid #fdc84b;
-        border-bottom: 2px solid #fdc84b;
-        border-left: 2px solid #fdc84b;
-        margin-right: -2px;
-    }
-
+    .slider-left,
     .slider-right {
         position: absolute;
         z-index: 3;
         display: block;
-        left: 85%;
         top: 50%;
-        color: #ffffff;
+        color: $color_navbar_text;
         transform: translateY(-50%);
-        padding: 20px 15px;
-        border-top: 2px solid #fdc84b;
-        border-right: 2px solid #fdc84b;
-        border-bottom: 2px solid #fdc84b;
-        border-left: 2px solid #fdc84b;
-        margin-left: -2px;
+        padding: 10px 15px;
+        border-radius: 50%;
+        border: 2px solid $color_navbar_text;
+    }
+
+    .slider-left {
+        right: 250%;
+    }
+
+    .slider-right {
+        left: 250%;
+    }
+
+    .slider-left:hover svg:not(:root).svg-inline--fa {
+        transform: translate(-5px, 0);
+    }
+
+    .slider-right:hover svg:not(:host).svg-inline--fa {
+        transform: translate(5px, 0);
+    }
+
+    svg:not(:host).svg-inline--fa,
+    svg:not(:root).svg-inline--fa {
+        transition: 0.3s;
     }
 
     .not-visible {
@@ -751,6 +728,14 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
     body section .container_respons nav div ul .a_padding {
         padding-left: 5px !important;
         padding-right: 5px !important;
+    }
+
+    .slider-left {
+        right: 152% !important;
+    }
+
+    .slider-right {
+        left: 152% !important;
     }
 }
 
@@ -826,9 +811,35 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
         min-height: 0px;
     }
 
-    .active_owl {
-        width: 20%;
-        height: 80vh;
+    .slider-left,
+    .slider-right {
+        top: 600px !important;
+    }
+
+    .slider-left {
+        right: 60% !important;
+    }
+
+    .slider-right {
+        left: 60% !important;
+    }
+
+    .slider-container {
+        .slider-content {
+            .slider-single {
+                &.preactive {
+                    .slider-single-image {
+                        transform: translateX(-7%) scale(0.8);
+                    }
+                }
+
+                &.proactive {
+                    .slider-single-image {
+                        transform: translateX(7%) scale(0.8);
+                    }
+                }
+            }
+        }
     }
 }
 
