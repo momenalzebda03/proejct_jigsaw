@@ -9,6 +9,14 @@ for (let i = 0; i < tag_header.length; i++) {
   });
 }
 
+var icon_animation = document.getElementById("icon_animation");
+icon_animation.addEventListener("click", () => {
+  window.scrollTo({
+    top: 670,
+    behavior: "smooth",
+  });
+});
+
 var button_menu = document.getElementById("button_menu");
 var span_icon = document.getElementById("span_icon");
 var bollen = true;
@@ -18,17 +26,6 @@ button_menu.onclick = () => {
     bollen = false;
   } else {
     span_icon.classList = "fas fa-bars";
-    bollen = true;
-  }
-};
-
-var button_active_language = document.getElementById("button_active_language");
-button_active_language.onclick = () => {
-  if (bollen === true) {
-    button_active_language.textContent = "عربي";
-    bollen = false;
-  } else {
-    button_active_language.textContent = "English";
     bollen = true;
   }
 };
@@ -81,14 +78,9 @@ var tag_header = document.querySelectorAll(".image_click");
 var div_none = document.getElementById("div_none");
 var div_none_reverse = document.querySelectorAll(".div_none_reverse");
 var bollen = true;
-div_none_reverse.forEach((element) => {
-  element.addEventListener("click", () => {
-    element.style.display = "none";
-  });
-});
 for (let i = 0; i < tag_header.length; i++) {
   var chekd = tag_header[i];
-  chekd.addEventListener("click", function () {
+  chekd.addEventListener("mouseenter", function () {
     if (bollen == true) {
       for (let i = 0; i < tag_header.length; i++) {
         div_none_reverse[i].style.display = "none";
@@ -130,52 +122,3 @@ div_box.forEach((element) => {
     }
   });
 });
-
-const carouselList = document.querySelector(".carousel__list");
-const arrowLeft = document.getElementById("arraow_left");
-const arraow_right = document.getElementById("arraow_right");
-const carouselItems = document.querySelectorAll(".carousel__item");
-const elems = Array.from(carouselItems);
-carouselList.addEventListener("click", function (event) {
-  var newActive = event.target;
-  var isItem = newActive.closest(".carousel__item");
-  if (!isItem || newActive.classList.contains("carousel__item_active")) {
-    return;
-  }
-  update(newActive);
-});
-arrowLeft.addEventListener("click", function () {
-  const currentActive = document.querySelector(".carousel__item_active");
-  const currentPos = parseInt(currentActive.dataset.pos);
-  const newActivePos = (currentPos - 1) % elems.length;
-  const newActive = elems.find(
-    (elem) => parseInt(elem.dataset.pos) === newActivePos
-  );
-  update(newActive);
-});
-arraow_right.addEventListener("click", function () {
-  const currentActive = document.querySelector(".carousel__item_active");
-  const currentPos = parseInt(currentActive.dataset.pos);
-  const newActivePos = (currentPos + 1) % elems.length;
-  const newActive = elems.find(
-    (elem) => parseInt(elem.dataset.pos) === newActivePos
-  );
-  update(newActive);
-});
-const update = function (newActive) {
-  const newActivePos = parseInt(newActive.dataset.pos);
-  const current = elems.find((elem) => parseInt(elem.dataset.pos) === 0);
-  current.classList.remove("carousel__item_active");
-  elems.forEach((item) => {
-    var itemPos = parseInt(item.dataset.pos);
-    item.dataset.pos = getPos(itemPos, newActivePos);
-  });
-  newActive.classList.add("carousel__item_active");
-};
-const getPos = function (current, active) {
-  const diff = current - active;
-  if (Math.abs(diff) > 3) {
-    return -current;
-  }
-  return diff;
-};

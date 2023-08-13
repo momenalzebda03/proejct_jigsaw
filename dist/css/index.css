@@ -31,11 +31,8 @@ body main section .container .div_works::after,
 body main section .container .div_works::before,
 body main section .container .div_content::after,
 body main section .container .div_content::before,
-body main .section_services .container .div_anmai_end::before,
-body main .section_services .container .div_before_anmai_next::after,
-body main .section_services .container .div_before_anmai_next::before,
-body main .section_services .container .div_before_anmai::before,
-body main .section_services .container .div_before_anmai::after,
+body main .section_services .container .section_backimage::before,
+body main .section_services .container .section_backimage::after,
 body main section .container .image_beforeandafter .image_animation .div_change::before,
 body main section .container .image_beforeandafter .image_animation::after,
 body main section .container .image_beforeandafter .image_animation::before,
@@ -236,7 +233,7 @@ body .section_main div .container .row div div div .button_background:hover .ima
   margin-top: 5px;
 }
 
-body .section_main div a .icon_animation {
+body .section_main div .icon_animation {
   animation: image_animation 4s infinite;
 }
 
@@ -246,6 +243,10 @@ body main section .container .title_about {
 
 body main section .container .text_about {
   color: #A92D94;
+}
+
+.title_size {
+  font-size: 18px;
 }
 
 body main section .container .image_beforeandafter .image_animation::after,
@@ -338,51 +339,33 @@ body main .section_services .container .row_nth:nth-child(even) {
   flex-direction: row;
 }
 
-body main .section_services .container .row_nth .col_overflow div .div_mouse .acitve_background {
+body main .section_services .container .row_nth div div .div_mouse .acitve_background {
   background-color: #2D337B !important;
 }
 
-body main .section_services .container .row_nth .col_overflow div .div_mouse .icon_padding {
+body main .section_services .container .row_nth div div .div_mouse .icon_padding {
   width: 50px;
   height: 50px;
 }
 
-body main .section_services .container .row_nth .col_overflow div .text_active {
+body main .section_services .container .row_nth div div .text_active {
   color: #2D337B;
 }
 
-body main .section_services .container .row_nth .col_overflow div .div_mouse .icon_padding .icon_active {
+body main .section_services .container .row_nth div div .div_mouse .icon_padding .icon_active {
   color: white !important;
 }
 
-body main .section_services .container .div_before_anmai::after {
+body main .section_services .container .section_backimage::before {
   content: url("/folder_image/image_services/image_background_left.svg");
   left: 0;
   margin-top: -1000px;
 }
 
-body main .section_services .container .div_before_anmai::before {
+body main .section_services .container .section_backimage::after {
   content: url("/folder_image/image_services/image_background_right.svg");
   right: 0;
   margin-top: -800px;
-}
-
-body main .section_services .container .div_before_anmai_next::before {
-  content: url("/folder_image/image_services/image_background_left.svg");
-  left: 0;
-  margin-top: -500px;
-}
-
-body main .section_services .container .div_before_anmai_next::after {
-  content: url("/folder_image/image_services/image_background_right.svg");
-  right: 0;
-  margin-top: -300px;
-}
-
-body main .section_services .container .div_anmai_end::before {
-  content: url("/folder_image/image_services/image_background_left.svg");
-  left: 0;
-  margin-top: -100px;
 }
 
 body main .section_services .container .row div a .button_hover .image_hover_right {
@@ -397,10 +380,6 @@ body main .section_services .container .row_nth div div .border_right {
   border-right: 4px solid #2D337B;
 }
 
-.text_size {
-  font-size: 20px;
-}
-
 body main .section_minheight {
   min-height: 900px;
 }
@@ -409,13 +388,21 @@ body main section div .div_animation {
   animation: left_animation 8s infinite !important;
 }
 
+body main .section_minheight div div .row .accordion div .accordion-header .accordion-button:focus {
+  box-shadow: var(--bs-accordion-btn-focus-border-color);
+}
+
 .col:nth-child(odd) .div_none_color,
 .col:nth-child(even) .div_none_color {
-  top: 100%;
-  left: 50%;
-  width: 0%;
-  height: 0vh;
+  margin-top: 55px;
+  margin-left: -48px;
+  width: 100%;
+  height: 185px;
   transition: 1s;
+}
+
+body main section .container .row .col .div_hover:hover .div_margin_hover {
+  margin-top: -215px;
 }
 
 .col:nth-child(odd) .div_none_color {
@@ -426,11 +413,8 @@ body main section div .div_animation {
   background-color: #A92D94;
 }
 
-body main section .container .row .col .div_hover:hover .div_none_color {
-  top: 0%;
-  left: 0;
-  width: 100%;
-  height: 195px;
+body main section div .row section div .div_margin_hover {
+  transition: 1s;
 }
 
 body main section .container .row .col .div_hover .div_none_color .container .p_line::before {
@@ -540,86 +524,106 @@ body main .section_cutomer {
   height: 1000px;
 }
 
-body main .section_cutomer div .carousel .carousel__list .div_border_mobile {
-  z-index: 6;
-  top: -29.2px;
-}
-
-body main .section_cutomer div .carousel .carousel__list .div_border_mobile img {
+body main .section_services div .swiper {
   width: 100%;
-  height: 610px;
+  height: 650px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-body main .section_cutomer div .carousel__list {
-  height: 450px;
-  perspective: 300px;
-}
-body main .section_cutomer div .carousel__item {
-  height: 550px;
-  transition: all 0.3s ease-in;
-}
-body main .section_cutomer div .carousel__item[data-pos="0"] {
-  z-index: 5;
-}
-body main .section_cutomer div .carousel__item[data-pos="-1"], body main .section_cutomer div .carousel__item[data-pos="1"] {
-  opacity: 0.7;
-  filter: blur(1px) grayscale(10%);
-}
-body main .section_cutomer div .carousel__item[data-pos="-1"] {
-  transform: translateX(-40%) scale(0.9);
-  z-index: 4;
-}
-body main .section_cutomer div .carousel__item[data-pos="1"] {
-  transform: translateX(40%) scale(0.9);
-  z-index: 4;
-}
-body main .section_cutomer div .carousel__item[data-pos="-2"], body main .section_cutomer div .carousel__item[data-pos="2"] {
-  opacity: 0.4;
-  filter: blur(3px) grayscale(20%);
-}
-body main .section_cutomer div .carousel__item[data-pos="-2"] {
-  transform: translateX(-70%) scale(0.8);
-  z-index: 3;
-}
-body main .section_cutomer div .carousel__item[data-pos="2"] {
-  transform: translateX(70%) scale(0.8);
-  z-index: 3;
-}
-body main .section_cutomer div .carousel__item[data-pos="-3"], body main .section_cutomer div .carousel__item[data-pos="3"] {
-  opacity: 0.4;
-  filter: blur(3px) grayscale(20%);
-}
-body main .section_cutomer div .carousel__item[data-pos="-3"] {
-  transform: translateX(-100%) scale(0.8);
-  z-index: 3;
-}
-body main .section_cutomer div .carousel__item[data-pos="3"] {
-  transform: translateX(100%) scale(0.8);
-  z-index: 3;
+body main .section_services div .swiper .swiper-wrapper .swiper-slide {
+  width: 239px;
+  height: 70vh;
 }
 
-body main .section_cutomer div .carousel .icon_border {
-  width: 15px;
-  height: 15px;
+body main .section_services div .swiper .swiper-wrapper .swiper-slide img {
+  border-radius: 30px;
+  display: block;
+  width: 100%;
+}
+
+body main .section_services div .swiper .swiper-wrapper .swiper-slide.inactive {
+  filter: blur(4px);
+  opacity: 1;
+}
+
+body main .section_services div .swiper .swiper-wrapper .swiper-slide-active::before {
+  content: url("/folder_image/image_customers/image_background.png");
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -22px;
+}
+
+body main .section_services div .swiper .swiper-button-next,
+body main .section_services div .swiper .swiper-button-prev {
   color: #2D337B;
   border: 2px solid #2D337B;
+  transition: 0.2s;
 }
 
-body main .section_cutomer div .carousel .icon_margin_left,
-body main .section_cutomer div .carousel .icon_margin_right {
-  transition: 0.3s;
-}
-
-body main .section_cutomer div .carousel .icon_border:hover .icon_margin_left {
-  margin-left: -10px;
-}
-
-body main .section_cutomer div .carousel .icon_border:hover .icon_margin_right {
+body main .section_services div .swiper .swiper-button-next:hover:after,
+.swiper-rtl .swiper-button-prev:hover:after {
   margin-left: 10px;
 }
 
-body main .section_cutomer div .div_margin_links {
-  margin-top: 160px;
+body main .section_services div .swiper .swiper-button-prev:hover:after,
+.swiper-rtl .swiper-button-next:hover:after {
+  margin-right: 10px;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+body main .section_services div .swiper .swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  font-size: 23px;
+  transition: 0.2s;
+}
+
+body main .section_footer {
+  background: linear-gradient(87deg, rgb(27, 34, 114), rgb(26, 30, 77));
+}
+
+body main .section_footer div .background_footer {
+  height: 400px;
+  animation: footer_animation 7s infinite;
+}
+
+@keyframes footer_animation {
+  0% {
+    content: url("/folder_image/image_footer/image_background.png");
+    transform: translate(0px, -50px);
+  }
+  50% {
+    content: url("/folder_image/image_footer/image_background1.png");
+    transform: translate(0px, 0px);
+  }
+  100% {
+    content: url("/folder_image/image_footer/image_background.png");
+    transform: translate(0px, -50px);
+  }
+}
+body main .section_footer div .div_hr {
+  width: 100%;
+  height: 2px;
+}
+
+body main .section_footer .row div ul li .line_before::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 1.5px;
+  height: 15px;
+  margin-top: 5px;
+  margin-left: 10.5px;
+}
+
+.icon_footer:hover,
+body main .section_footer .row div ul li .line_before:hover {
+  color: rgba(255, 255, 255, 0.7098039216);
+}
+
+.data_hover:hover .text_color_reverse {
+  color: white !important;
 }
 
 @media (max-width: 1200px) and (min-width: 990px) {
@@ -639,6 +643,9 @@ body main .section_cutomer div .div_margin_links {
   body .section_main {
     padding-top: 1100px;
   }
+  body main .section_services .container .section_backimage::before,
+  body main .section_services .container .section_backimage::after,
+  body main .section_footer::before,
   body main section .container .div_works::after,
   body main section .container .div_works::before,
   body main section .container .row div .col_circle::before,
@@ -646,11 +653,6 @@ body main .section_cutomer div .div_margin_links {
   body main section #div_none,
   body main section .container .div_content::after,
   body main section .container .div_content::before,
-  body main .section_services .container .div_anmai_end::before,
-  body main .section_services .container .div_before_anmai_next::after,
-  body main .section_services .container .div_before_anmai_next::before,
-  body main .section_services .container .div_before_anmai::before,
-  body main .section_services .container .div_before_anmai::after,
   body main section .container .image_beforeandafter .image_animation .div_change::before,
   body main section .container .image_beforeandafter .image_animation::after,
   body main section .container .image_beforeandafter .image_animation::before,
@@ -677,7 +679,7 @@ body main .section_cutomer div .div_margin_links {
   }
   body section .container_respons nav div ul .a_padding:hover,
   body section .container_respons nav div ul li .active {
-    color: red !important;
+    color: #E51148 !important;
     background-color: transparent;
   }
   body section .container_respons nav div ul {
@@ -692,30 +694,32 @@ body main .section_cutomer div .div_margin_links {
   body main .section_minheight {
     min-height: 0px;
   }
-  body main .section_cutomer div .carousel__item[data-pos="-2"], body main .section_cutomer div .carousel__item[data-pos="2"], body main .section_cutomer div .carousel__item[data-pos="-3"], body main .section_cutomer div .carousel__item[data-pos="3"] {
-    transform: translateX(0%) scale(0.8);
+  body main section .container .row .col .div_hover {
+    height: 200px !important;
+  }
+  .col:nth-child(odd) .div_none_color,
+  .col:nth-child(even) .div_none_color {
+    margin-top: 55px;
+    margin-left: -48px;
+    width: 100%;
+    height: 185px;
+    transition: 1s;
+  }
+  body main section .container .row .col .div_hover:hover .div_margin_hover {
+    margin-top: -215px;
   }
 }
 @media (max-width: 520px) {
+  body main .section_services div .swiper {
+    padding-top: 10px;
+  }
   body main .section_cutomer {
     height: 900px;
   }
   body main .section_cutomer div .div_margin_links {
-    margin-top: 80px;
+    margin-top: -90px;
   }
-  body main .section_cutomer div .carousel .carousel__list .div_border_mobile img {
-    width: 100%;
-    height: 550px;
-  }
-  body main .section_cutomer div .carousel__list {
-    margin-left: -30px;
-  }
-  body main .section_cutomer div .carousel__item {
-    width: 72%;
-    height: 500px;
-    margin-top: -3px;
-  }
-  body main .section_cutomer div .carousel__item[data-pos="-1"], body main .section_cutomer div .carousel__item[data-pos="1"], body main .section_cutomer div .carousel__item[data-pos="-2"], body main .section_cutomer div .carousel__item[data-pos="2"], body main .section_cutomer div .carousel__item[data-pos="-3"], body main .section_cutomer div .carousel__item[data-pos="3"] {
-    transform: translateX(0%) scale(0.8);
+  body main .section_services div .swiper .swiper-wrapper .swiper-slide {
+    height: 60vh;
   }
 }/*# sourceMappingURL=index.css.map */
