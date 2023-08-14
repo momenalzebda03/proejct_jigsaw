@@ -10,23 +10,42 @@ for (let i = 0; i < tag_header.length; i++) {
 }
 
 var icon_animation = document.getElementById("icon_animation");
-icon_animation.addEventListener("click", () => {
+function scroll_smool() {
+  window.scrollTo({
+    top: 1100,
+    behavior: "smooth",
+  });
+}
+function scroll() {
   window.scrollTo({
     top: 670,
     behavior: "smooth",
   });
+}
+function addEventListenerBasedOnWidth() {
+  if (window.innerWidth <= 990) {
+    icon_animation.addEventListener("click", scroll_smool);
+  } else {
+    icon_animation.addEventListener("click", scroll);
+  }
+}
+addEventListenerBasedOnWidth();
+window.addEventListener("resize", () => {
+  if (icon_animation.removeEventListener) {
+    icon_animation.removeEventListener("click", scroll_smool);
+  } else {
+    icon_animation.removeEventListener("click", scroll);
+  }
+  addEventListenerBasedOnWidth();
 });
 
 var button_menu = document.getElementById("button_menu");
-var span_icon = document.getElementById("span_icon");
-var bollen = true;
+var icon_menu = document.getElementById("icon_menu");
 button_menu.onclick = () => {
-  if (bollen === true) {
-    span_icon.classList = "fas fa-times";
-    bollen = false;
+  if (button_menu.classList == "navbar-toggler mx-4") {
+    icon_menu.src = "folder_image/image_navbar/icon_close.svg";
   } else {
-    span_icon.classList = "fas fa-bars";
-    bollen = true;
+    icon_menu.src = "folder_image/image_navbar/icon_menu.svg";
   }
 };
 
@@ -62,16 +81,7 @@ div_check.forEach((element) => {
     }
     const icon_active = element.querySelector(".icon_all");
     icon_active.classList.add("icon_active");
-    const activeIndex = Array.from(div_check).indexOf(element);
-    localStorage.setItem("activeIndex", activeIndex);
   });
-});
-window.addEventListener("load", function () {
-  const activeIndex = localStorage.getItem("activeIndex");
-  if (activeIndex !== null) {
-    const savedActiveElement = div_check[activeIndex];
-    savedActiveElement.click();
-  }
 });
 
 var tag_header = document.querySelectorAll(".image_click");

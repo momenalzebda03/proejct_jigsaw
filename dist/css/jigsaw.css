@@ -27,6 +27,7 @@ body {
   z-index: 4;
 }
 
+body main section .container .image_beforeandafter .image_animation .div_change::after,
 body main section .container .div_works::after,
 body main section .container .div_works::before,
 body main section .container .div_content::after,
@@ -125,17 +126,18 @@ body section .container_respons nav div ul li .active {
   background-color: #1A1E4D;
 }
 
-body section .container_respons nav div ul li .button_active_language {
+body section .container_respons nav div .button_active_language {
   background-color: #E51148;
 }
 
-body section .container_respons nav div ul .a_padding {
+.a_padding {
+  margin-top: -5px;
   color: #2D337B;
   padding-top: 34px;
   padding-bottom: 34px;
 }
 
-body section .container_respons nav div ul .a_padding:hover {
+.a_padding:hover {
   color: white !important;
   background-color: #1A1E4D;
 }
@@ -307,24 +309,48 @@ body main section .container .image_beforeandafter .image_animation::after {
   animation: point_smoll_animation 4s infinite;
 }
 
-body main section .container .image_beforeandafter .image_animation .div_change::before {
+body main section .container .image_beforeandafter .image_animation .div_change::before,
+body main section .container .image_beforeandafter .image_animation .div_change::after {
   right: 0;
   z-index: -1;
+}
+
+body main section .container .image_beforeandafter .image_animation .div_change::before {
   animation: change_animation 7s infinite;
+  content: url("/folder_image/image_about/image_jiqsaw1.svg");
 }
 
 @keyframes change_animation {
   0% {
-    content: url("/folder_image/image_about/image_jiqsaw1.svg");
     transform: translate(-30px, 70px);
+    opacity: 1;
   }
   50% {
-    content: url("/folder_image/image_about/image_jiqsaw2.svg");
     transform: translate(0px, 0px);
+    opacity: 0;
   }
   100% {
-    content: url("/folder_image/image_about/image_jiqsaw1.svg");
     transform: translate(-30px, 70px);
+    opacity: 1;
+  }
+}
+body main section .container .image_beforeandafter .image_animation .div_change::after {
+  animation: change_animation2 7s infinite;
+  content: url("/folder_image/image_about/image_jiqsaw2.svg");
+}
+
+@keyframes change_animation2 {
+  0% {
+    transform: translate(-30px, 70px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-30px, 70px);
+    opacity: 0;
   }
 }
 body main .section_services {
@@ -348,7 +374,7 @@ body main .section_services .container .row_nth div div .div_mouse .icon_padding
   height: 50px;
 }
 
-body main .section_services .container .row_nth div div .text_active {
+body main .section_services .container .row_nth div .text_active {
   color: #2D337B;
 }
 
@@ -368,16 +394,24 @@ body main .section_services .container .section_backimage::after {
   margin-top: -800px;
 }
 
-body main .section_services .container .row div a .button_hover .image_hover_right {
+body main .section_services .container .row div .button_hover .image_hover_right {
   transition: 0.3s;
 }
 
-body main .section_services .container .row div a .button_hover:hover .image_hover_right {
+body main .section_services .container .row div .button_hover:hover .image_hover_right {
   margin-left: 20px;
 }
 
-body main .section_services .container .row_nth div div .border_right {
+body main .section_services .container .row_nth div .border_right {
   border-right: 4px solid #2D337B;
+}
+
+body main .section_services .container .row_nth:nth-child(odd) div .image_child {
+  text-align: left;
+}
+
+body main .section_services .container .row_nth:nth-child(even) div .image_child {
+  text-align: right;
 }
 
 body main .section_minheight {
@@ -392,39 +426,49 @@ body main .section_minheight div div .row .accordion div .accordion-header .acco
   box-shadow: var(--bs-accordion-btn-focus-border-color);
 }
 
-.col:nth-child(odd) .div_none_color,
-.col:nth-child(even) .div_none_color {
-  margin-top: 55px;
-  margin-left: -48px;
-  width: 100%;
-  height: 185px;
-  transition: 1s;
+body main section .container .row div .div_hover:hover .text_size {
+  margin-top: 0 !important;
 }
 
-body main section .container .row .col .div_hover:hover .div_margin_hover {
-  margin-top: -215px;
+body main section .container .row div .div_hover:hover .div_bottomcolor {
+  background-color: #2C3B84;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  top: 10px;
+  height: 22vh;
 }
 
-.col:nth-child(odd) .div_none_color {
+body main section .container .row div .div_hover .div_bottomcolor {
+  transition: 0.5s;
+  top: 100px;
+}
+
+body main section .container .row div .div_hover .div_bottomcolor .text_size {
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+body main section .container .row div .div_hover:hover .div_imagehover img {
+  width: 0;
+}
+
+body main section .container .row div .div_hover .div_imagehover img {
+  width: 100px;
+  transition: 0.5s;
+}
+
+body main section div .row div .div_hover {
+  height: 190px;
+  transition: 0.5s;
+}
+
+body main section .container .row div:hover:nth-child(odd) .div_bottomcolor {
   background-color: #2C3B84;
 }
 
-.col:nth-child(even) .div_none_color {
+body main section .container .row div:hover:nth-child(even) .div_bottomcolor {
   background-color: #A92D94;
-}
-
-body main section div .row section div .div_margin_hover {
-  transition: 1s;
-}
-
-body main section .container .row .col .div_hover .div_none_color .container .p_line::before {
-  content: "";
-  position: absolute;
-  width: 55%;
-  height: 2px;
-  top: 45px;
-  left: 65px;
-  background-color: white;
 }
 
 body main section .container .div_content::before {
@@ -493,10 +537,11 @@ body main section .container .div_border {
   border-top: 5px dashed #2D337B;
 }
 
-body main section .container .row div .col_circle::before {
+body main section .container .row div .col_circle::after {
   content: "";
   position: absolute;
-  margin-top: -68px;
+  margin-top: -50px;
+  margin-left: calc(50% - 25px);
   border-radius: 50px;
   border: 2px solid white;
   outline: 2px solid #2D337B;
@@ -504,16 +549,30 @@ body main section .container .row div .col_circle::before {
   height: 25px;
 }
 
-body main section .container .row div:nth-child(even) .col_circle::before {
+body main section .container .row div:nth-child(even) .col_circle::after {
   background-color: #2D337B;
 }
 
-body main section .container .row :nth-child(odd) .col_circle::before {
+body main section .container .row div:nth-child(odd) .col_circle::after {
   background-color: #AD2685;
 }
 
-body main section .container div .div_width_line {
-  width: 85%;
+body main section .container .row div .col_circle::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 3px;
+  margin-top: -40px;
+  border: 2px dashed #2D337B;
+}
+
+body main section .container .row div:first-child .col_circle::before {
+  width: 60%;
+  margin-left: 50%;
+}
+
+body main section .container .row div:last-child .col_circle::before {
+  width: 45%;
 }
 
 body main section .container .row .col .shadow_radius {
@@ -607,6 +666,10 @@ body main .section_footer div .div_hr {
   height: 2px;
 }
 
+body main .section_footer .row div ul li:nth-child(2) .line_before::after {
+  display: none;
+}
+
 body main .section_footer .row div ul li .line_before::after {
   content: "";
   position: absolute;
@@ -617,7 +680,6 @@ body main .section_footer .row div ul li .line_before::after {
   margin-left: 10.5px;
 }
 
-.icon_footer:hover,
 body main .section_footer .row div ul li .line_before:hover {
   color: rgba(255, 255, 255, 0.7098039216);
 }
@@ -626,14 +688,27 @@ body main .section_footer .row div ul li .line_before:hover {
   color: white !important;
 }
 
+body main .section_footer .row div ul li .icon_footer:hover {
+  color: rgba(255, 255, 255, 0.7098039216);
+}
+
 @media (max-width: 1200px) and (min-width: 990px) {
   body .section_main div .container .row div .div_image_back::before {
     width: 50%;
     height: 650px;
   }
-  body section .container_respons nav div ul .a_padding {
+  .a_padding {
     padding-left: 5px !important;
     padding-right: 5px !important;
+  }
+  body main section .container .row div .div_hover:hover .div_margin_hover {
+    margin-top: -175px;
+  }
+  body main section div .row div .div_hover {
+    height: 170px;
+  }
+  body main section .container .row div .div_hover .div_bottomcolor .text_size {
+    font-size: 9px;
   }
 }
 @media (max-width: 990px) {
@@ -643,16 +718,18 @@ body main .section_footer .row div ul li .line_before:hover {
   body .section_main {
     padding-top: 1100px;
   }
+  body main section .container .row div .col_circle::before,
+  body main section .container .row div .col_circle::after,
   body main .section_services .container .section_backimage::before,
   body main .section_services .container .section_backimage::after,
   body main .section_footer::before,
   body main section .container .div_works::after,
   body main section .container .div_works::before,
-  body main section .container .row div .col_circle::before,
   body main section .div_inline_none,
   body main section #div_none,
   body main section .container .div_content::after,
   body main section .container .div_content::before,
+  body main section .container .image_beforeandafter .image_animation .div_change::after,
   body main section .container .image_beforeandafter .image_animation .div_change::before,
   body main section .container .image_beforeandafter .image_animation::after,
   body main section .container .image_beforeandafter .image_animation::before,
@@ -664,26 +741,23 @@ body main .section_footer .row div ul li .line_before:hover {
   body .section_main div .container .row div .div_image_back::after {
     display: none !important;
   }
-  body section .container_respons nav div ul li .button_active_demo:hover,
-  body section .container_respons nav div ul li .button_active_language:hover {
+  body section .container_respons nav div ul .button_active_demo:hover,
+  body section .container_respons nav div ul .button_active_language:hover {
     color: white !important;
   }
-  body section .container_respons nav div ul li .button_active_demo:hover {
+  body section .container_respons nav div .button_active_demo:hover {
     background-color: #AD2685;
   }
-  body section .container_respons nav div ul li .button_active_language:hover {
+  body section .container_respons nav div .button_active_language:hover {
     background-color: #E51148;
   }
   body section .container_respons {
     min-width: 100%;
   }
-  body section .container_respons nav div ul .a_padding:hover,
+  .a_padding:hover,
   body section .container_respons nav div ul li .active {
     color: #E51148 !important;
     background-color: transparent;
-  }
-  body section .container_respons nav div ul {
-    height: 100vh;
   }
   .div_width {
     width: 100% !important;
@@ -694,19 +768,21 @@ body main .section_footer .row div ul li .line_before:hover {
   body main .section_minheight {
     min-height: 0px;
   }
-  body main section .container .row .col .div_hover {
-    height: 200px !important;
+  body main section .container .row div .div_hover:hover .div_margin_hover {
+    margin-top: -210px;
+    margin-left: -15px;
   }
-  .col:nth-child(odd) .div_none_color,
-  .col:nth-child(even) .div_none_color {
-    margin-top: 55px;
-    margin-left: -48px;
-    width: 100%;
-    height: 185px;
-    transition: 1s;
+  body main .section_services .container .row_nth div .border_right {
+    border-right: 0px solid #2D337B;
   }
-  body main section .container .row .col .div_hover:hover .div_margin_hover {
-    margin-top: -215px;
+  body main section div .row div .div_hover {
+    height: 200px;
+  }
+  .text_size {
+    font-size: 7px !important;
+  }
+  body section .container nav .collapse .div_button_right {
+    margin-left: 40px;
   }
 }
 @media (max-width: 520px) {
