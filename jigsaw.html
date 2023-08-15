@@ -27,7 +27,7 @@
                     data-bs-target="#navbarSupportedContent">
                     <img src="folder_image/image_navbar/icon_menu.svg" alt="" id="icon_menu">
                 </button>
-                <div class="collapse navbar-collapse div_menu" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse py-3 py-md-0" id="navbarSupportedContent">
                     <ul
                         class="navbar-nav mb-2 mb-lg-0 d-flex gap-3 gap-lg-0 justify-content-lg-end w-100 pt-3 pt-lg-0 ms-4">
                         <li class="nav-item">
@@ -52,11 +52,11 @@
                         </li>
                     </ul>
                     <div class="d-flex div_button_right list-unstyled mt-3 mt-md-0">
-                        <a class="fw-bold a_padding px-4 button_active_demo text-white text-decoration-none text-nowrap"
+                        <a class="fw-bold a_padding a_padding_button px-4 button_active_demo text-white text-decoration-none text-nowrap"
                             href="#"> REQUEST A DEMO
                         </a>
                         <a href="#"
-                            class="fw-bold a_padding px-3 button_active_language text-white text-decoration-none">
+                            class="fw-bold a_padding a_padding_button px-3 button_active_language text-white text-decoration-none">
                             عربي
                         </a>
                     </div>
@@ -66,18 +66,20 @@
     </section>
     <!-- end navbar -->
     <!-- start main -->
-    <section class="section_main pb-4 d-flex align-items-end justify-content-center overflow-hidden position-relative">
+    <section
+        class="section_main pb-4 d-flex align-items-center align-items-lg-end justify-content-center overflow-hidden position-relative">
         <div>
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6">
-                        <div class="text-center text-md-start text-white div_index position-relative">
-                            <h1 class="fw-bold size_Jigsaw">Jigsaw® is an <span
-                                    class="span_all text-decoration-underline">ALL-IN-ONE</span> cloud-based ordering
+                        <div class="text-white div_index position-relative">
+                            <h1 class="fw-bold size_Jigsaw sizesmool">Jigsaw® is an <span
+                                    class="span_all text-decoration-underline sizesmool">ALL-IN-ONE</span> cloud-based
+                                ordering
                                 and delivery platform</h1>
-                            <p class="mt-3 fw-bold text_gold">“Keep your goal close, and your customer closer”</p>
+                            <i class="text_gold size_span">“Keep your goal close, and your customer closer”</i>
                             <div
-                                class="fw-bold d-flex gap-0 gap-sm-4 flex-column flex-sm-row justify-content-center justify-content-md-start align-items-center mt-4 gap-4">
+                                class="fw-bold d-flex gap-2 gap-sm-4 justify-content-start justify-content-sm-center justify-content-md-start mt-3">
                                 <div id="video"
                                     class="bg-white rounded-circle d-flex justify-content-center align-items-center video_center border border-2 border-secondary">
                                     <img src="folder_image/image_main/image_viedo.svg" alt="">
@@ -85,22 +87,25 @@
                                 <a href="#"
                                     class="px-4 py-3 border border-0 rounded-5 tag_transition button_background d-flex align-items-center text-white text-decoration-none gap-3">
                                     <img src="folder_image/image_main/Icon_arraow.svg" alt="">
-                                    <span class="tag_transition text_download">Download Our Profile</span>
+                                    <span class="sizesmool tag_transition text_download">Download Our Profile</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <div class="d-flex justify-content-center div_image_back">
-                            <div class="before_image"></div>
-                            <img src="folder_image/image_main/image_iPhone.png" alt="" class="div_index image_zindex">
+                        <div class="d-flex justify-content-center div_image_back mt-4 mt-sm-0">
+                            <div
+                                class="before_image position-relative d-flex justify-content-center justify-content-md-start">
+                                <img src="folder_image/image_main/image_iPhone.png" alt=""
+                                    class="image_responsve w-100 div_index">
+                            </div>
                         </div>
                     </div>
+                    <div class="text-center mt-5 mt-md-0 text-white mouse_caro" id="icon_animation">
+                        <i class="fas fa-arrow-down fs-4 icon_animation"></i>
+                        <p class="mt-2">Scroll to explore more</p>
+                    </div>
                 </div>
-            </div>
-            <div class="text-center mt-5 mt-md-0 text-white mouse_caro" id="icon_animation">
-                <i class="fas fa-arrow-down fs-4 icon_animation"></i>
-                <p class="mt-2">Scroll to explore more</p>
             </div>
             <div class="position-absolute bottom-0 start-0">
                 <img src="folder_image/image_main/image_main_left.png" alt="" class="image_left_back">
@@ -118,12 +123,12 @@
                     <h3 class="text_about fs-4">Jigsaw® is an <span class="text-decoration-underline">all-in-one</span>
                         cloud-based delivery and ordering platform
                     </h3>
+                    <p class="fw-bold">Jigsaw® helps set up digital ordering and delivery systems via mobile App, web
+                        ordering, self-services (Kiosk), or digital call center for F&B and Retail Industries, leading
+                        to cutting high costs and increasing business profitability.</p>
+                    <i class="fw-bold span_all">Jigsaw® enables seamless integrations with leading food ordering
+                        platforms and other solutions.</i>
                 </div>
-                <p class="fw-bold">Jigsaw® helps set up digital ordering and delivery systems via mobile App, web
-                    ordering, self-services (Kiosk), or digital call center for F&B and Retail Industries, leading to
-                    cutting high costs and increasing business profitability.</p>
-                <i class="fw-bold span_all">Jigsaw® enables seamless integrations with leading food ordering platforms
-                    and other solutions.</i>
                 <div class="image_beforeandafter">
                     <div class="image_animation">
                         <div class="div_change">
@@ -142,10 +147,10 @@
                     <h3 class="text_about fs-4">Keep your goal close, and your customer closer</h3>
                 </div>
                 <section id="carouselExampleIndicators"
-                    class="row row_nth justify-content-between carousel slide mt-0 pt-0 mt-md-5 pt-md-5">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="row div_index">
-                            <div class="col-3 col-sm-12">
+                    class="row row_nth justify-content-between align-items-center carousel slide">
+                    <div class="col-md-12 col-lg-3 div_index">
+                        <div class="row">
+                            <div class="col-3 col-lg-12">
                                 <div id="div_check" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1">
                                     <div
@@ -154,11 +159,11 @@
                                             class="bg-white acitve_background rounded-circle icon_padding d-flex justify-content-center align-items-center">
                                             <i class="fas fa-store text-black icon_all icon_active"></i>
                                         </div>
-                                        <h4 class="fs-5 d-none d-sm-block">store</h4>
+                                        <h4 class="fs-5 d-none d-lg-block">store</h4>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3 col-sm-12">
+                            <div class="col-3 col-lg-12">
                                 <div id="div_check" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                                     class="active" aria-current="true" aria-label="Slide 2">
                                     <div
@@ -167,11 +172,11 @@
                                             class="bg-white rounded-circle icon_padding d-flex justify-content-center align-items-center">
                                             <i class="fas fa-border-none icon_all text-black"></i>
                                         </div>
-                                        <h4 class="fs-5 d-none d-sm-block">Order Methodes</h4>
+                                        <h4 class="fs-5 d-none d-lg-block">Order Methodes</h4>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3 col-sm-12">
+                            <div class="col-3 col-lg-12">
                                 <div id="div_check" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                                     class="active" aria-current="true" aria-label="Slide 3">
                                     <div
@@ -180,11 +185,11 @@
                                             class="bg-white rounded-circle icon_padding d-flex justify-content-center align-items-center">
                                             <i class="fas fa-bell icon_all text-black"></i>
                                         </div>
-                                        <h4 class="fs-5 d-none d-sm-block">Signle Item</h4>
+                                        <h4 class="fs-5 d-none d-lg-block">Signle Item</h4>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3 col-sm-12">
+                            <div class="col-3 col-lg-12">
                                 <div id="div_check" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
                                     class="active" aria-current="true" aria-label="Slide 4">
                                     <div
@@ -193,7 +198,7 @@
                                             class="bg-white rounded-circle icon_padding d-flex justify-content-center align-items-center">
                                             <i class="fas fa-smile-wink icon_all text-black"></i>
                                         </div>
-                                        <h4 class="fs-5 d-none d-sm-block">Feedback</h4>
+                                        <h4 class="fs-5 d-none d-lg-block">Feedback</h4>
                                     </div>
                                 </div>
                             </div>
@@ -202,9 +207,9 @@
                     <div class="col-lg-8">
                         <div class="carousel-inner div_index mt-4 mt-md-0">
                             <div class="carousel-item active">
-                                <div class="row">
+                                <div class="row align-items-center">
                                     <div class="col-md-7">
-                                        <div class="mt-3 text-center text-lg-start">
+                                        <div class="text-center text-lg-start">
                                             <h3 class="text_about fw-bold fs-5">Fully Customized</h3>
                                             <h4 class="title_about title_size fs-3">Mobile Application</h4>
                                             <p class="title_size">Jigsaw enables smart ordering technology, simplifies
@@ -214,17 +219,17 @@
                                         </div>
                                     </div>
                                     <div class="col-md-5">
-                                        <div class="text-center text-lg-end">
+                                        <div class="text-center text-lg-end mt-0 mt-md-5">
                                             <img src="folder_image/image_services/image_iphone_left.png" alt=""
-                                                class="w-100">
+                                                class="image_responsve_serves">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="row">
+                                <div class="row align-items-center">
                                     <div class="col-md-7">
-                                        <div class="mt-3 text-center text-lg-start">
+                                        <div class="text-center text-lg-start">
                                             <h3 class="text_about fw-bold fs-5">Fully Customized</h3>
                                             <h4 class="title_about title_size fs-3">Mobile Application</h4>
                                             <p class="title_size">Jigsaw enables smart ordering technology, simplifies
@@ -234,36 +239,17 @@
                                         </div>
                                     </div>
                                     <div class="col-md-5">
-                                        <div class="text-center text-lg-end">
-                                            <img src="folder_image/image_services/image_food.png" alt="" class="w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-md-7">
-                                        <div class="mt-3 text-center text-lg-start">
-                                            <h3 class="text_about fw-bold fs-5">Fully Customized</h3>
-                                            <h4 class="title_about title_size fs-3">Mobile Application</h4>
-                                            <p class="title_size">Jigsaw enables smart ordering technology, simplifies
-                                                operations by allowing customers to order from their phone. Jigsaw
-                                                offers fast and secure payments, integrations with major point of sale
-                                                systems, tailored implementation plans and customer support.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="text-center text-lg-end">
+                                        <div class="text-center text-lg-end mt-0 mt-md-5">
                                             <img src="folder_image/image_services/image_iphone_left.png" alt=""
-                                                class="w-100">
+                                                class="image_responsve_serves">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="row">
+                                <div class="row align-items-center">
                                     <div class="col-md-7">
-                                        <div class="mt-3 text-center text-lg-start">
+                                        <div class="text-center text-lg-start">
                                             <h3 class="text_about fw-bold fs-5">Fully Customized</h3>
                                             <h4 class="title_about title_size fs-3">Mobile Application</h4>
                                             <p class="title_size">Jigsaw enables smart ordering technology, simplifies
@@ -273,8 +259,29 @@
                                         </div>
                                     </div>
                                     <div class="col-md-5">
-                                        <div class="text-center text-lg-end">
-                                            <img src="folder_image/image_services/image_food.png" alt="" class="w-100">
+                                        <div class="text-center text-lg-end mt-0 mt-md-5">
+                                            <img src="folder_image/image_services/image_iphone_left.png" alt=""
+                                                class="image_responsve_serves">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row align-items-center">
+                                    <div class="col-md-7">
+                                        <div class="text-center text-lg-start">
+                                            <h3 class="text_about fw-bold fs-5">Fully Customized</h3>
+                                            <h4 class="title_about title_size fs-3">Mobile Application</h4>
+                                            <p class="title_size">Jigsaw enables smart ordering technology, simplifies
+                                                operations by allowing customers to order from their phone. Jigsaw
+                                                offers fast and secure payments, integrations with major point of sale
+                                                systems, tailored implementation plans and customer support.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="text-center text-lg-end mt-0 mt-md-5">
+                                            <img src="folder_image/image_services/image_iphone_left.png" alt=""
+                                                class="image_responsve_serves">
                                         </div>
                                     </div>
                                 </div>
@@ -287,34 +294,42 @@
                         <div class="mt-3 text-center text-lg-start">
                             <h3 class="text_about fw-bold fs-5">Amazing</h3>
                             <h4 class="title_about title_size fs-3">Web Application</h4>
-                            <p class="title_size">Transform Turn your restaurant into an online business. Jigsaw web
+                            <p class="title_size">Transform Turn your restaurant into an online business. Jigsaw
+                                web
                                 ordering will ease targeting more customers and earning their loyalty.</p>
                         </div>
-                        <ul class="list-unstyled d-flex div_width w-75 flex-wrap">
-                            <li class="w-50 text-center mt-4">
-                                <img src="/folder_image/image_services/icon_responsive.svg" alt=""
-                                    class="d-none d-lg-inline">
-                                <span class="title_about">Responsive</span>
-                            </li>
-                            <li class="w-50 text-center mt-4">
-                                <img src="/folder_image/image_services/icon_note.svg" alt="" class="d-none d-lg-inline">
-                                <span class="title_about">Multilingual</span>
-                            </li>
-                            <li class="w-50 text-center mt-4">
-                                <img src="/folder_image/image_services/icon_track.svg" alt=""
-                                    class="d-none d-lg-inline">
-                                <span class="title_about">Track Orders</span>
-                            </li>
-                            <li class="w-50 text-center mt-4">
-                                <img src="/folder_image/image_services/icon_manage.svg" alt=""
-                                    class="d-none d-lg-inline">
-                                <span class="title_about">Manage payment</span>
-                            </li>
-                        </ul>
+                        <div class="ms-4 ms-md-0">
+                            <ul class="list-unstyled d-flex row_gap row">
+                                <li class="col-6">
+                                    <div class="d-flex gap-3">
+                                        <img src="/folder_image/image_services/icon_responsive.svg" alt="">
+                                        <span class="title_about">Responsive</span>
+                                    </div>
+                                </li>
+                                <li class="col-6">
+                                    <div class="d-flex gap-3">
+                                        <img src="/folder_image/image_services/icon_note.svg" alt="">
+                                        <span class="title_about">Multilingual</span>
+                                    </div>
+                                </li>
+                                <li class="col-6">
+                                    <div class="d-flex gap-3">
+                                        <img src="/folder_image/image_services/icon_track.svg" alt="">
+                                        <span class="title_about">Track Orders</span>
+                                    </div>
+                                </li>
+                                <li class="col-6">
+                                    <div class="d-flex gap-3">
+                                        <img src="/folder_image/image_services/icon_manage.svg" alt="">
+                                        <span class="title_about">Manage payment</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-md-7">
                         <div class="div_index image_child">
-                            <img src="folder_image/image_services/image_iMac.png" alt="" class="div_width">
+                            <img src="folder_image/image_services/image_iMac.png" alt="" class="image_responsve_serves">
                         </div>
                     </div>
                 </section>
@@ -326,31 +341,44 @@
                             <p class="title_size">Jigsaw Self Kiosk are fully made to fit restaurants of all sizes.
                                 Increase your revenue and save your customer’s time!.</p>
                         </div>
-                        <ul class="list-unstyled d-flex div_width w-75 flex-wrap">
-                            <li class="w-50 text-center mt-4">
-                                <img src="/folder_image/image_services/icon_responsive.svg" alt=""
-                                    class="d-none d-lg-inline">
-                                <span class="title_about">Carefully designed</span>
-                            </li>
-                            <li class="w-50 text-center mt-4">
-                                <img src="/folder_image/image_services/icon_note.svg" alt="" class="d-none d-lg-inline">
-                                <span class="title_about">User Interactive</span>
-                            </li>
-                            <li class="w-50 text-center mt-4">
-                                <img src="/folder_image/image_services/icon_track.svg" alt=""
-                                    class="d-none d-lg-inline">
-                                <span class="title_about">Seamless Sync</span>
-                            </li>
-                            <li class="w-50 text-center mt-4">
-                                <img src="/folder_image/image_services/icon_manage.svg" alt=""
-                                    class="d-none d-lg-inline">
-                                <span class="title_about">Instant Response</span>
-                            </li>
-                        </ul>
+                        <div class="ms-4 ms-md-0">
+                            <ul class="list-unstyled d-flex row_gap row">
+                                <li class="col-6">
+                                    <div class="d-flex gap-3">
+                                        <img src="/folder_image/image_services/icon_square.svg" alt="">
+                                        <span class="title_about">Carefully designed</span>
+                                    </div>
+                                </li>
+                                <li class="col-6">
+                                    <div class="d-flex gap-3">
+                                        <img src="/folder_image/image_services/icon_user.svg" alt="">
+                                        <span class="title_about">User Interactive</span>
+                                    </div>
+                                </li>
+                                <li class="col-6">
+                                    <div class="d-flex gap-3">
+                                        <img src="/folder_image/image_services/icon_seamless.svg" alt="">
+                                        <span class="title_about">Seamless Sync</span>
+                                    </div>
+                                </li>
+                                <li class="col-6">
+                                    <div class="d-flex gap-3">
+                                        <img src="/folder_image/image_services/icon_manage.svg" alt="">
+                                        <span class="title_about">Instant Response</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-5 mb-3 d-flex justify-content-lg-start justify-content-center">
+                            <a href="#" class="px-5 image_hover_right py-3 rounded-5 nav-link text-white text-center">
+                                <span>REQUEST A DEMO </span>
+                                <img src="folder_image/image_services/arrow-right.svg" alt="" class="arraow_left">
+                            </a>
+                        </div>
                     </div>
                     <div class="col-md-7">
                         <div class="div_index image_child">
-                            <img src="folder_image/image_services/image_uik.png" alt="" class="div_width">
+                            <img src="folder_image/image_services/image_uik.png" alt="" class="image_responsve_serves">
                         </div>
                     </div>
                 </section>
@@ -365,7 +393,8 @@
                     </div>
                     <div class="col-md-6">
                         <div class="div_index image_child">
-                            <img src="folder_image/image_services/image_print.png" alt="" class="div_width">
+                            <img src="folder_image/image_services/image_print.png" alt=""
+                                class="image_responsve_serves">
                         </div>
                     </div>
                 </section>
@@ -380,7 +409,8 @@
                     </div>
                     <div class="col-md-6">
                         <div class="div_index image_child">
-                            <img src="folder_image/image_services/image_sackle.png" alt="" class="div_width">
+                            <img src="folder_image/image_services/image_sackle.png" alt=""
+                                class="image_responsve_serves">
                         </div>
                     </div>
                 </section>
@@ -403,7 +433,8 @@
                                     <button class="border border-0 accordion-button collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
                                         aria-controls="collapseOne">
-                                        <h4 class="fs-5 ms-3 mt-2">Effective in communicating with clients</h4>
+                                        <h4 class="tag_size_title mt-2">Effective in communicating with clients
+                                        </h4>
                                     </button>
                                 </div>
                                 <div id="collapseOne"
@@ -421,7 +452,8 @@
                                     <button class="border border-0 accordion-button collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapsetow" aria-expanded="false"
                                         aria-controls="collapsetow">
-                                        <h4 class="fs-5 ms-3 mt-2">Increase recognition & build client loyalty</h4>
+                                        <h4 class="tag_size_title mt-2">Increase recognition & build client loyalty
+                                        </h4>
                                     </button>
                                 </div>
                                 <div id="collapsetow" class="collapse shadow text-muted text-center border border-2"
@@ -439,7 +471,7 @@
                                     <button class="border border-0 accordion-button collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false"
                                         aria-controls="collapsethree">
-                                        <h4 class="fs-5 ms-3 mt-2">Grow brand awareness</h4>
+                                        <h4 class="tag_size_title mt-2">Grow brand awareness</h4>
                                     </button>
                                 </div>
                                 <div id="collapsethree" class="collapse shadow text-muted text-center border border-2"
@@ -459,7 +491,7 @@
                                     <button class="border border-0 accordion-button collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false"
                                         aria-controls="collapsefour">
-                                        <h4 class="fs-5 ms-3 mt-2">Growth in sales</h4>
+                                        <h4 class="tag_size_title mt-2">Growth in sales</h4>
                                     </button>
                                 </div>
                                 <div id="collapsefour" class="collapse shadow text-muted text-center border border-2"
@@ -479,7 +511,7 @@
                                     <button class="border border-0 accordion-button collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
                                         aria-controls="collapsefive">
-                                        <h4 class="fs-5 ms-3 mt-2">Modern marketing tool</h4>
+                                        <h4 class="tag_size_title mt-2">Modern marketing tool</h4>
                                     </button>
                                 </div>
                                 <div id="collapsefive" class="collapse shadow text-muted text-center border border-2"
@@ -498,7 +530,7 @@
                                     <button class="border border-0 accordion-button collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false"
                                         aria-controls="collapsesix">
-                                        <h4 class="fs-5 ms-3 mt-2">Customer loyalty</h4>
+                                        <h4 class="tag_size_title mt-2">Customer loyalty</h4>
                                     </button>
                                 </div>
                                 <div id="collapsesix" class="collapse shadow text-muted text-center border border-2"
@@ -516,7 +548,8 @@
                                     <button class="border border-0 accordion-button collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false"
                                         aria-controls="collapseseven">
-                                        <h4 class="fs-5 ms-3 mt-2">Effective in communicating with clients</h4>
+                                        <h4 class="tag_size_title mt-2">Effective in communicating with clients
+                                        </h4>
                                     </button>
                                 </div>
                                 <div id="collapseseven" class="collapse shadow text-muted text-center border border-2"
@@ -545,7 +578,7 @@
                 <div class="row">
                     <div class="col-6 col-md-3">
                         <div
-                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-5">
+                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-4">
                             <div class="div_imagehover">
                                 <img src="folder_image/image_features/image_statistics.png" alt="">
                             </div>
@@ -562,7 +595,7 @@
                     </div>
                     <div class="col-6 col-md-3">
                         <div
-                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-5">
+                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-4">
                             <div class="div_imagehover">
                                 <img src="folder_image/image_features/image_full.png" alt="" class="image_width">
                             </div>
@@ -579,7 +612,7 @@
                     </div>
                     <div class="col-6 col-md-3">
                         <div
-                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-5">
+                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-4">
                             <div class="div_imagehover">
                                 <img src="folder_image/image_features/image_hour.png" alt="" class="image_width">
                             </div>
@@ -595,7 +628,7 @@
                     </div>
                     <div class="col-6 col-md-3">
                         <div
-                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-5">
+                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-4">
                             <div class="div_imagehover">
                                 <img src="folder_image/image_features/image_methods.png" alt="" class="image_width">
                             </div>
@@ -611,7 +644,7 @@
                     </div>
                     <div class="col-6 col-md-3">
                         <div
-                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-5">
+                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-4">
                             <div class="div_imagehover">
                                 <img src="folder_image/image_features/image_tools.png" alt="" class="image_width">
                             </div>
@@ -627,7 +660,7 @@
                     </div>
                     <div class="col-6 col-md-3">
                         <div
-                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-5">
+                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-4">
                             <div class="div_imagehover">
                                 <img src="folder_image/image_features/image_database.png" alt="" class="image_width">
                             </div>
@@ -643,7 +676,7 @@
                     </div>
                     <div class="col-6 col-md-3">
                         <div
-                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-5">
+                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-4">
                             <div class="div_imagehover">
                                 <img src="folder_image/image_features/image_branch.png" alt="" class="image_width">
                             </div>
@@ -659,7 +692,7 @@
                     </div>
                     <div class="col-6 col-md-3">
                         <div
-                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-5">
+                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-4">
                             <div class="div_imagehover">
                                 <img src="folder_image/image_features/image_mongo.png" alt="" class="image_width">
                             </div>
@@ -676,7 +709,7 @@
                     </div>
                     <div class="col-6 col-md-3">
                         <div
-                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-5">
+                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-4">
                             <div class="div_imagehover">
                                 <img src="folder_image/image_features/image_cods.png" alt="" class="image_width">
                             </div>
@@ -693,7 +726,7 @@
                     </div>
                     <div class="col-6 col-md-3">
                         <div
-                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-5">
+                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-4">
                             <div class="div_imagehover">
                                 <img src="folder_image/image_features/image_serves.png" alt="" class="image_width">
                             </div>
@@ -709,7 +742,7 @@
                     </div>
                     <div class="col-6 col-md-3">
                         <div
-                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-5">
+                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-4">
                             <div class="div_imagehover">
                                 <img src="folder_image/image_features/image_public.png" alt="" class="image_width">
                             </div>
@@ -725,7 +758,7 @@
                     </div>
                     <div class="col-6 col-md-3">
                         <div
-                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-5">
+                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-4">
                             <div class="div_imagehover">
                                 <img src="folder_image/image_features/image_flexible.png" alt="" class="image_width">
                             </div>
@@ -742,7 +775,7 @@
                     </div>
                     <div class="col-6 col-md-3">
                         <div
-                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-5">
+                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-4">
                             <div class="div_imagehover">
                                 <img src="folder_image/image_features/image_languase.png" alt="" class="image_width">
                             </div>
@@ -758,7 +791,7 @@
                     </div>
                     <div class="col-6 col-md-3">
                         <div
-                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-5">
+                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-4">
                             <div class="div_imagehover">
                                 <img src="folder_image/image_features/image_multiple.png" alt="" class="image_width">
                             </div>
@@ -774,7 +807,7 @@
                     </div>
                     <div class="col-6 col-md-3">
                         <div
-                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-5">
+                            class="shadow pt-2 text-center rounded-3 position-relative div_hover overflow-hidden border border-2 mt-4">
                             <div class="div_imagehover">
                                 <img src="folder_image/image_features/image_multiple.png" alt="" class="image_width">
                             </div>
@@ -790,21 +823,22 @@
                     </div>
                 </div>
             </div>
-            <div
+            <section
                 class="d-flex flex-column flex-lg-row w-100 mt-5 pt-5 mouse_caro position-relative overflow-hidden div_inline_none">
-                <div id="div_none" class="position-absolute start-50 top-50 translate-middle text-white fs-3">
+                <div class="position-absolute start-50 top-50 translate-middle text-white fs-3 div_none">
                     <div class="text-center">
                         <h5 class="fs-1">How Jigsaw® Sees Digital Business</h5>
                         <p class="fs-4 div_width text_letter">We believe that every business model related to Food &
                             Beverage in the world can be reflected into 4 aspects of the process</p>
                     </div>
                 </div>
-                <div class="position-relative">
-                    <div class="position-absolute ms-3 mt-5 text-white div_absolute_width">
+                <div class="div_imagewidth overflow-hidden">
+                    <img src="folder_image/image_business/image_ordering.png" alt="" class="image_click image_fit">
+                    <div class="position-absolute text-white div_position">
                         <h6 class="fw-bold fs-3">Ordering</h6>
-                        <div class="div_none_reverse">
-                            <p class="fs-4 text_color_reverse">Our order management system is summarized in three main
-                                sides:</p>
+                        <div class="div_none_reverse overflow-hidden">
+                            <p class="fs-4 text_color_reverse w-75">Our order management system is summarized in three
+                                main sides:</p>
                             <div class="row pt-5">
                                 <div class="col-6">
                                     <div class="mt-5">
@@ -848,92 +882,76 @@
                         </div>
                     </div>
                 </div>
-                <img src="folder_image/image_business/image_ordering.png" alt=""
-                    class="overflow-hidden image_click image_fit">
-                <div class="position-relative">
-                    <div class="position-absolute ms-3 mt-5 text-white div_absolute_width">
+                <div class="div_imagewidth overflow-hidden">
+                    <img src="folder_image/image_business/image_ordering.png" alt="" class="image_click image_fit">
+                    <div class="position-absolute text-white div_position">
                         <h6 class="fw-bold fs-3">Delivery</h6>
-                        <div class="div_none_reverse">
-                            <div class="row pt-5">
-                                <div class="col-12">
-                                    <div class="mt-5">
-                                        <h6 class="fs-4">The Restaurant-to-Consumer:</h6>
-                                        <div class="text_color_reverse d-flex flex-column fs-5">
-                                            <span>The delivery segment includes the delivery of meals
-                                                carried out directly by the restaurants. The order may be made via
-                                                platforms (e.g. Delivery Hero, Just Eat) or directly through a
-                                                restaurant website (e.g. Domino's).</span>
-                                        </div>
-                                    </div>
+                        <div class="div_none_reverse overflow-hidden">
+                            <div class="mt-5 w-50">
+                                <h6 class="fs-4">The Restaurant-to-Consumer:</h6>
+                                <div class="text_color_reverse d-flex flex-column fs-5">
+                                    <span>The delivery segment includes the delivery of meals
+                                        carried out directly by the restaurants. The order may be made via
+                                        platforms (e.g. Delivery Hero, Just Eat) or directly through a
+                                        restaurant website (e.g. Domino's).</span>
                                 </div>
-                                <div class="col-12">
-                                    <div class="mt-5">
-                                        <h6 class="fs-4">The Platform-to-Consumer</h6>
-                                        <div class="text_color_reverse d-flex flex-column fs-5">
-                                            <span>Delivery market segment focuses on online delivery services that
-                                                provide customers with meals from partner restaurants that do not
-                                                necessarily have to offer food delivery themselves.</span>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="mt-5 w-50">
+                                <h6 class="fs-4">The Platform-to-Consumer</h6>
+                                <div class="text_color_reverse d-flex flex-column fs-5">
+                                    <span>Delivery market segment focuses on online delivery services that
+                                        provide customers with meals from partner restaurants that do not
+                                        necessarily have to offer food delivery themselves.</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <img src="folder_image/image_business/image_delivery.png" alt=""
-                    class="overflow-hidden image_click image_fit">
-                <div class="position-relative">
-                    <div class="position-absolute ms-3 mt-5 text-white div_absolute_width">
+                <div class="div_imagewidth overflow-hidden">
+                    <img src="folder_image/image_business/image_payment.png" alt="" class="image_click image_fit">
+                    <div class="position-absolute text-white div_position">
                         <h6 class="fw-bold fs-3">Payments</h6>
-                        <div class="div_none_reverse">
-                            <div class="row pt-5">
-                                <div class="col-12">
-                                    <div class="mt-5">
-                                        <div class="text_color_reverse d-flex flex-column fs-5">
-                                            <span>• Introduce a highly scalable, real-time, integrated control layer
-                                                automating all digital payment transactions.</span>
-                                        </div>
-                                    </div>
+                        <div class="div_none_reverse overflow-hidden">
+                            <div class="mt-5 w-50">
+                                <h6 class="fs-4">The Restaurant-to-Consumer:</h6>
+                                <div class="text_color_reverse d-flex flex-column fs-5">
+                                    <span>• Introduce a highly scalable, real-time, integrated control layer
+                                        automating all digital payment transactions.</span>
                                 </div>
-                                <div class="col-12">
-                                    <div class="mt-5">
-                                        <div class="text_color_reverse d-flex flex-column fs-5">
-                                            <span>• Introduce a digital wallet that would carry out all customer
-                                                payments</span>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="mt-5 w-50">
+                                <h6 class="fs-4">The Platform-to-Consumer</h6>
+                                <div class="text_color_reverse d-flex flex-column fs-5">
+                                    <span>• Introduce a digital wallet that would carry out all customer
+                                        payments</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <img src="folder_image/image_business/image_payment.png" alt=""
-                    class="overflow-hidden image_click image_fit">
-                <div class="position-relative">
-                    <div class="position-absolute ms-3 mt-5 text-white div_absolute_width">
+                <div class="div_imagewidth overflow-hidden">
+                    <img src="folder_image/image_business/image_marketplace.png" alt="" class="image_click image_fit">
+                    <div class="position-absolute text-white div_position">
                         <h6 class="fw-bold fs-3">Marketplace</h6>
-                        <div class="div_none_reverse">
-                            <div class="row pt-5">
-                                <div class="col-12">
-                                    <div class="text_color_reverse d-flex flex-column fs-5 mt-5">
-                                        <span>• To complete the whole loop for all merchants, the solution will be
-                                            completed with a flexible marketplace.</span>
-                                    </div>
+                        <div class="div_none_reverse overflow-hidden">
+                            <div class="mt-5 w-50">
+                                <h6 class="fs-4">The Restaurant-to-Consumer:</h6>
+                                <div class="text_color_reverse d-flex flex-column fs-5">
+                                    <span>• To complete the whole loop for all merchants, the solution will be
+                                        completed with a flexible marketplace.</span>
                                 </div>
-                                <div class="col-12">
-                                    <div class="text_color_reverse d-flex flex-column fs-5 mt-5">
-                                        <span>• The digital marketplace will help us scale our solution and its
-                                            technology to further serve market segments and adhere to customer
-                                            requests.</span>
-                                    </div>
+                            </div>
+                            <div class="mt-5 w-50">
+                                <h6 class="fs-4">The Platform-to-Consumer</h6>
+                                <div class="text_color_reverse d-flex flex-column fs-5">
+                                    <span>• To complete the whole loop for all merchants, the solution will be
+                                        completed with a flexible marketplace.</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <img src="folder_image/image_business/image_marketplace.png" alt=""
-                    class="overflow-hidden image_click image_fit">
-            </div>
+            </section>
             <section>
                 <div class="container d-block d-lg-none mt-5">
                     <div class="text-center div_content">
@@ -958,9 +976,9 @@
                             </div>
                             <div id="collapseeat" class="collapse shadow text-start ps-4 border border-2 div_background"
                                 aria-labelledby="headingeat" data-bs-parent="#accordieatxample">
-                                <div class="div_content px-2">
+                                <div class="div_content px-2 py-3">
                                     <h6 class="fs-4 text_about fw-bold">How Jigsaw® Sees Digital Business</h6>
-                                    <div class="row py-3">
+                                    <div class="row">
                                         <div class="col-12 mt-3 title_about">
                                             <h6 class="fs-4">1. Order Sources</h6>
                                             <ul class="d-flex flex-column fs-5">
@@ -1010,8 +1028,8 @@
                             <div id="collapsenine"
                                 class="collapse shadow text-start ps-4 border border-2 div_background"
                                 aria-labelledby="headingnine" data-bs-parent="#accordininexample">
-                                <div class="div_content px-2">
-                                    <div class="row py-3">
+                                <div class="div_content px-2 py-3">
+                                    <div class="row">
                                         <div class="col-12">
                                             <div class="mt-3 title_about">
                                                 <h6 class="fs-4">The Restaurant-to-Consumer:</h6>
@@ -1056,8 +1074,8 @@
                             </div>
                             <div id="collapseten" class="collapse shadow text-start ps-4 border border-2 div_background"
                                 aria-labelledby="headingten" data-bs-parent="#accorditenxample">
-                                <div class="div_content px-2">
-                                    <div class="row py-3">
+                                <div class="div_content px-2 py-3">
+                                    <div class="row">
                                         <div class="col-12">
                                             <div class="d-flex flex-column fs-5 mt-3 title_about">
                                                 <span class="div_background">• Introduce a highly scalable, real-time,
@@ -1095,8 +1113,8 @@
                             <div id="collapseelaven"
                                 class="collapse shadow text-start ps-4 border border-2 div_background"
                                 aria-labelledby="headingelaven" data-bs-parent="#accordielavenxample">
-                                <div class="div_content px-2">
-                                    <div class="row py-3">
+                                <div class="div_content px-2 py-3">
+                                    <div class="row">
                                         <div class="col-12">
                                             <div class="d-flex flex-column fs-5 mt-3 title_about">
                                                 <span class="div_background">• To complete the whole loop for all
@@ -1121,7 +1139,7 @@
         </section>
         <!-- end features -->
         <!-- start works -->
-        <section class="mt-0 pt-5 mt-md-5">
+        <section class="py-0 py-md-5 my-5">
             <div class="container">
                 <div class="text-center div_works">
                     <h2 class="title_about fw-bold">How Jigsaw® Works!</h2>
@@ -1194,74 +1212,93 @@
         </section>
         <!-- end works -->
         <!-- start integration -->
-        <section class="mt-0 pt-5 pt-md-0 mt-md-5">
+        <section class="mt-5 pt-5">
             <div class="container">
                 <div class="text-center div_works">
                     <h2 class="title_about fw-bold">Integration</h2>
                     <h3 class="text_about fs-4">Jigsaw® enables seamless integrations with leading food ordering
                         platforms and other solutions.</h3>
                 </div>
-                <div class="row position-relative">
-                    <div class="col">
-                        <div
-                            class="shadow h-100 d-flex justify-content-center align-items-center p-3 text-center shadow_radius mt-4">
-                            <div>
-                                <img src="/folder_image/image_integration/image_revel.png" alt="">
-                                <h6 class="fs-4">POS Systems</h6>
+                <div class="row position-relative div_index">
+                    <div class="col-6 col-md-3">
+                        <div class="mt-5">
+                            <div
+                                class="shadow d-flex justify-content-center align-items-center p-3 text-center shadow_radius">
+                                <div>
+                                    <img src="/folder_image/image_integration/image_revel.png" alt="" class="div_width">
+                                    <h4 class="integration_text fs-4">POS Systems</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div
-                            class="shadow h-100 d-flex justify-content-center align-items-center p-3 text-center shadow_radius mt-4">
-                            <div>
-                                <img src="/folder_image/image_integration/image_oracle.png" alt="">
-                                <h6 class="fs-4">ERP Systems</h6>
+                    <div class="col-6 col-md-3">
+                        <div class="mt-5">
+                            <div
+                                class="shadow d-flex justify-content-center align-items-center p-3 text-center shadow_radius">
+                                <div>
+                                    <img src="/folder_image/image_integration/image_oracle.png" alt=""
+                                        class="div_width">
+                                    <h4 class="integration_text fs-4">ERP Systems</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div
-                            class="shadow h-100 d-flex justify-content-center align-items-center p-3 text-center shadow_radius mt-4">
-                            <div>
-                                <img src="/folder_image/image_integration/image_unlzashed.png" alt="">
-                                <h6 class="fs-4">Inventory Management Systems</h6>
+                    <div class="col-6 col-md-3">
+                        <div class="mt-5">
+                            <div
+                                class="shadow d-flex justify-content-center align-items-center p-3 text-center shadow_radius">
+                                <div>
+                                    <img src="/folder_image/image_integration/image_unlzashed.png" alt=""
+                                        class="div_width">
+                                    <h4 class="integration_text fs-4">Inventory Management Systems</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div
-                            class="shadow h-100 d-flex justify-content-center align-items-center p-3 text-center shadow_radius mt-4">
-                            <div>
-                                <img src="/folder_image/image_integration/image_yollow.png" alt="">
-                                <h6 class="fs-4">Delivery Applications</h6>
+                    <div class="col-6 col-md-3">
+                        <div class="mt-5">
+                            <div
+                                class="shadow d-flex justify-content-center align-items-center p-3 text-center shadow_radius">
+                                <div>
+                                    <img src="/folder_image/image_integration/image_yollow.png" alt=""
+                                        class="div_width">
+                                    <h4 class="integration_text fs-4">Delivery Applications</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div
-                            class="shadow h-100 d-flex justify-content-center align-items-center p-3 text-center shadow_radius mt-4">
-                            <div>
-                                <img src="/folder_image/image_integration/image_fort.png" alt="">
-                                <h6 class="fs-4">Electronic Payment Gateways</h6>
+                    <div class="col-6 col-md-4">
+                        <div class="mt-5">
+                            <div
+                                class="shadow d-flex justify-content-center align-items-center p-3 text-center shadow_radius">
+                                <div>
+                                    <img src="/folder_image/image_integration/image_fort.png" alt="" class="div_width">
+                                    <h4 class="integration_text fs-4">Electronic Payment Gateways</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div
-                            class="shadow h-100 d-flex justify-content-center align-items-center p-3 text-center shadow_radius mt-4">
-                            <div>
-                                <img src="/folder_image/image_integration/image_unifouic.png" alt="">
-                                <h6 class="fs-4">Text Messaging Portals</h6>
+                    <div class="col-6 col-md-4">
+                        <div class="mt-5">
+                            <div
+                                class="shadow d-flex justify-content-center align-items-center p-3 text-center shadow_radius">
+                                <div>
+                                    <img src="/folder_image/image_integration/image_unifouic.png" alt=""
+                                        class="div_width">
+                                    <h4 class="integration_text fs-4">Text Messaging Portals</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div
-                            class="shadow h-100 d-flex justify-content-center align-items-center p-3 text-center shadow_radius mt-4">
-                            <div>
-                                <img src="/folder_image/image_integration/image_fresdask.png" alt="">
-                                <h6 class="fs-4">Digital Call Center</h6>
+                    <div class="col-6 col-md-4">
+                        <div class="mt-5">
+                            <div
+                                class="shadow d-flex justify-content-center align-items-center p-3 text-center shadow_radius">
+                                <div>
+                                    <img src="/folder_image/image_integration/image_fresdask.png" alt=""
+                                        class="div_width">
+                                    <h4 class="integration_text fs-4">Digital Call Center</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1307,7 +1344,7 @@
                 </div>
                 <div class="div_margin_links text-center">
                     <h6 class="fs-4">Terrace No.09 app</h6>
-                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-1 gap-sm-4">
+                    <div class="d-flex justify-content-center gap-1 gap-sm-4">
                         <a href="#">
                             <img src="folder_image/image_customers/image_google.png" alt="">
                         </a>
@@ -1319,28 +1356,23 @@
         </section>
         <!-- end customers -->
         <!-- start footer -->
-        <section class="section_footer pb-3 pt-5" id="scrollspyHeading6">
-            <div class="position-absolute end-0">
-                <img src="folder_image/image_footer/image_background.png" alt="" class="background_footer">
-            </div>
-            <div class="container text-white position-relative">
+        <section class="section_footer position-relative overflow-hidden" id="scrollspyHeading6">
+            <div class="container text-white position-relative pt-5">
                 <div class="row">
-                    <div class="col">
-                        <div class="text-center text-md-start">
-                            <a href="#">
-                                <img src="folder_image/image_footer/logo.png" alt="">
-                            </a>
-                            <p class="mt-4 div_width w-75">Jigsaw is an all-in-one cloud-based ordering and delivery
-                                platform that helps set up digital ordering and delivery systems via mobile App, web
-                                ordering, self-services (Kiosk), or digital call center for F&B and Retail Industries,
-                                leading to cutting high costs and increasing business profitability.</p>
-                        </div>
+                    <div class="col-md-4">
+                        <a href="#">
+                            <img src="folder_image/image_footer/logo.png" alt="">
+                        </a>
+                        <p class="mt-4 div_width w-75">Jigsaw is an all-in-one cloud-based ordering and delivery
+                            platform that helps set up digital ordering and delivery systems via mobile App, web
+                            ordering, self-services (Kiosk), or digital call center for F&B and Retail Industries,
+                            leading to cutting high costs and increasing business profitability.</p>
                     </div>
-                    <div class="col">
-                        <div class="text-center text-md-start mt-4">
+                    <div class="col-12 col-md-4">
+                        <div class="mt-4">
                             <h6 class="fs-3">Company</h6>
                             <ul class="list-unstyled">
-                                <li class="nav-item pt-3">
+                                <li class="nav-item pt-0 pt-md-3">
                                     <a class="nav-link icon_footer d-inline" href="#">About Us</a>
                                 </li>
                                 <li class="nav-item pt-1">
@@ -1355,28 +1387,33 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="text-center text-md-start mt-4">
+                    <div class="col-12 col-md-4">
+                        <div class="mt-4 position-relative div_index">
                             <h6 class="fs-3">Contact Us</h6>
                             <ul class="list-unstyled">
                                 <li>
-                                    <a href="#"
-                                        class="d-flex justify-content-center justify-content-md-start nav-link gap-3 pt-2 data_hover">
-                                        <img src="folder_image/image_footer/icon_email.svg" alt="">
+                                    <a href="#" class="d-flex nav-link gap-3 mt-3 data_hover">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="folder_image/image_footer/icon_email.svg" alt=""
+                                                class="icon_media">
+                                        </div>
                                         <span class="text_color_reverse"> Info@Jigsawme.io</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="d-flex justify-content-center justify-content-md-start nav-link gap-3 pt-2 data_hover">
-                                        <img src="folder_image/image_footer/icon_phone.svg" alt="">
+                                    <a href="#" class="d-flex nav-link gap-3 mt-3 data_hover">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="folder_image/image_footer/icon_phone.svg" alt=""
+                                                class="icon_media">
+                                        </div>
                                         <span class="text_color_reverse"> +966 92 003 3605</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="d-flex justify-content-center justify-content-md-start nav-link gap-3 pt-2 data_hover">
-                                        <img src="folder_image/image_footer/icon_map.svg" alt="">
+                                    <a href="#" class="d-flex nav-link gap-3 mt-3 data_hover">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="folder_image/image_footer/icon_map.svg" alt="" class="icon_media">
+                                        </div>
                                         <span class="text_color_reverse"> Al Rajmiyah، Almasiaf, Riyadh 12465</span>
                                     </a>
                                 </li>
@@ -1384,8 +1421,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="div_hr bg-white mt-5 mb-3"></div>
-                <div class="row">
+                <div class="div_hr bg-white mt-3 mt-md-5 mb-3"></div>
+                <div class="row div_row">
                     <div class="col-md-4">
                         <ul
                             class="d-flex justify-content-center justify-content-md-start gap-4 list-unstyled text-center text-md-start">
@@ -1398,13 +1435,13 @@
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <div class="text-center mt-2">
+                        <div class="text-center">
                             <p class="text_color_reverse">Jigsaw ® 2022 All Right Reserved.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <ul
-                            class="d-flex justify-content-center justify-content-md-end gap-4 list-unstyled text-center text-md-end mt-2">
+                            class="d-flex justify-content-center justify-content-md-end gap-4 list-unstyled text-center text-md-end position-relative div_index">
                             <li>
                                 <a href="#" class="nav-link">
                                     <i class="fab fa-facebook-f fs-5 icon_footer mouse_caro"></i>

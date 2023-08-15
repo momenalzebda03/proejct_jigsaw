@@ -121,13 +121,8 @@ body .section_main .container .row div .div_image_back::after {
   background-color: #F4F4F4;
 }
 
-body section .container_respons nav div ul li .active {
-  color: white !important;
-  background-color: #1A1E4D;
-}
-
-body section .container_respons nav div .button_active_language {
-  background-color: #E51148;
+.row_gap {
+  row-gap: 25px;
 }
 
 .a_padding {
@@ -142,8 +137,17 @@ body section .container_respons nav div .button_active_language {
   background-color: #1A1E4D;
 }
 
+body section .container_respons nav div ul li .active {
+  color: white !important;
+  background-color: #1A1E4D;
+}
+
+body section .container_respons nav div .button_active_language {
+  background-color: #E51148;
+}
+
 body .section_main div .container .row div .div_index .size_Jigsaw {
-  font-size: 50px;
+  font-size: 45px;
 }
 
 body .section_main {
@@ -170,6 +174,7 @@ body .section_main div div .image_left_back {
 }
 body .section_main .container .row div div .text_gold {
   color: Yellow;
+  font-size: 20px;
 }
 
 body .section_main .container .row div .div_image_back::before {
@@ -394,11 +399,15 @@ body main .section_services .container .section_backimage::after {
   margin-top: -800px;
 }
 
-body main .section_services .container .row div .button_hover .image_hover_right {
+body main .section_services .container .row div div .image_hover_right {
+  background-color: #A92D94;
+}
+
+body main .section_services .container .row div div .image_hover_right .arraow_left {
   transition: 0.3s;
 }
 
-body main .section_services .container .row div .button_hover:hover .image_hover_right {
+body main .section_services .container .row div div .image_hover_right:hover .arraow_left {
   margin-left: 20px;
 }
 
@@ -414,6 +423,10 @@ body main .section_services .container .row_nth:nth-child(even) div .image_child
   text-align: right;
 }
 
+.image_responsve_serves {
+  width: 70%;
+}
+
 body main .section_minheight {
   min-height: 900px;
 }
@@ -426,6 +439,10 @@ body main .section_minheight div div .row .accordion div .accordion-header .acco
   box-shadow: var(--bs-accordion-btn-focus-border-color);
 }
 
+body main .section_minheight div div .row .accordion div .accordion-header .accordion-button .tag_size_title {
+  font-size: 20px;
+}
+
 body main section .container .row div .div_hover:hover .text_size {
   margin-top: 0 !important;
 }
@@ -433,10 +450,10 @@ body main section .container .row div .div_hover:hover .text_size {
 body main section .container .row div .div_hover:hover .div_bottomcolor {
   background-color: #2C3B84;
   color: white;
-  margin-left: 5px;
-  margin-right: 5px;
   top: 10px;
-  height: 22vh;
+  bottom: 10px;
+  left: 5px;
+  right: 5px;
 }
 
 body main section .container .row div .div_hover .div_bottomcolor {
@@ -463,11 +480,11 @@ body main section div .row div .div_hover {
   transition: 0.5s;
 }
 
-body main section .container .row div:hover:nth-child(odd) .div_bottomcolor {
+body main section .container .row div .div_hover:hover:nth-child(odd) .div_bottomcolor {
   background-color: #2C3B84;
 }
 
-body main section .container .row div:hover:nth-child(even) .div_bottomcolor {
+body main section .container .row div .div_hover:hover:nth-child(even) .div_bottomcolor {
   background-color: #A92D94;
 }
 
@@ -483,26 +500,36 @@ body main section .container .div_content::after {
   margin-top: -300px;
 }
 
-body section main div div div .text_letter {
-  letter-spacing: 2px;
+body main section .div_inline_none .div_imagewidth {
+  width: 25%;
+  transition: 1.5s;
 }
 
-body main section .div_inline_none div .div_absolute_width {
-  width: 390px;
+body main section .div_inline_none .div_imagewidth:hover {
+  width: 80%;
 }
 
-body main section .div_inline_none div .div_absolute_width .div_none_reverse {
+body main section .div_inline_none:hover .div_none {
   display: none;
 }
 
-body main section .div_inline_none .image_click {
-  width: 100%;
-  height: 100vh;
-  transition: 1s;
+body main section .div_inline_none .div_imagewidth .div_position .div_none_reverse {
+  width: 0;
+  transition: 1.5s;
 }
 
-body main section .div_inline_none .active_image {
-  width: 250%;
+body main section .div_inline_none .div_imagewidth:hover .div_none_reverse {
+  width: 70%;
+}
+
+body main section .div_inline_none .div_imagewidth .image_click {
+  width: 100%;
+  height: 800px;
+}
+
+body main section .div_inline_none .div_imagewidth .div_position {
+  top: 10%;
+  margin-left: 2%;
 }
 
 body main section section .container .row .accordion .accordion-header div .image_respons {
@@ -541,7 +568,7 @@ body main section .container .row div .col_circle::after {
   content: "";
   position: absolute;
   margin-top: -50px;
-  margin-left: calc(50% - 25px);
+  margin-left: calc(50% - 13px);
   border-radius: 50px;
   border: 2px solid white;
   outline: 2px solid #2D337B;
@@ -575,8 +602,9 @@ body main section .container .row div:last-child .col_circle::before {
   width: 45%;
 }
 
-body main section .container .row .col .shadow_radius {
+body main section .container .row div div .shadow_radius {
   border-radius: 50px;
+  height: 250px;
 }
 
 body main .section_cutomer {
@@ -592,7 +620,7 @@ body main .section_services div .swiper {
 
 body main .section_services div .swiper .swiper-wrapper .swiper-slide {
   width: 239px;
-  height: 70vh;
+  height: 500px;
 }
 
 body main .section_services div .swiper .swiper-wrapper .swiper-slide img {
@@ -642,23 +670,48 @@ body main .section_footer {
   background: linear-gradient(87deg, rgb(27, 34, 114), rgb(26, 30, 77));
 }
 
-body main .section_footer div .background_footer {
-  height: 400px;
-  animation: footer_animation 7s infinite;
+body main .section_footer::before {
+  content: url("/folder_image/image_footer/image_background.png");
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  animation: footer_animation 4s infinite;
+}
+
+body main .section_footer::after {
+  content: url("/folder_image/image_footer/image_background1.png");
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  animation: footer_animation_1 4s infinite;
 }
 
 @keyframes footer_animation {
   0% {
-    content: url("/folder_image/image_footer/image_background.png");
-    transform: translate(0px, -50px);
+    transform: translate(0px, 30px);
+    opacity: 1;
   }
   50% {
-    content: url("/folder_image/image_footer/image_background1.png");
     transform: translate(0px, 0px);
+    opacity: 0;
   }
   100% {
-    content: url("/folder_image/image_footer/image_background.png");
-    transform: translate(0px, -50px);
+    transform: translate(0px, 30px);
+    opacity: 1;
+  }
+}
+@keyframes footer_animation_1 {
+  0% {
+    transform: translate(0px, 30px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, 30px);
+    opacity: 0;
   }
 }
 body main .section_footer div .div_hr {
@@ -716,30 +769,8 @@ body main .section_footer .row div ul li .icon_footer:hover {
     font-size: 25px;
   }
   body .section_main {
-    padding-top: 1100px;
-  }
-  body main section .container .row div .col_circle::before,
-  body main section .container .row div .col_circle::after,
-  body main .section_services .container .section_backimage::before,
-  body main .section_services .container .section_backimage::after,
-  body main .section_footer::before,
-  body main section .container .div_works::after,
-  body main section .container .div_works::before,
-  body main section .div_inline_none,
-  body main section #div_none,
-  body main section .container .div_content::after,
-  body main section .container .div_content::before,
-  body main section .container .image_beforeandafter .image_animation .div_change::after,
-  body main section .container .image_beforeandafter .image_animation .div_change::before,
-  body main section .container .image_beforeandafter .image_animation::after,
-  body main section .container .image_beforeandafter .image_animation::before,
-  body main section .container .image_beforeandafter::after,
-  body main section .container .image_beforeandafter::before,
-  body .section_main div div .image_left_back,
-  body .section_main div .container .row div div .before_image::before,
-  body .section_main div .container .row div .div_image_back::before,
-  body .section_main div .container .row div .div_image_back::after {
-    display: none !important;
+    height: 906px;
+    padding-top: 130px;
   }
   body section .container_respons nav div ul .button_active_demo:hover,
   body section .container_respons nav div ul .button_active_language:hover {
@@ -775,14 +806,61 @@ body main .section_footer .row div ul li .icon_footer:hover {
   body main .section_services .container .row_nth div .border_right {
     border-right: 0px solid #2D337B;
   }
-  body main section div .row div .div_hover {
-    height: 200px;
-  }
   .text_size {
     font-size: 7px !important;
   }
   body section .container nav .collapse .div_button_right {
     margin-left: 40px;
+  }
+  .a_padding_button {
+    padding: 15px !important;
+  }
+  body .section_main .container .row div .div_image_back .before_image .image_responsve {
+    width: 217px;
+    height: 387.6px;
+  }
+  .image_responsve_serves {
+    width: 70%;
+  }
+  body main .section_services .container .row_nth:nth-child(odd) div .image_child,
+  body main .section_services .container .row_nth:nth-child(even) div .image_child {
+    text-align: center;
+  }
+  .integration_text {
+    font-size: 15px !important;
+  }
+  body main section .container .row div div .shadow_radius {
+    height: 150px;
+  }
+  body main .section_footer .container .row div div ul li .data_hover .icon_media {
+    width: 25px;
+  }
+  body main section .container .row div .col_circle::before,
+  body main section .container .row div .col_circle::after,
+  body main .section_services .container .section_backimage::before,
+  body main .section_services .container .section_backimage::after,
+  body main .section_footer::before,
+  body main .section_footer::after,
+  body main section .container .div_works::after,
+  body main section .container .div_works::before,
+  body main section .div_inline_none,
+  body main section #div_none,
+  body main section .container .div_content::after,
+  body main section .container .div_content::before,
+  body main section .container .image_beforeandafter .image_animation .div_change::after,
+  body main section .container .image_beforeandafter .image_animation .div_change::before,
+  body main section .container .image_beforeandafter .image_animation::after,
+  body main section .container .image_beforeandafter .image_animation::before,
+  body main section .container .image_beforeandafter::after,
+  body main section .container .image_beforeandafter::before,
+  body .section_main div div .image_left_back,
+  body .section_main div .container .row div div .before_image::before,
+  body .section_main div .container .row div .div_image_back::before,
+  body .section_main div .container .row div .div_image_back::after {
+    display: none !important;
+  }
+  .div_row {
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 520px) {
@@ -795,7 +873,12 @@ body main .section_footer .row div ul li .icon_footer:hover {
   body main .section_cutomer div .div_margin_links {
     margin-top: -90px;
   }
-  body main .section_services div .swiper .swiper-wrapper .swiper-slide {
-    height: 60vh;
+  body main .section_minheight div div .row .accordion div .accordion-header .accordion-button .tag_size_title {
+    font-size: 15.41px;
+  }
+}
+@media (max-width: 300px) {
+  .sizesmool {
+    font-size: 10px !important;
   }
 }/*# sourceMappingURL=jigsaw.css.map */
