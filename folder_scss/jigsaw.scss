@@ -54,10 +54,6 @@ body .section_main .container .row div .div_image_back::after {
     background-color: $color_navbar_demo;
 }
 
-.div_height {
-    height: 10vh;
-}
-
 .mouse_caro {
     cursor: pointer;
 }
@@ -120,7 +116,7 @@ body .section_main .container .row div .div_image_back::after {
 }
 
 .div_background {
-    background-color: #F4F4F4;
+    background-color: $color_secondary;
 }
 
 .row_gap {
@@ -137,6 +133,22 @@ body .section_main .container .row div .div_image_back::after {
 .a_padding:hover {
     color: $color_white !important;
     background-color: $color_main_one;
+}
+
+.title_about {
+    color: $color_aboutandservices_title;
+}
+
+.text_about {
+    color: $color_aboutandservices_text;
+}
+
+.title_size {
+    font-size: 18px;
+}
+
+.image_responsve_serves {
+    width: 80%;
 }
 
 // end everyone
@@ -259,18 +271,8 @@ body .section_main div .icon_animation {
 
 // end main
 // start about
-body main section .container .title_about {
-    color: $color_aboutandservices_title;
-}
-
-body main section .container .text_about {
-    color: $color_aboutandservices_text;
-}
-
-.title_size {
-    font-size: 18px;
-}
-
+body main section .container .image_beforeandafter .image_animation .div_change::before,
+body main section .container .image_beforeandafter .image_animation .div_change::after,
 body main section .container .image_beforeandafter .image_animation::after,
 body main section .container .image_beforeandafter .image_animation::before,
 body main section .container .image_beforeandafter::before,
@@ -338,7 +340,6 @@ body main section .container .image_beforeandafter .image_animation::after {
 body main section .container .image_beforeandafter .image_animation .div_change::before,
 body main section .container .image_beforeandafter .image_animation .div_change::after {
     right: 0;
-    z-index: -1;
 }
 
 body main section .container .image_beforeandafter .image_animation .div_change::before {
@@ -452,10 +453,6 @@ body main .section_services .container .row_nth:nth-child(even) div .image_child
     text-align: right;
 }
 
-.image_responsve_serves {
-    width: 70%;
-}
-
 // end services
 // start benefits
 body main .section_minheight {
@@ -509,7 +506,7 @@ body main section .container .row div .div_hover .div_imagehover img {
 }
 
 body main section div .row div .div_hover {
-    height: 190px;
+    height: 182px;
     transition: 0.5s;
 }
 
@@ -595,10 +592,6 @@ body main section .container .div_works::after {
     margin-top: -100px;
 }
 
-body main section .container .div_border {
-    border-top: 5px dashed $color_navbar_text;
-}
-
 body main section .container .row div .col_circle::after {
     content: "";
     position: absolute;
@@ -646,10 +639,6 @@ body main section .container .row div div .shadow_radius {
 
 // start integration
 // start customers
-body main .section_cutomer {
-    height: 1000px;
-}
-
 body main .section_services div .swiper {
     width: 100%;
     height: 650px;
@@ -796,18 +785,9 @@ body main .section_footer .row div ul li .icon_footer:hover {
 // end footer
 // start media
 @media (max-width: 1200px) and (min-width: 990px) {
-    body .section_main div .container .row div .div_image_back::before {
-        width: 50%;
-        height: 650px;
-    }
-
     .a_padding {
         padding-left: 5px !important;
         padding-right: 5px !important;
-    }
-
-    body main section .container .row div .div_hover:hover .div_margin_hover {
-        margin-top: -175px;
     }
 
     body main section div .row div .div_hover {
@@ -856,17 +836,8 @@ body main .section_footer .row div ul li .icon_footer:hover {
         width: 100% !important;
     }
 
-    .image_click {
-        height: 30vh !important;
-    }
-
     body main .section_minheight {
         min-height: 0px;
-    }
-
-    body main section .container .row div .div_hover:hover .div_margin_hover {
-        margin-top: -210px;
-        margin-left: -15px;
     }
 
     body main .section_services .container .row_nth div .border_right {
@@ -907,10 +878,6 @@ body main .section_footer .row div ul li .icon_footer:hover {
         height: 150px;
     }
 
-    body main .section_footer .container .row div div ul li .data_hover .icon_media {
-        width: 25px;
-    }
-
     body main section .container .row div .col_circle::before,
     body main section .container .row div .col_circle::after,
     body main .section_services .container .section_backimage::before,
@@ -936,8 +903,13 @@ body main .section_footer .row div ul li .icon_footer:hover {
         display: none !important;
     }
 
-    .div_row {
-        flex-direction: column-reverse;
+    body main section .container .row_height {
+        height: 844px;
+    }
+
+    body main section div .row div .div_hover .div_imagehover img {
+        width: 72px !important;
+        height: 76px !important;
     }
 }
 
@@ -956,6 +928,14 @@ body main .section_footer .row div ul li .icon_footer:hover {
 
     body main .section_minheight div div .row .accordion div .accordion-header .accordion-button .tag_size_title {
         font-size: 15.41px;
+    }
+
+    body main .section_footer .container .div_row {
+        flex-direction: column-reverse;
+    }
+
+    body main .section_footer .container .div_row div:nth-child(2) {
+        order: -1;
     }
 }
 

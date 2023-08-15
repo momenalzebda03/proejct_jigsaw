@@ -98,3 +98,14 @@ div_box.forEach((element) => {
     }
   });
 });
+
+var text = "“Keep your goal close, and your customer closer”";
+var id_text = document.getElementById("id_text");
+var i = 0;
+var time_clear = setInterval(() => {
+  id_text.textContent += text[i];
+  i++;
+  if (i > text.length - 1) {
+    clearInterval(time_clear);
+  }
+}, 100);

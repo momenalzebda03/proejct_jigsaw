@@ -51,10 +51,6 @@ body .section_main .container .row div .div_image_back::after {
   background-color: #AD2685;
 }
 
-.div_height {
-  height: 10vh;
-}
-
 .mouse_caro {
   cursor: pointer;
 }
@@ -118,7 +114,7 @@ body .section_main .container .row div .div_image_back::after {
 }
 
 .div_background {
-  background-color: #F4F4F4;
+  background-color: rgba(255, 255, 255, 0.7098039216);
 }
 
 .row_gap {
@@ -135,6 +131,22 @@ body .section_main .container .row div .div_image_back::after {
 .a_padding:hover {
   color: white !important;
   background-color: #1A1E4D;
+}
+
+.title_about {
+  color: #2C3B84;
+}
+
+.text_about {
+  color: #A92D94;
+}
+
+.title_size {
+  font-size: 18px;
+}
+
+.image_responsve_serves {
+  width: 80%;
 }
 
 body section .container_respons nav div ul li .active {
@@ -244,18 +256,8 @@ body .section_main div .icon_animation {
   animation: image_animation 4s infinite;
 }
 
-body main section .container .title_about {
-  color: #2C3B84;
-}
-
-body main section .container .text_about {
-  color: #A92D94;
-}
-
-.title_size {
-  font-size: 18px;
-}
-
+body main section .container .image_beforeandafter .image_animation .div_change::before,
+body main section .container .image_beforeandafter .image_animation .div_change::after,
 body main section .container .image_beforeandafter .image_animation::after,
 body main section .container .image_beforeandafter .image_animation::before,
 body main section .container .image_beforeandafter::before,
@@ -317,7 +319,6 @@ body main section .container .image_beforeandafter .image_animation::after {
 body main section .container .image_beforeandafter .image_animation .div_change::before,
 body main section .container .image_beforeandafter .image_animation .div_change::after {
   right: 0;
-  z-index: -1;
 }
 
 body main section .container .image_beforeandafter .image_animation .div_change::before {
@@ -423,10 +424,6 @@ body main .section_services .container .row_nth:nth-child(even) div .image_child
   text-align: right;
 }
 
-.image_responsve_serves {
-  width: 70%;
-}
-
 body main .section_minheight {
   min-height: 900px;
 }
@@ -476,7 +473,7 @@ body main section .container .row div .div_hover .div_imagehover img {
 }
 
 body main section div .row div .div_hover {
-  height: 190px;
+  height: 182px;
   transition: 0.5s;
 }
 
@@ -560,10 +557,6 @@ body main section .container .div_works::after {
   margin-top: -100px;
 }
 
-body main section .container .div_border {
-  border-top: 5px dashed #2D337B;
-}
-
 body main section .container .row div .col_circle::after {
   content: "";
   position: absolute;
@@ -605,10 +598,6 @@ body main section .container .row div:last-child .col_circle::before {
 body main section .container .row div div .shadow_radius {
   border-radius: 50px;
   height: 250px;
-}
-
-body main .section_cutomer {
-  height: 1000px;
 }
 
 body main .section_services div .swiper {
@@ -746,16 +735,9 @@ body main .section_footer .row div ul li .icon_footer:hover {
 }
 
 @media (max-width: 1200px) and (min-width: 990px) {
-  body .section_main div .container .row div .div_image_back::before {
-    width: 50%;
-    height: 650px;
-  }
   .a_padding {
     padding-left: 5px !important;
     padding-right: 5px !important;
-  }
-  body main section .container .row div .div_hover:hover .div_margin_hover {
-    margin-top: -175px;
   }
   body main section div .row div .div_hover {
     height: 170px;
@@ -793,15 +775,8 @@ body main .section_footer .row div ul li .icon_footer:hover {
   .div_width {
     width: 100% !important;
   }
-  .image_click {
-    height: 30vh !important;
-  }
   body main .section_minheight {
     min-height: 0px;
-  }
-  body main section .container .row div .div_hover:hover .div_margin_hover {
-    margin-top: -210px;
-    margin-left: -15px;
   }
   body main .section_services .container .row_nth div .border_right {
     border-right: 0px solid #2D337B;
@@ -832,9 +807,6 @@ body main .section_footer .row div ul li .icon_footer:hover {
   body main section .container .row div div .shadow_radius {
     height: 150px;
   }
-  body main .section_footer .container .row div div ul li .data_hover .icon_media {
-    width: 25px;
-  }
   body main section .container .row div .col_circle::before,
   body main section .container .row div .col_circle::after,
   body main .section_services .container .section_backimage::before,
@@ -859,8 +831,12 @@ body main .section_footer .row div ul li .icon_footer:hover {
   body .section_main div .container .row div .div_image_back::after {
     display: none !important;
   }
-  .div_row {
-    flex-direction: column-reverse;
+  body main section .container .row_height {
+    height: 844px;
+  }
+  body main section div .row div .div_hover .div_imagehover img {
+    width: 72px !important;
+    height: 76px !important;
   }
 }
 @media (max-width: 520px) {
@@ -875,6 +851,12 @@ body main .section_footer .row div ul li .icon_footer:hover {
   }
   body main .section_minheight div div .row .accordion div .accordion-header .accordion-button .tag_size_title {
     font-size: 15.41px;
+  }
+  body main .section_footer .container .div_row {
+    flex-direction: column-reverse;
+  }
+  body main .section_footer .container .div_row div:nth-child(2) {
+    order: -1;
   }
 }
 @media (max-width: 300px) {
