@@ -891,17 +891,27 @@ body main .section_footer .row div ul li .icon_footer:hover {
     width: 60px;
     height: 50px;
   }
+  body main .section_services div .swiper {
+    height: 380px;
+  }
+  body main .section_services div .swiper .swiper-wrapper .swiper-slide {
+    width: 140.02px;
+    height: 296.98px;
+  }
+  body main .section_services div .swiper .swiper-wrapper .swiper-slide-active::before {
+    content: "";
+    background-image: url("/folder_image/image_customers/image_background.png") !important;
+    background-size: 168.78px 327.33px;
+    width: 168px;
+    height: 327px;
+    top: -14px;
+    left: -15px;
+  }
+  .size_litter {
+    letter-spacing: 3px;
+  }
 }
 @media (max-width: 520px) {
-  body main .section_services div .swiper {
-    padding-top: 10px;
-  }
-  body main .section_cutomer {
-    height: 900px;
-  }
-  body main .section_cutomer div .div_margin_links {
-    margin-top: -90px;
-  }
   body main .section_minheight div div .row .accordion div .accordion-header .accordion-button .tag_size_title {
     font-size: 15.41px;
   }
