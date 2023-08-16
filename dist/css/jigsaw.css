@@ -27,6 +27,7 @@ body {
   z-index: 4;
 }
 
+body .section_main .container .row div .div_image_back .before_image::after,
 body main section .container .image_beforeandafter .image_animation .div_change::after,
 body main section .container .div_works::after,
 body main section .container .div_works::before,
@@ -40,9 +41,7 @@ body main section .container .image_beforeandafter .image_animation::before,
 body main section .container .image_beforeandafter::after,
 body main section .container .image_beforeandafter::before,
 body .section_main .container .row div div .before_image::before,
-body .section_main .container .row div .div_image_back::before,
-body .section_main .container .row div .div_image_back::after {
-  content: "";
+body .section_main .container .row div .div_image_back::before {
   animation: image_animation 3s infinite;
   position: absolute;
 }
@@ -149,6 +148,14 @@ body .section_main .container .row div .div_image_back::after {
   width: 80%;
 }
 
+.tag_40 {
+  font-size: 40px;
+}
+
+.size_litter {
+  letter-spacing: 5px;
+}
+
 body section .container_respons nav div ul li .active {
   color: white !important;
   background-color: #1A1E4D;
@@ -193,21 +200,22 @@ body .section_main .container .row div .div_image_back::before {
   content: url("/folder_image/image_main/image_main_right.png");
 }
 
-body .section_main .container .row div .div_image_back::after {
-  content: url("/folder_image/image_main/image_iphone_left.png");
-  margin-top: 150px;
+body .section_main .container .row div .div_image_back .before_image::after,
+body .section_main .container .row div .div_image_back .before_image::before {
   border-radius: 20px;
-  margin-left: -300px;
   z-index: 3;
+}
+
+body .section_main .container .row div .div_image_back .before_image::after {
+  content: url("/folder_image/image_main/image_iphone_left.png");
+  left: -60px;
+  bottom: 150px;
 }
 
 body .section_main .container .row div .div_image_back .before_image::before {
   content: url("/folder_image/image_main/image_iphone_right.png");
-  margin-top: 150px;
-  border-radius: 20px;
-  margin-left: 200px;
-  margin-top: 360px;
-  z-index: 3;
+  right: -100px;
+  bottom: 30px;
 }
 
 @keyframes image_animation {
@@ -265,14 +273,11 @@ body main section .container .image_beforeandafter::after {
   z-index: -1;
 }
 
-body main section .container .image_beforeandafter::before,
-body main section .container .image_beforeandafter .image_animation::before {
-  animation: point_animation 5s infinite;
-  margin-left: -520px;
-}
-
 body main section .container .image_beforeandafter::before {
   content: url("/folder_image/image_about/image_ellipse1.svg");
+  animation: point_animation 5s infinite;
+  left: 9%;
+  top: -30px;
 }
 
 @keyframes point_animation {
@@ -288,9 +293,9 @@ body main section .container .image_beforeandafter::before {
 }
 body main section .container .image_beforeandafter::after {
   content: url("/folder_image/image_about/image_ellipse2.svg");
-  margin-left: -540px;
-  margin-top: -630px;
   animation: point_smoll_animation 4s infinite;
+  left: 9%;
+  top: 85px;
 }
 
 @keyframes point_smoll_animation {
@@ -306,29 +311,30 @@ body main section .container .image_beforeandafter::after {
 }
 body main section .container .image_beforeandafter .image_animation::before {
   content: url("/folder_image/image_about/image_ellipse5.svg");
-  margin-top: 400px;
+  bottom: 150px;
+  right: 78%;
 }
 
 body main section .container .image_beforeandafter .image_animation::after {
   content: url("/folder_image/image_about/image_ellipse4.svg");
-  margin-left: -530px;
-  margin-top: -170px;
+  bottom: 140px;
+  right: 90%;
   animation: point_smoll_animation 4s infinite;
 }
 
 body main section .container .image_beforeandafter .image_animation .div_change::before,
 body main section .container .image_beforeandafter .image_animation .div_change::after {
-  right: 0;
+  right: 10px;
 }
 
 body main section .container .image_beforeandafter .image_animation .div_change::before {
-  animation: change_animation 7s infinite;
   content: url("/folder_image/image_about/image_jiqsaw1.svg");
+  animation: change_animation 7s infinite;
 }
 
 @keyframes change_animation {
   0% {
-    transform: translate(-30px, 70px);
+    transform: translate(-30px, 20px);
     opacity: 1;
   }
   50% {
@@ -336,18 +342,18 @@ body main section .container .image_beforeandafter .image_animation .div_change:
     opacity: 0;
   }
   100% {
-    transform: translate(-30px, 70px);
+    transform: translate(-30px, 20px);
     opacity: 1;
   }
 }
 body main section .container .image_beforeandafter .image_animation .div_change::after {
-  animation: change_animation2 7s infinite;
   content: url("/folder_image/image_about/image_jiqsaw2.svg");
+  animation: change_animation2 7s infinite;
 }
 
 @keyframes change_animation2 {
   0% {
-    transform: translate(-30px, 70px);
+    transform: translate(-30px, 20px);
     opacity: 0;
   }
   50% {
@@ -355,7 +361,7 @@ body main section .container .image_beforeandafter .image_animation .div_change:
     opacity: 1;
   }
   100% {
-    transform: translate(-30px, 70px);
+    transform: translate(-30px, 20px);
     opacity: 0;
   }
 }
@@ -391,13 +397,13 @@ body main .section_services .container .row_nth div div .div_mouse .icon_padding
 body main .section_services .container .section_backimage::before {
   content: url("/folder_image/image_services/image_background_left.svg");
   left: 0;
-  margin-top: -1000px;
+  margin-bottom: 950px;
 }
 
 body main .section_services .container .section_backimage::after {
   content: url("/folder_image/image_services/image_background_right.svg");
   right: 0;
-  margin-top: -800px;
+  margin-top: 300px;
 }
 
 body main .section_services .container .row div div .image_hover_right {
@@ -488,13 +494,11 @@ body main section .container .row div .div_hover:hover:nth-child(even) .div_bott
 body main section .container .div_content::before {
   content: url("/folder_image/image_services/image_background_left.svg");
   left: 0;
-  margin-top: -300px;
 }
 
 body main section .container .div_content::after {
   content: url("/folder_image/image_services/image_background_right.svg");
   right: 0;
-  margin-top: -300px;
 }
 
 body main section .div_inline_none .div_imagewidth {
@@ -506,6 +510,10 @@ body main section .div_inline_none .div_imagewidth:hover {
   width: 80%;
 }
 
+body main .section_services .container .section_backimage:last-child::before,
+body main .section_services .container .section_backimage:nth-child(4)::after,
+body main .section_services .container .section_backimage:first-child::after,
+body main .section_services .container .section_backimage:last-child::after,
 body main section .div_inline_none:hover .div_none {
   display: none;
 }
@@ -548,13 +556,11 @@ body main section section .container .row .accordion .accordion-header div .div_
 body main section .container .div_works::before {
   content: url("/folder_image/image_services/image_background_right.svg");
   right: 0;
-  margin-top: -20px;
 }
 
 body main section .container .div_works::after {
   content: url("/folder_image/image_services/image_background_left.svg");
   left: 0;
-  margin-top: -100px;
 }
 
 body main section .container .row div .col_circle::after {
@@ -582,13 +588,13 @@ body main section .container .row div .col_circle::before {
   position: absolute;
   width: 110%;
   height: 3px;
-  margin-top: -40px;
+  top: -40px;
   border: 2px dashed #2D337B;
 }
 
 body main section .container .row div:first-child .col_circle::before {
   width: 60%;
-  margin-left: 50%;
+  left: 100px;
 }
 
 body main section .container .row div:last-child .col_circle::before {
@@ -626,8 +632,8 @@ body main .section_services div .swiper .swiper-wrapper .swiper-slide.inactive {
 body main .section_services div .swiper .swiper-wrapper .swiper-slide-active::before {
   content: url("/folder_image/image_customers/image_background.png");
   position: absolute;
-  margin-top: -25px;
-  margin-left: -22px;
+  top: -25px;
+  left: -22px;
 }
 
 body main .section_services div .swiper .swiper-button-next,
@@ -747,8 +753,9 @@ body main .section_footer .row div ul li .icon_footer:hover {
   }
 }
 @media (max-width: 990px) {
-  body .section_main div .container .row div .div_index .size_Jigsaw {
-    font-size: 25px;
+  .tag_40,
+  .size_Jigsaw {
+    font-size: 25px !important;
   }
   body .section_main {
     height: 906px;
@@ -794,6 +801,7 @@ body main .section_footer .row div ul li .icon_footer:hover {
     width: 217px;
     height: 387.6px;
   }
+  .image_responsve_full,
   .image_responsve_serves {
     width: 70%;
   }
@@ -802,41 +810,86 @@ body main .section_footer .row div ul li .icon_footer:hover {
     text-align: center;
   }
   .integration_text {
-    font-size: 15px !important;
+    font-size: 12px !important;
   }
   body main section .container .row div div .shadow_radius {
     height: 150px;
   }
-  body main section .container .row div .col_circle::before,
-  body main section .container .row div .col_circle::after,
-  body main .section_services .container .section_backimage::before,
-  body main .section_services .container .section_backimage::after,
-  body main .section_footer::before,
-  body main .section_footer::after,
-  body main section .container .div_works::after,
-  body main section .container .div_works::before,
-  body main section .div_inline_none,
-  body main section #div_none,
-  body main section .container .div_content::after,
-  body main section .container .div_content::before,
-  body main section .container .image_beforeandafter .image_animation .div_change::after,
-  body main section .container .image_beforeandafter .image_animation .div_change::before,
-  body main section .container .image_beforeandafter .image_animation::after,
-  body main section .container .image_beforeandafter .image_animation::before,
-  body main section .container .image_beforeandafter::after,
-  body main section .container .image_beforeandafter::before,
-  body .section_main div div .image_left_back,
-  body .section_main div .container .row div div .before_image::before,
-  body .section_main div .container .row div .div_image_back::before,
-  body .section_main div .container .row div .div_image_back::after {
-    display: none !important;
-  }
   body main section .container .row_height {
     height: 844px;
   }
-  body main section div .row div .div_hover .div_imagehover img {
-    width: 72px !important;
-    height: 76px !important;
+  body main section .container .row_height::-webkit-scrollbar {
+    width: 5px;
+  }
+  body main section .container .row_height::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+  }
+  body .section_main .container .row div .div_image_back::before {
+    width: 272px;
+    height: 302px;
+    top: 192px;
+    animation: image_animation 8s infinite;
+  }
+  body .section_main div div .image_left_back {
+    width: 162px;
+    height: 141px;
+    top: -270px;
+    left: -35px;
+    animation: left_animation 8s infinite !important;
+  }
+  body main .section_services .container .row_nth div div .div_mouse .icon_padding {
+    width: 30px;
+    height: 30px;
+  }
+  body main .section_services .container .row_nth div .row_text div:nth-child(2) {
+    order: 5;
+  }
+  body main .section_services .container .row_nth div .row_text div:nth-child(3) {
+    order: 2;
+  }
+  body main section .container .image_beforeandafter::after,
+  body main section .container .div_content::after,
+  body main section .container .div_content::before,
+  body main section .container .div_works::after,
+  body main section .container .div_works::before,
+  body main .section_footer::before,
+  body main .section_footer::after,
+  body main section .container .row div .col_circle::after,
+  body main section .container .row div .col_circle::before,
+  .div_inline_none {
+    display: none !important;
+  }
+  body main section .container .image_beforeandafter::before {
+    content: url("/folder_image/image_about/image_res.png");
+    left: -4%;
+    top: -30px;
+  }
+  body main section .container .image_beforeandafter .image_animation::before {
+    content: url("/folder_image/image_about/image_respons.png");
+    bottom: 20px;
+    right: 78%;
+  }
+  body main section .container .image_beforeandafter .image_animation .div_change::before,
+  body main section .container .image_beforeandafter .image_animation .div_change::after {
+    content: "";
+    background-size: 250px 250px;
+    width: 250px;
+    height: 250px;
+    left: 150px;
+    bottom: 20px;
+  }
+  body main section .container .image_beforeandafter .image_animation .div_change::before {
+    background-image: url("/folder_image/image_about/image_jiqsaw1.svg");
+  }
+  body main section .container .image_beforeandafter .image_animation .div_change::after {
+    background-image: url("/folder_image/image_about/image_jiqsaw2.svg");
+  }
+  body .section_main .container .row div .div_image_back .before_image::before {
+    right: -70px;
+  }
+  body .section_main div .container .row div div div .video_center {
+    width: 60px;
+    height: 50px;
   }
 }
 @media (max-width: 520px) {
@@ -862,5 +915,18 @@ body main .section_footer .row div ul li .icon_footer:hover {
 @media (max-width: 300px) {
   .sizesmool {
     font-size: 10px !important;
+  }
+  body .section_main .container .row div .div_image_back .before_image::after {
+    left: -30px;
+  }
+  body .section_main .container .row div .div_image_back .before_image::before {
+    right: -20px;
+  }
+  body main section div .row div .div_hover .div_imagehover img {
+    width: 52px !important;
+    height: 56px !important;
+  }
+  body main section .container .row div .div_hover .div_bottomcolor {
+    top: 70px;
   }
 }/*# sourceMappingURL=jigsaw.css.map */

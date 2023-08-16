@@ -12,7 +12,7 @@ for (let i = 0; i < tag_header.length; i++) {
 var icon_animation = document.getElementById("icon_animation");
 function scroll_smool() {
   window.scrollTo({
-    top: 1100,
+    top: 750,
     behavior: "smooth",
   });
 }
@@ -103,9 +103,36 @@ var text = "“Keep your goal close, and your customer closer”";
 var id_text = document.getElementById("id_text");
 var i = 0;
 var time_clear = setInterval(() => {
-  id_text.textContent += text[i];
+  i > text.length - 1
+    ? clearInterval(time_clear)
+    : (id_text.textContent += text[i]);
   i++;
-  if (i > text.length - 1) {
-    clearInterval(time_clear);
-  }
 }, 100);
+
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 80,
+    depth: 400,
+    modifier: 0.5,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  initialSlide: 3,
+});
+swiper.on("slideChangeTransitionEnd", function () {
+  var slides = swiper.slides;
+  slides.forEach(function (slide) {
+    if (!slide.classList.contains("swiper-slide-active")) {
+      slide.classList.add("inactive");
+    } else {
+      slide.classList.remove("inactive");
+    }
+  });
+});
