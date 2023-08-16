@@ -171,6 +171,7 @@ body .section_main div .container .row div .div_index .size_Jigsaw {
 
 body .section_main {
   height: 100vh;
+  padding-top: 200px;
   background: linear-gradient(-180deg, #1A1E4D, #4149A0);
 }
 
@@ -759,7 +760,6 @@ body main .section_footer .row div ul li .icon_footer:hover {
   }
   body .section_main {
     height: 906px;
-    padding-top: 130px;
   }
   body section .container_respons nav div ul .button_active_demo:hover,
   body section .container_respons nav div ul .button_active_language:hover {
