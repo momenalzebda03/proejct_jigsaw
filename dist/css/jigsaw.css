@@ -1,5 +1,4 @@
 body {
-  text-transform: capitalize;
   font-family: "Rajdhani", sans-serif;
 }
 
@@ -11,171 +10,111 @@ body {
   background: #2D337B;
 }
 
-.tagTransition {
+.tag-transition {
   transition: 0.4s;
 }
 
-.divIndex {
+.div-index {
   z-index: 1;
 }
 
-.spanAll {
+.span-all {
   color: #F94F72;
 }
 
-.indexFour {
-  z-index: 4;
-}
-
-body .sectionMain .container .row div .divImageBack .beforeImage::after,
-body main section .container .imageBeforeandafter .imageAnimation .divChange::after,
-body main section .container .divWorks::after,
-body main section .container .divWorks::before,
-body main section .container .divContent::after,
-body main section .container .divContent::before,
-body main .sectionServices .container .sectionBackImage::before,
-body main .sectionServices .container .sectionBackImage::after,
-body main section .container .imageBeforeandafter .imageAnimation .divChange::before,
-body main section .container .imageBeforeandafter .imageAnimation::after,
-body main section .container .imageBeforeandafter .imageAnimation::before,
-body main section .container .imageBeforeandafter::after,
-body main section .container .imageBeforeandafter::before,
-body .sectionMain .container .row div div .beforeImage::before,
-body .sectionMain .container .row div .divImageBack::before {
+.div-animation,
+body .section-marign-all div div div .image-ellipase-clicle,
+body .section-main .container .row div .image-rnimation-right {
   animation: imageAnimation 3s infinite;
   position: absolute;
 }
 
-.buttonActiveDemo {
-  background-color: #AD2685;
-}
-
-.mouseCaro {
+.mouse-caro {
   cursor: pointer;
 }
 
-.textColorReverse {
-  color: rgba(255, 255, 255, 0.7098039216);
+.section-marign-all {
+  margin-top: 70px;
 }
 
-.accordion-button::after,
-.accordion-button:not(.collapsed)::after {
-  background-image: unset;
-}
-
-.accordion:nth-child(odd) .accordion-button::after {
-  content: url("/assest/images/iconArrowRight.svg");
-  margin-left: auto;
-}
-
-.accordion:nth-child(even) .accordion-button::after {
-  content: url("/assest/images/iconArrow.svg");
-  margin-left: auto;
-}
-
-.accordion:nth-child(odd) .accordion-button:not(.collapsed)::after,
-.accordion:nth-child(even) .accordion-button:not(.collapsed)::after {
-  content: url("/assest/images/iconBottom.svg");
-  transform: rotate(0deg);
-}
-
-.accordion:nth-child(odd) .accordion-item:last-of-type .accordion-button.collapsed,
-.accordion:nth-child(even) .accordion-item:last-of-type .accordion-button.collapsed {
-  border-radius: 20px;
-}
-
-.accordion:nth-child(odd) .accordion-item:last-of-type .accordion-button.collapsed {
+.color-title {
   color: #2C3B84;
-  background-color: #F5F5FA;
 }
 
-.accordion:nth-child(even) .accordion-item:last-of-type .accordion-button.collapsed {
+.color-text {
   color: #A92D94;
-  background-color: #F5F5FA;
 }
 
-.accordion:nth-child(odd) .accordion-item .accordion-button {
-  background-color: #2C3B84;
+.title-size {
+  font-size: 18px;
 }
 
-.accordion:nth-child(even) .accordion-item .accordion-button {
-  background-color: #A92D94;
+.tag-40 {
+  font-size: 40px;
 }
 
-.accordion .accordion-item .accordion-button {
-  border-radius: 20px 20px 0 0;
-  color: white;
+.size-litter {
+  letter-spacing: 5px;
 }
 
-.imageFit {
+.text-justify {
+  text-align: justify;
+}
+
+body nav {
+  position: fixed !important;
+}
+
+body nav .container-respons div ul li .active {
+  color: white !important;
+  background-color: #1A1E4D;
+}
+
+body nav .container-respons div div .button-active-language {
+  background-color: #E51148;
+}
+
+body nav .container-respons div .image-logo {
+  width: 100%;
+  height: 60px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.divBackground {
-  background-color: rgba(255, 255, 255, 0.7098039216);
-}
-
-.rowGap {
-  row-gap: 25px;
-}
-
-.aPadding {
-  margin-top: -5px;
+body nav .container-respons div ul li .style-padding-navbar {
   color: #2D337B;
   padding-top: 34px;
   padding-bottom: 34px;
 }
 
-.aPadding:hover {
+body nav .container-respons div ul li .style-padding-navbar:hover {
   color: white !important;
   background-color: #1A1E4D;
 }
 
-.titleAbout {
-  color: #2C3B84;
+body nav .container-respons div div .padding-buttons {
+  padding: 25px 15px !important;
 }
 
-.textAbout {
-  color: #A92D94;
+body nav .container-respons div div .button-active-demo {
+  background-color: #AD2685;
+  width: 200px;
 }
 
-.titleSize {
-  font-size: 18px;
+body .index-four {
+  z-index: 4;
 }
 
-.imageResponsveServes {
-  width: 80%;
-}
-
-.tag40 {
-  font-size: 40px;
-}
-
-.sizeLitter {
-  letter-spacing: 5px;
-}
-
-body section .containerRespons nav div ul li .active {
-  color: white !important;
-  background-color: #1A1E4D;
-}
-
-body section .containerRespons nav div .divButtonRight .buttonActiveLanguage {
-  background-color: #E51148;
-}
-
-body .sectionMain div .container .row div .divIndex .sizeJigsaw {
-  font-size: 45px;
-}
-
-body .sectionMain {
+body .section-main {
   height: 100vh;
-  padding-top: 200px;
   background: linear-gradient(-180deg, #1A1E4D, #4149A0);
 }
 
-body .sectionMain div div .imageLeftBack {
+body .section-main div div div .div-index div .size-jigsaw-text {
+  font-size: 45px;
+}
+
+body .section-main div .image-left-back {
   width: 500px;
   height: 400px;
   animation: leftAnimation 3s infinite !important;
@@ -192,31 +131,18 @@ body .sectionMain div div .imageLeftBack {
     transform: translate(0, 50px);
   }
 }
-body .sectionMain .container .row div div .textGold {
+body .section-main div div div .div-index div .text-gold {
   color: Yellow;
   font-size: 20px;
 }
 
-body .sectionMain .container .row div .divImageBack::before {
-  content: url("/assest/images/imageMainRight.png");
+body .section-main div div div div div .image-right-main {
+  right: -50px;
+  top: 40%;
 }
 
-body .sectionMain .container .row div .divImageBack .beforeImage::after,
-body .sectionMain .container .row div .divImageBack .beforeImage::before {
-  border-radius: 20px;
-  z-index: 3;
-}
-
-body .sectionMain .container .row div .divImageBack .beforeImage::after {
-  content: url("/assest/images/imagePorgar.png");
-  left: -60px;
-  bottom: 150px;
-}
-
-body .sectionMain .container .row div .divImageBack .beforeImage::before {
-  content: url("/assest/images/imageIphoneRight.png");
-  right: -100px;
-  bottom: 30px;
+body .section-main div div div div div .image-left-main {
+  left: -50px;
 }
 
 @keyframes imageAnimation {
@@ -230,56 +156,52 @@ body .sectionMain .container .row div .divImageBack .beforeImage::before {
     transform: translate(0, -30px);
   }
 }
-body .sectionMain div .container .row div div div .videoCenter {
+body .section-main div div div .div-index div .video-center {
   outline: 2px solid white;
   width: 60px;
   height: 60px;
   cursor: pointer;
   transition: 0.1s;
 }
+body .section-main div div div .div-index div .video-center img {
+  width: 20px;
+  height: 20px;
+}
 
-body .sectionMain div .container .row div div div .videoCenter:hover {
+body .section-main div div div .div-index div .video-center:hover {
   outline: 0px solid white;
   background-color: #CCCDDF !important;
 }
 
-body .sectionMain div .container .row div div div .buttonBackground {
+body .section-main div div div .div-index div .button-background {
   background-color: #F94F72;
 }
-
-body .sectionMain div .container .row div div div .buttonBackground:hover {
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-  background-color: #AD2685;
+body .section-main div div div .div-index div .button-background img {
+  width: 25px;
+  height: 25px;
 }
 
-body .sectionMain div .container .row div div div .buttonBackground:hover .textDownload {
+body .section-main div div div .div-index div .button-background:hover {
+  background-color: #AD2685;
+}
+body .section-main div div div .div-index div .button-background:hover span {
   font-size: 17px;
 }
 
-body .sectionMain div .container .row div div div .buttonBackground:hover .imageHover {
-  margin-top: 5px;
-}
-
-body .sectionMain div .iconAnimation {
+body .section-main div .icon-animation {
   animation: imageAnimation 4s infinite;
 }
 
-body main section .container .imageBeforeandAfter .imageAnimation .divChange::before,
-body main section .container .imageBeforeandAfter .imageAnimation .divChange::after,
-body main section .container .imageBeforeandAfter .imageAnimation::after,
-body main section .container .imageBeforeandAfter .imageAnimation::before,
-body main section .container .imageBeforeandAfter::before,
-body main section .container .imageBeforeandAfter::after {
-  position: absolute;
-  z-index: -1;
+body .section-main .container .row div .image-rnimation-right img {
+  width: 100%;
+  height: auto;
 }
 
-body main section .container .imageBeforeandAfter::before {
-  content: url("/assest/images/imageEllipse1.svg");
-  animation: pointAnimation 5s infinite;
+body .section-marign-all div div div .image-about-cirlce {
   left: 9%;
   top: -30px;
+  z-index: -1;
+  animation: pointAnimation 5s infinite;
 }
 
 @keyframes pointAnimation {
@@ -293,11 +215,10 @@ body main section .container .imageBeforeandAfter::before {
     transform: translate(0, -5px);
   }
 }
-body main section .container .imageBeforeandAfter::after {
-  content: url("/assest/images/imageEllipse2.svg");
-  animation: pointSmollAnimation 4s infinite;
+body .section-marign-all div div div .image-about-cirlce-smaill {
   left: 9%;
   top: 85px;
+  animation: pointSmollAnimation 4s infinite;
 }
 
 @keyframes pointSmollAnimation {
@@ -311,27 +232,23 @@ body main section .container .imageBeforeandAfter::after {
     transform: translate(0px, -19px);
   }
 }
-body main section .container .imageBeforeandAfter .imageAnimation::before {
-  content: url("/assest/images/imageEllipse4.svg");
+body .section-marign-all div div div .image-ellipase-clicle {
   bottom: 150px;
   right: 78%;
+  z-index: -1;
 }
 
-body main section .container .imageBeforeandAfter .imageAnimation::after {
-  content: url("/assest/images/imageEllipse3.svg");
+body .section-marign-all div div div .image-ellipase-clicle-3 {
   bottom: 140px;
   right: 90%;
   animation: pointSmollAnimation 4s infinite;
+  z-index: -1;
 }
 
-body main section .container .imageBeforeandAfter .imageAnimation .divChange::before,
-body main section .container .imageBeforeandAfter .imageAnimation .divChange::after {
+body .section-marign-all div div div .image-ellipase-clicle-4 {
   right: 10px;
-}
-
-body main section .container .imageBeforeandAfter .imageAnimation .divChange::before {
-  content: url("/assest/images/imageJiqsaw1.svg");
   animation: changeAnimation 7s infinite;
+  z-index: -1;
 }
 
 @keyframes changeAnimation {
@@ -348,9 +265,10 @@ body main section .container .imageBeforeandAfter .imageAnimation .divChange::be
     opacity: 1;
   }
 }
-body main section .container .imageBeforeandAfter .imageAnimation .divChange::after {
-  content: url("/assest/images/imageJiqsaw2.svg");
+body .section-marign-all div div div .image-ellipase-clicle-5 {
+  right: 10px;
   animation: changeAnimation2 7s infinite;
+  z-index: -1;
 }
 
 @keyframes changeAnimation2 {
@@ -367,577 +285,134 @@ body main section .container .imageBeforeandAfter .imageAnimation .divChange::af
     opacity: 0;
   }
 }
-body main .sectionServices {
+body .section-services {
   background-color: #F0F1F7;
 }
 
-body main .sectionServices .container .rowNth:nth-child(odd) {
+body .section-marign-all div .row-nth:nth-child(odd) {
   flex-direction: row-reverse;
 }
 
-body main .sectionServices .container .rowNth:nth-child(even) {
+body .section-marign-all div .row-nth:nth-child(even) {
   flex-direction: row;
 }
 
-body main .sectionServices .container .rowNth div div .divMouse .acitveBackground {
+body .section-services div .row-nth div div div div div .acitve-background {
   background-color: #2D337B !important;
 }
 
-body main .sectionServices .container .rowNth div div .divMouse .iconPadding {
+body .section-services div .row-nth div div div div .border-right .icon-padding {
   width: 50px;
   height: 50px;
 }
 
-body main .sectionServices .container .rowNth div .textActive {
+body .section-services div .row-nth div div div div .text-active {
   color: #2D337B;
 }
 
-body main .sectionServices .container .rowNth div div .divMouse .iconPadding .iconActive {
+body .section-services div .row-nth div div div div .border-right .acitve-background .icon-active {
   color: white !important;
 }
 
-body main .sectionServices .container .sectionBackImage::before {
-  content: url("/assest/images/imageBackgroundLeft.svg");
-  left: 0;
-  margin-bottom: 950px;
+body .section-services div .row-nth div div div div div div .image-responsve-full {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-body main .sectionServices .container .sectionBackImage::after {
-  content: url("/assest/images/imageBackgroundRight.svg");
-  right: 0;
-  margin-top: 300px;
+body .section-marign-all div .row-nth .div-animation .size-image-right-and-left {
+  width: 300px;
+  height: 300px;
 }
 
-body main .sectionServices .container .row div div .imageHoverRight {
+body .section-marign-all div .row-nth div div div .image-hover-right {
   background-color: #A92D94;
 }
 
-body main .sectionServices .container .row div div .imageHoverRight .arraowLeft {
+body .section-marign-all div .row-nth div div div .image-hover-right .arraw-left {
   transition: 0.3s;
 }
 
-body main .sectionServices .container .row div div .imageHoverRight:hover .arraowLeft {
+body .section-marign-all div .row-nth div div div .image-hover-right:hover .arraw-left {
   margin-left: 20px;
 }
 
-body main .sectionServices .container .rowNth div .borderRight {
+body .section-marign-all div .row-nth div div div div .border-right {
   border-right: 4px solid #2D337B;
 }
 
-body main .sectionServices .container .rowNth:nth-child(odd) div .imageChild {
-  text-align: left;
+body .section-marign-all div .row-nth div div .row-gap {
+  row-gap: 25px;
 }
 
-body main .sectionServices .container .rowNth:nth-child(even) div .imageChild {
-  text-align: right;
-}
-
-body main .sectionMinheight {
-  min-height: 900px;
-}
-
-body main section div .divAnimation {
-  animation: leftAnimation 8s infinite !important;
-}
-
-body main .sectionMinheight div div .row .accordion div .accordion-header .accordion-button:focus {
-  box-shadow: var(--bs-accordion-btn-focus-border-color);
-}
-
-body main .sectionMinheight div div .row .accordion div .accordion-header .accordion-button .tagSizeTitle {
-  font-size: 20px;
-}
-
-body main section .container .row div .divHover:hover .textSize {
-  margin-top: 0 !important;
-}
-
-body main section .container .row div .divHover:hover .divBottomColor {
-  background-color: #2C3B84;
-  color: white;
-  top: 10px;
-  bottom: 10px;
-  left: 5px;
-  right: 5px;
-}
-
-body main section .container .row div .divHover .divBottomColor {
-  transition: 0.5s;
-  top: 100px;
-}
-
-body main section .container .row div .divHover .divBottomColor .textSize {
-  font-size: 12px;
-  margin-top: 50px;
-}
-
-body main section .container .row div .divHover:hover .divImageHover img {
-  width: 0;
-}
-
-body main section .container .row div .divHover .divImageHover img {
-  width: 100px;
-  transition: 0.5s;
-}
-
-body main section div .row div .divHover {
-  height: 182px;
-  transition: 0.5s;
-}
-
-body main section .container .row div .divHover:hover:nth-child(odd) .divBottomColor {
-  background-color: #2C3B84;
-}
-
-body main section .container .row div .divHover:hover:nth-child(even) .divBottomColor {
-  background-color: #A92D94;
-}
-
-body main section .container .divContent::before {
-  content: url("/assest/images/imageBackgroundLeft.svg");
-  left: 0;
-}
-
-body main section .container .divContent::after {
-  content: url("/assest/images/imageBackgroundRight.svg");
-  right: 0;
-}
-
-body main section .divInlineNone .divImageWidth {
-  width: 25%;
-  transition: 1.5s;
-}
-
-body main section .divInlineNone .divImageWidth:hover {
-  width: 80%;
-}
-
-body main .sectionServices .container .sectionBackImage:last-child::before,
-body main .sectionServices .container .sectionBackImage:nth-child(4)::after,
-body main .sectionServices .container .sectionBackImage:first-child::after,
-body main .sectionServices .container .sectionBackImage:last-child::after,
-body main section .divInlineNone:hover .divNone {
-  display: none;
-}
-
-body main section .divInlineNone .divImageWidth .divPosition .divNoneReverse {
-  width: 0;
-  transition: 1.5s;
-}
-
-body main section .divInlineNone .divImageWidth:hover .divNoneReverse {
-  width: 70%;
-}
-
-body main section .divInlineNone .divImageWidth .imageClick {
-  width: 100%;
-  height: 800px;
-}
-
-body main section .divInlineNone .divImageWidth .divPosition {
-  top: 10%;
-  margin-left: 2%;
-}
-
-body main section section .container .row .accordion .accordion-header div .imageRespons {
-  height: 20vh;
-}
-
-body main section section .container .row .accordion .accordion-header div .divCenter {
-  transform: translate(0, 50px);
-}
-
-body main section section .container .row .accordion .accordion-header div .divCenter .activeImageArraow {
-  transform: rotate(180deg);
-}
-
-body main section section .container .row .accordion .accordion-header div .divCenter .imageArraow {
-  transition: 0.5s;
-}
-
-body main section .container .divWorks::before {
-  content: url("/assest/images/imageBackgroundRight.svg");
-  right: 0;
-}
-
-body main section .container .divWorks::after {
-  content: url("/assest/images/imageBackgroundLeft.svg");
-  left: 0;
-}
-
-body main section .container .row div .colCircle::after {
-  content: "";
-  position: absolute;
-  margin-top: -50px;
-  margin-left: calc(50% - 13px);
-  border-radius: 50px;
-  border: 2px solid white;
-  outline: 2px solid #2D337B;
+body .section-marign-all div .row-nth div div ul li div .size-icon-list-app {
   width: 25px;
   height: 25px;
 }
 
-body main section .container .row div:nth-child(even) .colCircle::after {
-  background-color: #2D337B;
+body .section-marign-all div .row-nth div .image-child .image-responsve-serves {
+  width: 80%;
 }
 
-body main section .container .row div:nth-child(odd) .colCircle::after {
-  background-color: #AD2685;
+body .section-marign-all div .row-nth:nth-child(odd) .image-child {
+  text-align: left;
 }
 
-body main section .container .row div .colCircle::before {
-  content: "";
-  position: absolute;
-  width: 110%;
-  height: 3px;
-  top: -40px;
-  border: 2px dashed #2D337B;
+body .section-marign-all div .row-nth:nth-child(even) .image-child {
+  text-align: right;
 }
-
-body main section .container .row div:first-child .colCircle::before {
-  width: 60%;
-  left: 100px;
-}
-
-body main section .container .row div:last-child .colCircle::before {
-  width: 45%;
-}
-
-body main section .container .row div div .shadowRadius {
-  border-radius: 50px;
-  height: 250px;
-}
-
-body main .sectionServices div .swiper {
-  width: 100%;
-  height: 650px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-body main .sectionServices div .swiper .swiper-wrapper .swiper-slide {
-  width: 239px;
-  height: 500px;
-}
-
-body main .sectionServices div .swiper .swiper-wrapper .swiper-slide img {
-  border-radius: 30px;
-  display: block;
-  width: 100%;
-}
-
-body main .sectionServices div .swiper .swiper-wrapper .swiper-slide.inactive {
-  filter: blur(4px);
-  opacity: 1;
-}
-
-body main .sectionServices div .swiper .swiper-wrapper .swiper-slide-active::before {
-  content: url("/assest/images/backgroundMObile.png");
-  position: absolute;
-  top: -25px;
-  left: -22px;
-}
-
-body main .sectionServices div .swiper .swiper-button-next,
-body main .sectionServices div .swiper .swiper-button-prev {
-  color: #2D337B;
-  border: 2px solid #2D337B;
-  transition: 0.2s;
-}
-
-body main .sectionServices div .swiper .swiper-button-next:hover:after,
-.swiper-rtl .swiper-button-prev:hover:after {
-  margin-left: 10px;
-}
-
-body main .sectionServices div .swiper .swiper-button-prev:hover:after,
-.swiper-rtl .swiper-button-next:hover:after {
-  margin-right: 10px;
-}
-
-.swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after,
-body main .sectionServices div .swiper .swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
-  font-size: 23px;
-  transition: 0.2s;
-}
-
-body main .sectionFooter {
-  background: linear-gradient(87deg, rgb(27, 34, 114), rgb(26, 30, 77));
-}
-
-body main .sectionFooter::before {
-  content: url("/assest/images/imageBackground.png");
-  position: absolute;
-  bottom: 50px;
-  right: 0;
-  animation: footerAnimation 4s infinite;
-}
-
-body main .sectionFooter::after {
-  content: url("/assest/images/imageBackground1.png");
-  position: absolute;
-  right: 0;
-  bottom: 50px;
-  animation: footerAnimation1 4s infinite;
-}
-
-@keyframes footerAnimation {
-  0% {
-    transform: translate(0px, 30px);
-    opacity: 1;
-  }
-  50% {
-    transform: translate(0px, 0px);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(0px, 30px);
-    opacity: 1;
-  }
-}
-@keyframes footerAnimation1 {
-  0% {
-    transform: translate(0px, 30px);
-    opacity: 0;
-  }
-  50% {
-    transform: translate(0px, 0px);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(0px, 30px);
-    opacity: 0;
-  }
-}
-body main .sectionFooter div .divHr {
-  width: 100%;
-  height: 2px;
-}
-
-body main .sectionFooter .row div ul li:nth-child(2) .lineBefore::after {
+body .section-marign-all div .row-nth:nth-child(even) .div-animation {
   display: none;
 }
 
-body main .sectionFooter .row div ul li .lineBefore::after {
-  content: "";
-  position: absolute;
-  background-color: white;
-  width: 1.5px;
-  height: 15px;
-  margin-top: 5px;
-  margin-left: 10.5px;
+body .section-marign-all div .row-nth .div-start {
+  left: -25px;
 }
 
-body main .sectionFooter .row div ul li .lineBefore:hover {
-  color: rgba(255, 255, 255, 0.7098039216);
+.div-animation {
+  animation: leftAnimation 8s infinite !important;
 }
 
-.data_hover:hover .textColorReverse {
-  color: white !important;
-}
-
-body main .sectionFooter .row div ul li .iconFooter:hover {
-  color: rgba(255, 255, 255, 0.7098039216);
-}
-
-@media (max-width: 1200px) and (min-width: 990px) {
-  .a_padding {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-  }
-  body main section div .row div .divHover {
-    height: 170px;
-  }
-  body main section .container .row div .divHover .divBottomColor .textSize {
-    font-size: 9px;
-  }
-}
 @media (max-width: 990px) {
-  .tag_40,
-  .size_Jigsaw {
-    font-size: 25px !important;
+  body nav {
+    position: relative !important;
   }
-  body .sectionMain {
-    height: 906px;
+  body .section-main {
+    height: 1150px;
   }
-  body section .containerRespons nav div ul .buttonActiveDemo:hover,
-  body section .containerRespons nav div ul .buttonActiveLanguage:hover {
-    color: white !important;
-  }
-  body section .containerRespons nav div .buttonActiveDemo:hover {
-    background-color: #AD2685;
-  }
-  body section .containerRespons nav div .buttonActiveLanguage:hover {
-    background-color: #E51148;
-  }
-  body section .containerRespons {
-    min-width: 100%;
-  }
-  .a_padding:hover,
-  body section .containerRespons nav div ul li .active {
+  body nav .container-respons div ul li .style-padding-navbar:hover,
+  body section .container-respons nav div ul li .active {
     color: #E51148 !important;
     background-color: transparent;
   }
-  .divWidth {
+  body section .container-respons {
+    min-width: 100%;
+  }
+  body nav .container-respons div ul li .style-padding-navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .div-width {
     width: 100% !important;
   }
-  body main .sectionMinheight {
-    min-height: 0px;
-  }
-  body main .sectionServices .container .rowNth div .borderRight {
-    border-right: 0px solid #2D337B;
-  }
-  .textSize {
-    font-size: 7px !important;
-  }
-  body section .container nav .collapse .divButtonRight {
-    margin-left: 40px;
-  }
-  .aPaddingButton {
-    padding: 15px !important;
-  }
-  body .sectionMain .container .row div .divImageBack .beforeImage .image_responsve {
-    width: 217px;
-    height: 387.6px;
-  }
-  .image_responsve_full,
-  .image_responsve_serves {
-    width: 70%;
-  }
-  body main .sectionServices .container .rowNth:nth-child(odd) div .imageChild,
-  body main .sectionServices .container .rowNth:nth-child(even) div .imageChild {
-    text-align: center;
-  }
-  .integration_text {
-    font-size: 12px !important;
-  }
-  body main section .container .row div div .shadowRadius {
-    height: 150px;
-  }
-  body main section .container .row_height {
-    height: 844px;
-  }
-  body main section .container .row_height::-webkit-scrollbar {
-    width: 5px;
-  }
-  body main section .container .row_height::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-  }
-  body .sectionMain .container .row div .divImageBack::before {
-    width: 272px;
-    height: 302px;
-    top: 192px;
-    animation: imageAnimation 8s infinite;
-  }
-  body .sectionMain div div .imageLeftBack {
-    width: 162px;
-    height: 141px;
-    top: -270px;
-    left: -35px;
-    animation: leftAnimation 8s infinite !important;
-  }
-  body main .sectionServices .container .rowNth div div .divMouse .iconPadding {
-    width: 30px;
-    height: 30px;
-  }
-  body main .sectionServices .container .rowNth div .row_text div:nth-child(2) {
-    order: 5;
-  }
-  body main .sectionServices .container .rowNth div .row_text div:nth-child(3) {
-    order: 2;
-  }
-  body main section .container .imageBeforeandafter::after,
-  body main section .container .divContent::after,
-  body main section .container .divContent::before,
-  body main section .container .divWorks::after,
-  body main section .container .divWorks::before,
-  body main .sectionFooter::before,
-  body main .sectionFooter::after,
-  body main section .container .row div .colCircle::after,
-  body main section .container .row div .colCircle::before,
-  .divInlineNone {
+  .div-inline-none {
     display: none !important;
   }
-  body main section .container .imageBeforeandafter::before {
-    content: url("/assest/images/imageRes.png");
-    left: -4%;
-    top: -30px;
+  body .section-services div .row-nth div div div div .border-right {
+    border-right: transparent;
   }
-  body main section .container .imageBeforeandafter .imageAnimation::before {
-    content: url("/assest/images/imageRespons.png");
-    bottom: 20px;
-    right: 78%;
+  body .section-marign-all div .row-nth .div-animation .size-image-right-and-left {
+    width: 100px;
+    height: 100px;
   }
-  body main section .container .imageBeforeandafter .imageAnimation .divChange::before,
-  body main section .container .imageBeforeandafter .imageAnimation .divChange::after {
-    content: "";
-    background-size: 250px 250px;
-    width: 250px;
-    height: 250px;
-    left: 150px;
-    bottom: 20px;
+  body .section-services div .row-nth div div div div div div .image-responsve-full {
+    height: auto;
   }
-  body main section .container .imageBeforeandafter .imageAnimation .divChange::before {
-    background-image: url("/assest/images/imageJiqsaw1.svg");
-  }
-  body main section .container .imageBeforeandafter .imageAnimation .divChange::after {
-    background-image: url("/assest/images/imageJiqsaw2.svg");
-  }
-  body .sectionMain .container .row div .divImageBack .beforeImage::before {
-    right: -70px;
-  }
-  body .sectionMain div .container .row div div div .videoCenter {
-    width: 60px;
-    height: 50px;
-  }
-  body main .sectionServices div .swiper {
-    height: 380px;
-  }
-  body main .sectionServices div .swiper .swiper-wrapper .swiper-slide {
-    width: 140.02px;
-    height: 296.98px;
-  }
-  body main .sectionServices div .swiper .swiper-wrapper .swiper-slide-active::before {
-    content: "";
-    background-image: url("/assest/images/imageBackground.png") !important;
-    background-size: 168.78px 327.33px;
-    width: 168px;
-    height: 327px;
-    top: -14px;
-    left: -15px;
-  }
-  .size_litter {
-    letter-spacing: 3px;
-  }
-}
-@media (max-width: 520px) {
-  body main .sectionMinheight div div .row .accordion div .accordion-header .accordion-button .tagSizeTitle {
-    font-size: 15.41px;
-  }
-  body main .sectionFooter .container .div_row {
-    flex-direction: column-reverse;
-  }
-  body main .sectionFooter .container .div_row div:nth-child(2) {
-    order: -1;
-  }
-}
-@media (max-width: 300px) {
-  .sizesmool {
-    font-size: 10px !important;
-  }
-  body .sectionMain .container .row div .divImageBack .beforeImage::after {
-    left: -30px;
-  }
-  body .sectionMain .container .row div .divImageBack .beforeImage::before {
+  body .section-main div div div div div .image-right-main {
     right: -20px;
   }
-  body main section div .row div .divHover .divImageHover img {
-    width: 52px !important;
-    height: 56px !important;
-  }
-  body main section .container .row div .divHover .divBottomColor {
-    top: 70px;
+  body .section-main div div div div div .image-left-main {
+    left: -20px;
   }
 }/*# sourceMappingURL=jigsaw.css.map */
