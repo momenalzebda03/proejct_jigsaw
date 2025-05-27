@@ -52,55 +52,6 @@ body .section-main .container .row div .image-rnimation-right {
 //     color: $colorSecondary;
 // }
 
-// .accordion-button::after,
-// .accordion-button:not(.collapsed)::after {
-//     background-image: unset;
-// }
-
-// .accordion:nth-child(odd) .accordion-button::after {
-//     content: url("/assest/images/iconArrowRight.svg");
-//     margin-left: auto;
-// }
-
-// .accordion:nth-child(even) .accordion-button::after {
-//     content: url("/assest/images/iconArrow.svg");
-//     margin-left: auto;
-// }
-
-// .accordion:nth-child(odd) .accordion-button:not(.collapsed)::after,
-// .accordion:nth-child(even) .accordion-button:not(.collapsed)::after {
-//     content: url("/assest/images/iconBottom.svg");
-//     transform: rotate(0deg);
-// }
-
-// .accordion:nth-child(odd) .accordion-item:last-of-type .accordion-button.collapsed,
-// .accordion:nth-child(even) .accordion-item:last-of-type .accordion-button.collapsed {
-//     border-radius: 20px;
-// }
-
-// .accordion:nth-child(odd) .accordion-item:last-of-type .accordion-button.collapsed {
-//     color: $colorAboutandservicesTitle;
-//     background-color: $colorBenefits;
-// }
-
-// .accordion:nth-child(even) .accordion-item:last-of-type .accordion-button.collapsed {
-//     color: $colorAboutandservicesText;
-//     background-color: $colorBenefits;
-// }
-
-// .accordion:nth-child(odd) .accordion-item .accordion-button {
-//     background-color: $colorAboutandservicesTitle;
-// }
-
-// .accordion:nth-child(even) .accordion-item .accordion-button {
-//     background-color: $colorAboutandservicesText;
-// }
-
-// .accordion .accordion-item .accordion-button {
-//     border-radius: 20px 20px 0 0;
-//     color: $colorWhite;
-// }
-
 // .imageFit {
 //     object-fit: cover;
 // }
@@ -131,6 +82,10 @@ body .section-main .container .row div .image-rnimation-right {
 
 .text-justify {
     text-align: justify;
+}
+
+.div-animation {
+    animation: leftAnimation 8s infinite !important;
 }
 
 // end everyone
@@ -479,17 +434,98 @@ body .section-marign-all div .row-nth .div-start {
 
 // end services
 // start benefits
-.div-animation {
-    animation: leftAnimation 8s infinite !important;
-}
-
-// body main .sectionMinheight div div .row .accordion div .accordion-header .accordion-button:focus {
+// .accordion-button:focus {
 //     box-shadow: var(--bs-accordion-btn-focus-border-color);
 // }
 
-// body main .sectionMinheight div div .row .accordion div .accordion-header .accordion-button .tagSizeTitle {
+// .accordion-button .tagSizeTitle {
 //     font-size: 20px;
 // }
+
+// .accordion-button::after,
+// .accordion-button:not(.collapsed)::after {
+//     background-image: unset;
+// }
+
+// .accordion:nth-child(odd) .accordion-button::after {
+//     content: url("/assests/images/iconArrowRight.svg");
+//     margin-left: auto;
+// }
+
+// .accordion:nth-child(even) .accordion-button::after {
+//     content: url("/assests/images/iconArrow.svg");
+//     margin-left: auto;
+// }
+
+// .accordion:nth-child(odd) .accordion-button:not(.collapsed)::after,
+// .accordion:nth-child(even) .accordion-button:not(.collapsed)::after {
+//     content: url("/assests/images/iconBottom.svg");
+//     transform: rotate(0deg);
+// }
+
+.accordion-button::after {
+    display: none;
+}
+
+.size-arraw-benefit {
+    right: 20px;
+    top: 25px;
+
+    img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.accordion-button:focus,
+.accordion-button:hover {
+    z-index: 0 !important;
+}
+
+.accordion .accordion-item:nth-child(odd):last-of-type .accordion-button.collapsed,
+.accordion .accordion-item:nth-child(even):last-of-type .accordion-button.collapsed {
+    border-radius: 20px;
+}
+
+.size-arraw.show {
+    transform: rotate(90deg) !important;
+    transition: 0.3s;
+}
+
+.size-arraw:not(.collapsed) {
+    display: block !important;
+    transform: rotate(0);
+    box-shadow: unset !important;
+    background-color: unset !important;
+    transition: 0.3s;
+}
+
+.accordion .accordion-item:nth-child(odd) .accordion-button.collapsed {
+    color: $colorAboutandservicesTitle;
+    background-color: $colorBenefits;
+}
+
+.accordion .accordion-item:nth-child(even) .accordion-button.collapsed {
+    color: $colorAboutandservicesText;
+    background-color: $colorBenefits;
+}
+
+.accordion .accordion-item:nth-child(odd) .accordion-button:not(.collapsed) {
+    background-color: $colorAboutandservicesText;
+}
+
+.accordion .accordion-item:nth-child(even) .accordion-button:not(.collapsed) {
+    background-color: $colorAboutandservicesTitle;
+}
+
+.accordion .accordion-item .accordion-button {
+    border-radius: 20px 20px 0 0;
+    color: $colorWhite;
+}
+
+.image-benefits {
+    z-index: -1;
+}
 
 // end benefits
 // start features
