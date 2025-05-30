@@ -37,6 +37,19 @@ body .section-main .container .row div .image-rnimation-right {
   margin-top: 70px;
 }
 
+.text-color-reverse {
+  color: rgba(255, 255, 255, 0.7098039216);
+}
+
+.image-fit {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.div-background {
+  background-color: rgba(255, 255, 255, 0.7098039216);
+}
+
 .color-title {
   color: #2C3B84;
 }
@@ -63,6 +76,10 @@ body .section-main .container .row div .image-rnimation-right {
 
 .div-animation {
   animation: leftAnimation 8s infinite !important;
+}
+
+.row-gap {
+  row-gap: 25px;
 }
 
 body nav {
@@ -346,10 +363,6 @@ body .section-marign-all div .row-nth div div div div .border-right {
   border-right: 4px solid #2D337B;
 }
 
-body .section-marign-all div .row-nth div div .row-gap {
-  row-gap: 25px;
-}
-
 body .section-marign-all div .row-nth div div ul li div .size-icon-list-app {
   width: 25px;
   height: 25px;
@@ -374,35 +387,35 @@ body .section-marign-all div .row-nth .div-start {
   left: -25px;
 }
 
-.accordion-button::after {
+body .section-marign-all div .accordion .div-width .accordion-header .accordion-button::after {
   display: none;
 }
 
-.size-arraw-benefit {
+body .section-marign-all div .accordion .accordion-item .size-arraw-benefit {
   right: 20px;
   top: 25px;
 }
-.size-arraw-benefit img {
+body .section-marign-all div .accordion .accordion-item .size-arraw-benefit img {
   width: 25px;
   height: 25px;
 }
 
-.accordion-button:focus,
-.accordion-button:hover {
+body .section-marign-all div .accordion .div-width .accordion-header .accordion-button:focus,
+body .section-marign-all div .accordion .div-width .accordion-header .accordion-button:hover {
   z-index: 0 !important;
 }
 
-.accordion .accordion-item:nth-child(odd):last-of-type .accordion-button.collapsed,
-.accordion .accordion-item:nth-child(even):last-of-type .accordion-button.collapsed {
+body .section-marign-all div .accordion .accordion-item:nth-child(odd):last-of-type .accordion-button.collapsed,
+body .section-marign-all div .accordion .accordion-item:nth-child(even):last-of-type .accordion-button.collapsed {
   border-radius: 20px;
 }
 
-.size-arraw.show {
+body .section-marign-all div .accordion .div-width .size-arraw-benefit .size-arraw.show {
   transform: rotate(90deg) !important;
   transition: 0.3s;
 }
 
-.size-arraw:not(.collapsed) {
+body .section-marign-all div .accordion .div-width .size-arraw:not(.collapsed) {
   display: block !important;
   transform: rotate(0);
   box-shadow: unset !important;
@@ -410,31 +423,243 @@ body .section-marign-all div .row-nth .div-start {
   transition: 0.3s;
 }
 
-.accordion .accordion-item:nth-child(odd) .accordion-button.collapsed {
+body .section-marign-all div .accordion .accordion-item:nth-child(odd) .accordion-button.collapsed {
   color: #2C3B84;
   background-color: #F5F5FA;
 }
 
-.accordion .accordion-item:nth-child(even) .accordion-button.collapsed {
+body .section-marign-all div .accordion .accordion-item:nth-child(even) .accordion-button.collapsed {
   color: #A92D94;
   background-color: #F5F5FA;
 }
 
-.accordion .accordion-item:nth-child(odd) .accordion-button:not(.collapsed) {
+body .section-marign-all div .accordion .accordion-item:nth-child(odd) .accordion-button:not(.collapsed) {
   background-color: #A92D94;
 }
 
-.accordion .accordion-item:nth-child(even) .accordion-button:not(.collapsed) {
+body .section-marign-all div .accordion .accordion-item:nth-child(even) .accordion-button:not(.collapsed) {
   background-color: #2C3B84;
 }
 
-.accordion .accordion-item .accordion-button {
+body .section-marign-all div .accordion .accordion-item .accordion-button {
   border-radius: 20px 20px 0 0;
   color: white;
 }
 
-.image-benefits {
+body .section-marign-all .image-benefits {
   z-index: -1;
+}
+
+body section div div div .div-hover {
+  height: 185px;
+  transition: 0.5s;
+}
+
+body section div div .even-odd-style-color:nth-child(odd) .div-hover:hover .div-bottom-color {
+  background-color: #2C3B84;
+}
+
+body section div div .even-odd-style-color:nth-child(even) .div-hover:hover .div-bottom-color {
+  background-color: #A92D94;
+}
+
+body section div div .even-odd-style-color .div-hover:hover .text-size {
+  margin-top: 0 !important;
+}
+
+body section div div .even-odd-style-color .div-hover:hover .div-bottom-color {
+  background-color: #2C3B84;
+  color: white;
+  top: 10px;
+  bottom: 10px;
+  left: 5px;
+  right: 5px;
+}
+
+body section div div .even-odd-style-color .div-hover .div-bottom-color {
+  transition: 0.5s;
+  top: 100px;
+}
+
+body section div div .even-odd-style-color .div-hover .div-bottom-color .textSize {
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+body section div div .even-odd-style-color .div-hover .div-image-hover .size-image-features {
+  width: 90px;
+  height: 90px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body section div div .even-odd-style-color .div-hover:hover .div-image-hover .size-image-features {
+  width: 0;
+  height: 0;
+}
+
+body section div div .even-odd-style-color .div-hover .div-image-hover .size-image-features {
+  width: 100px;
+  transition: 0.5s;
+}
+
+body section div .div-image-width {
+  width: 25%;
+  transition: 1.5s;
+}
+
+body section div .div-image-width:hover {
+  width: 80%;
+}
+
+.divNoneReverse {
+  width: 0;
+  transition: 1.5s;
+}
+
+body section div .div-image-width:hover .divNoneReverse {
+  width: 70%;
+}
+
+body section div .div-image-width:hover ~ .divNone {
+  display: none;
+}
+
+body section div .div-image-width:hover .div-position {
+  display: block;
+}
+
+body section div .div-image-width .div-position {
+  top: 10%;
+  margin-left: 2%;
+  display: none;
+}
+
+body section div div div div div .image-respons {
+  height: 20vh;
+}
+
+body section div div div div div .div-center {
+  top: 35%;
+}
+
+body section div div div div div .div-center .active-image-arraow {
+  transform: rotate(180deg);
+}
+
+body section div div div div div .div-center .image-arraow {
+  transition: 0.5s;
+}
+
+body section div .div-image-width .image-click {
+  width: 100%;
+  height: 800px;
+}
+
+body section div div div .col-circle::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 44%;
+  border-radius: 50px;
+  border: 2px solid white;
+  outline: 2px solid #2D337B;
+  width: 25px;
+  height: 25px;
+}
+
+body section div div div .col-circle::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 3px;
+  top: 0;
+  left: 0;
+  border: 2px dashed #2D337B;
+}
+
+body section div div div:nth-child(even) .col-circle::after {
+  background-color: #2D337B;
+}
+
+body section div div div:nth-child(odd) .col-circle::after {
+  background-color: #AD2685;
+}
+
+.icon-data {
+  width: 90px;
+  height: 90px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body section div div div:first-child .col-circle::before {
+  width: 60%;
+  left: 100px;
+}
+
+body section div div div:last-child .col-circle::before {
+  width: 45%;
+}
+
+body section div div div .shadow-radius {
+  border-radius: 50px;
+  height: 250px;
+}
+
+.swiper {
+  width: 100%;
+  height: 650px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper .swiper-wrapper .swiper-slide {
+  width: 239px;
+  height: 500px;
+}
+
+.swiper .swiper-wrapper .swiper-slide img {
+  border-radius: 30px;
+  display: block;
+  width: 100%;
+}
+
+.swiper .swiper-wrapper .swiper-slide.inactive {
+  filter: blur(4px);
+  opacity: 1;
+}
+
+.swiper .swiper-wrapper .swiper-slide-active::before {
+  content: url("/assest/images/backgroundMObile.png");
+  position: absolute;
+  top: -25px;
+  left: -22px;
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  color: #2D337B;
+  border: 2px solid #2D337B;
+  transition: 0.2s;
+}
+
+.swiper .swiper-button-next:hover:after,
+.swiper-rtl .swiper-button-prev:hover:after {
+  margin-left: 10px;
+}
+
+.swiper .swiper-button-prev:hover:after,
+.swiper-rtl .swiper-button-next:hover:after {
+  margin-right: 10px;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper .swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  font-size: 23px;
+  transition: 0.2s;
 }
 
 @media (max-width: 990px) {
@@ -459,6 +684,8 @@ body .section-marign-all div .row-nth .div-start {
   .div-width {
     width: 100% !important;
   }
+  body section div div div .col-circle::after,
+  body section div div div .col-circle::before,
   .div-inline-none {
     display: none !important;
   }

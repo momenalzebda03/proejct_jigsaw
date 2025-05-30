@@ -26,10 +26,6 @@ body {
 }
 
 // body main section .container .imageBeforeandafter .imageAnimation .divChange::after,
-// body main section .container .divWorks::after,
-// body main section .container .divWorks::before,
-// body main section .container .divContent::after,
-// body main section .container .divContent::before,
 // body main section .container .imageBeforeandafter .imageAnimation .divChange::before,
 // body main section .container .imageBeforeandafter::after,
 // body main section .container .imageBeforeandafter::before,
@@ -48,17 +44,17 @@ body .section-main .container .row div .image-rnimation-right {
     margin-top: 70px;
 }
 
-// .textColorReverse {
-//     color: $colorSecondary;
-// }
+.text-color-reverse {
+    color: $colorSecondary;
+}
 
-// .imageFit {
-//     object-fit: cover;
-// }
+.image-fit {
+    object-fit: cover;
+}
 
-// .divBackground {
-//     background-color: $colorSecondary;
-// }
+.div-background {
+    background-color: $colorSecondary;
+}
 
 .color-title {
     color: $colorAboutandservicesTitle;
@@ -86,6 +82,10 @@ body .section-main .container .row div .image-rnimation-right {
 
 .div-animation {
     animation: leftAnimation 8s infinite !important;
+}
+
+.row-gap {
+    row-gap: 25px;
 }
 
 // end everyone
@@ -399,10 +399,6 @@ body .section-marign-all div .row-nth div div div div .border-right {
     border-right: 4px solid $colorNavbarText;
 }
 
-body .section-marign-all div .row-nth div div .row-gap {
-    row-gap: 25px;
-}
-
 body .section-marign-all div .row-nth div div ul li div .size-icon-list-app {
     width: 25px;
     height: 25px;
@@ -434,40 +430,11 @@ body .section-marign-all div .row-nth .div-start {
 
 // end services
 // start benefits
-// .accordion-button:focus {
-//     box-shadow: var(--bs-accordion-btn-focus-border-color);
-// }
-
-// .accordion-button .tagSizeTitle {
-//     font-size: 20px;
-// }
-
-// .accordion-button::after,
-// .accordion-button:not(.collapsed)::after {
-//     background-image: unset;
-// }
-
-// .accordion:nth-child(odd) .accordion-button::after {
-//     content: url("/assests/images/iconArrowRight.svg");
-//     margin-left: auto;
-// }
-
-// .accordion:nth-child(even) .accordion-button::after {
-//     content: url("/assests/images/iconArrow.svg");
-//     margin-left: auto;
-// }
-
-// .accordion:nth-child(odd) .accordion-button:not(.collapsed)::after,
-// .accordion:nth-child(even) .accordion-button:not(.collapsed)::after {
-//     content: url("/assests/images/iconBottom.svg");
-//     transform: rotate(0deg);
-// }
-
-.accordion-button::after {
+body .section-marign-all div .accordion .div-width .accordion-header .accordion-button::after {
     display: none;
 }
 
-.size-arraw-benefit {
+body .section-marign-all div .accordion .accordion-item .size-arraw-benefit {
     right: 20px;
     top: 25px;
 
@@ -477,22 +444,22 @@ body .section-marign-all div .row-nth .div-start {
     }
 }
 
-.accordion-button:focus,
-.accordion-button:hover {
+body .section-marign-all div .accordion .div-width .accordion-header .accordion-button:focus,
+body .section-marign-all div .accordion .div-width .accordion-header .accordion-button:hover {
     z-index: 0 !important;
 }
 
-.accordion .accordion-item:nth-child(odd):last-of-type .accordion-button.collapsed,
-.accordion .accordion-item:nth-child(even):last-of-type .accordion-button.collapsed {
+body .section-marign-all div .accordion .accordion-item:nth-child(odd):last-of-type .accordion-button.collapsed,
+body .section-marign-all div .accordion .accordion-item:nth-child(even):last-of-type .accordion-button.collapsed {
     border-radius: 20px;
 }
 
-.size-arraw.show {
+body .section-marign-all div .accordion .div-width .size-arraw-benefit .size-arraw.show {
     transform: rotate(90deg) !important;
     transition: 0.3s;
 }
 
-.size-arraw:not(.collapsed) {
+body .section-marign-all div .accordion .div-width .size-arraw:not(.collapsed) {
     display: block !important;
     transform: rotate(0);
     box-shadow: unset !important;
@@ -500,247 +467,252 @@ body .section-marign-all div .row-nth .div-start {
     transition: 0.3s;
 }
 
-.accordion .accordion-item:nth-child(odd) .accordion-button.collapsed {
+body .section-marign-all div .accordion .accordion-item:nth-child(odd) .accordion-button.collapsed {
     color: $colorAboutandservicesTitle;
     background-color: $colorBenefits;
 }
 
-.accordion .accordion-item:nth-child(even) .accordion-button.collapsed {
+body .section-marign-all div .accordion .accordion-item:nth-child(even) .accordion-button.collapsed {
     color: $colorAboutandservicesText;
     background-color: $colorBenefits;
 }
 
-.accordion .accordion-item:nth-child(odd) .accordion-button:not(.collapsed) {
+body .section-marign-all div .accordion .accordion-item:nth-child(odd) .accordion-button:not(.collapsed) {
     background-color: $colorAboutandservicesText;
 }
 
-.accordion .accordion-item:nth-child(even) .accordion-button:not(.collapsed) {
+body .section-marign-all div .accordion .accordion-item:nth-child(even) .accordion-button:not(.collapsed) {
     background-color: $colorAboutandservicesTitle;
 }
 
-.accordion .accordion-item .accordion-button {
+body .section-marign-all div .accordion .accordion-item .accordion-button {
     border-radius: 20px 20px 0 0;
     color: $colorWhite;
 }
 
-.image-benefits {
+body .section-marign-all .image-benefits {
     z-index: -1;
 }
 
 // end benefits
 // start features
-// body main section .container .row div .divHover:hover .textSize {
-//     margin-top: 0 !important;
-// }
+body section div div div .div-hover {
+    height: 185px;
+    transition: 0.5s;
+}
 
-// body main section .container .row div .divHover:hover .divBottomColor {
-//     background-color: $colorAboutandservicesTitle;
-//     color: $colorWhite;
-//     top: 10px;
-//     bottom: 10px;
-//     left: 5px;
-//     right: 5px;
-// }
+body section div div .even-odd-style-color:nth-child(odd) .div-hover:hover .div-bottom-color {
+    background-color: $colorAboutandservicesTitle;
+}
 
-// body main section .container .row div .divHover .divBottomColor {
-//     transition: 0.5s;
-//     top: 100px;
-// }
+body section div div .even-odd-style-color:nth-child(even) .div-hover:hover .div-bottom-color {
+    background-color: $colorAboutandservicesText;
+}
 
-// body main section .container .row div .divHover .divBottomColor .textSize {
-//     font-size: 12px;
-//     margin-top: 50px;
-// }
+body section div div .even-odd-style-color .div-hover:hover .text-size {
+    margin-top: 0 !important;
+}
 
-// body main section .container .row div .divHover:hover .divImageHover img {
-//     width: 0;
-// }
+body section div div .even-odd-style-color .div-hover:hover .div-bottom-color {
+    background-color: $colorAboutandservicesTitle;
+    color: $colorWhite;
+    top: 10px;
+    bottom: 10px;
+    left: 5px;
+    right: 5px;
+}
 
-// body main section .container .row div .divHover .divImageHover img {
-//     width: 100px;
-//     transition: 0.5s;
-// }
+body section div div .even-odd-style-color .div-hover .div-bottom-color {
+    transition: 0.5s;
+    top: 100px;
+}
 
-// body main section div .row div .divHover {
-//     height: 182px;
-//     transition: 0.5s;
-// }
+body section div div .even-odd-style-color .div-hover .div-bottom-color .textSize {
+    font-size: 12px;
+    margin-top: 50px;
+}
 
-// body main section .container .row div .divHover:hover:nth-child(odd) .divBottomColor {
-//     background-color: $colorAboutandservicesTitle;
-// }
+body section div div .even-odd-style-color .div-hover .div-image-hover .size-image-features {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
 
-// body main section .container .row div .divHover:hover:nth-child(even) .divBottomColor {
-//     background-color: $colorAboutandservicesText;
-// }
+body section div div .even-odd-style-color .div-hover:hover .div-image-hover .size-image-features {
+    width: 0;
+    height: 0;
+}
 
-// body main section .container .divContent::before {
-//     content: url("/assest/images/imageBackgroundLeft.svg");
-//     left: 0;
-// }
-
-// body main section .container .divContent::after {
-//     content: url("/assest/images/imageBackgroundRight.svg");
-//     right: 0;
-// }
-
-// body main section .divInlineNone .divImageWidth {
-//     width: 25%;
-//     transition: 1.5s;
-// }
-
-// body main section .divInlineNone .divImageWidth:hover {
-//     width: 80%;
-// }
-
-// body main section .divInlineNone .divImageWidth .divPosition .divNoneReverse {
-//     width: 0;
-//     transition: 1.5s;
-// }
-
-// body main section .divInlineNone .divImageWidth:hover .divNoneReverse {
-//     width: 70%;
-// }
-
-// body main section .divInlineNone .divImageWidth .imageClick {
-//     width: 100%;
-//     height: 800px;
-// }
-
-// body main section .divInlineNone .divImageWidth .divPosition {
-//     top: 10%;
-//     margin-left: 2%;
-// }
-
-// body main section section .container .row .accordion .accordion-header div .imageRespons {
-//     height: 20vh;
-// }
-
-// body main section section .container .row .accordion .accordion-header div .divCenter {
-//     transform: translate(0, 50px);
-// }
-
-// body main section section .container .row .accordion .accordion-header div .divCenter .activeImageArraow {
-//     transform: rotate(180deg);
-// }
-
-// body main section section .container .row .accordion .accordion-header div .divCenter .imageArraow {
-//     transition: 0.5s;
-// }
+body section div div .even-odd-style-color .div-hover .div-image-hover .size-image-features {
+    width: 100px;
+    transition: 0.5s;
+}
 
 // end features
-// start work
-// body main section .container .divWorks::before {
-//     content: url("/assest/images/imageBackgroundRight.svg");
-//     right: 0;
-// }
+// start how jigsaw
+body section div .div-image-width {
+    width: 25%;
+    transition: 1.5s;
+}
 
-// body main section .container .divWorks::after {
-//     content: url("/assest/images/imageBackgroundLeft.svg");
-//     left: 0;
-// }
+body section div .div-image-width:hover {
+    width: 80%;
+}
 
-// body main section .container .row div .colCircle::after {
-//     content: "";
-//     position: absolute;
-//     margin-top: -50px;
-//     margin-left: calc(50% - 13px);
-//     border-radius: 50px;
-//     border: 2px solid $colorWhite;
-//     outline: 2px solid $colorNavbarText;
-//     width: 25px;
-//     height: 25px;
-// }
+.divNoneReverse {
+    width: 0;
+    transition: 1.5s;
+}
 
-// body main section .container .row div:nth-child(even) .colCircle::after {
-//     background-color: $colorNavbarText;
-// }
+body section div .div-image-width:hover .divNoneReverse {
+    width: 70%;
+}
 
-// body main section .container .row div:nth-child(odd) .colCircle::after {
-//     background-color: $colorNavbarDemo;
-// }
+body section div .div-image-width:hover~.divNone {
+    display: none;
+}
 
-// body main section .container .row div .colCircle::before {
-//     content: "";
-//     position: absolute;
-//     width: 110%;
-//     height: 3px;
-//     top: -40px;
-//     border: 2px dashed $colorNavbarText;
-// }
+body section div .div-image-width:hover .div-position {
+    display: block;
+}
 
-// body main section .container .row div:first-child .colCircle::before {
-//     width: 60%;
-//     left: 100px;
-// }
+body section div .div-image-width .div-position {
+    top: 10%;
+    margin-left: 2%;
+    display: none;
+}
 
-// body main section .container .row div:last-child .colCircle::before {
-//     width: 45%;
-// }
+body section div div div div div .image-respons {
+    height: 20vh;
+}
 
-// end work
+body section div div div div div .div-center {
+    top: 35%;
+}
+
+body section div div div div div .div-center .active-image-arraow {
+    transform: rotate(180deg);
+}
+
+body section div div div div div .div-center .image-arraow {
+    transition: 0.5s;
+}
+
+body section div .div-image-width .image-click {
+    width: 100%;
+    height: 800px;
+}
+
+// end how jigsaw
+// start works
+body section div div div .col-circle::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 44%;
+    border-radius: 50px;
+    border: 2px solid $colorWhite;
+    outline: 2px solid $colorNavbarText;
+    width: 25px;
+    height: 25px;
+}
+
+body section div div div .col-circle::before {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 3px;
+    top: 0;
+    left: 0;
+    border: 2px dashed $colorNavbarText;
+}
+
+body section div div div:nth-child(even) .col-circle::after {
+    background-color: $colorNavbarText;
+}
+
+body section div div div:nth-child(odd) .col-circle::after {
+    background-color: $colorNavbarDemo;
+}
+
+.icon-data {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+body section div div div:first-child .col-circle::before {
+    width: 60%;
+    left: 100px;
+}
+
+body section div div div:last-child .col-circle::before {
+    width: 45%;
+}
+
+// end works
 // start integration
-// body main section .container .row div div .shadowRadius {
-//     border-radius: 50px;
-//     height: 250px;
-// }
+body section div div div .shadow-radius {
+    border-radius: 50px;
+    height: 250px;
+}
 
 // start integration
 // start customers
-// body main .sectionServices div .swiper {
-//     width: 100%;
-//     height: 650px;
-//     padding-top: 50px;
-//     padding-bottom: 50px;
-// }
+.swiper {
+    width: 100%;
+    height: 650px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
-// body main .sectionServices div .swiper .swiper-wrapper .swiper-slide {
-//     width: 239px;
-//     height: 500px;
-// }
+.swiper .swiper-wrapper .swiper-slide {
+    width: 239px;
+    height: 500px;
+}
 
-// body main .sectionServices div .swiper .swiper-wrapper .swiper-slide img {
-//     border-radius: 30px;
-//     display: block;
-//     width: 100%;
-// }
+.swiper .swiper-wrapper .swiper-slide img {
+    border-radius: 30px;
+    display: block;
+    width: 100%;
+}
 
-// body main .sectionServices div .swiper .swiper-wrapper .swiper-slide.inactive {
-//     filter: blur(4px);
-//     opacity: 1;
-// }
+.swiper .swiper-wrapper .swiper-slide.inactive {
+    filter: blur(4px);
+    opacity: 1;
+}
 
-// body main .sectionServices div .swiper .swiper-wrapper .swiper-slide-active::before {
-//     content: url("/assest/images/backgroundMObile.png");
-//     position: absolute;
-//     top: -25px;
-//     left: -22px;
-// }
+.swiper .swiper-wrapper .swiper-slide-active::before {
+    content: url("/assest/images/backgroundMObile.png");
+    position: absolute;
+    top: -25px;
+    left: -22px;
+}
 
-// body main .sectionServices div .swiper .swiper-button-next,
-// body main .sectionServices div .swiper .swiper-button-prev {
-//     color: $colorNavbarText;
-//     border: 2px solid $colorNavbarText;
-//     transition: 0.2s;
-// }
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+    color: $colorNavbarText;
+    border: 2px solid $colorNavbarText;
+    transition: 0.2s;
+}
 
-// body main .sectionServices div .swiper .swiper-button-next:hover:after,
-// .swiper-rtl .swiper-button-prev:hover:after {
-//     margin-left: 10px;
-// }
+.swiper .swiper-button-next:hover:after,
+.swiper-rtl .swiper-button-prev:hover:after {
+    margin-left: 10px;
+}
 
-// body main .sectionServices div .swiper .swiper-button-prev:hover:after,
-// .swiper-rtl .swiper-button-next:hover:after {
-//     margin-right: 10px;
-// }
+.swiper .swiper-button-prev:hover:after,
+.swiper-rtl .swiper-button-next:hover:after {
+    margin-right: 10px;
+}
 
-// .swiper-button-prev:after,
-// .swiper-rtl .swiper-button-next:after,
-// body main .sectionServices div .swiper .swiper-button-next:after,
-// .swiper-rtl .swiper-button-prev:after {
-//     font-size: 23px;
-//     transition: 0.2s;
-// }
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper .swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    font-size: 23px;
+    transition: 0.2s;
+}
 
 // end customers
 // start footer
@@ -920,10 +892,6 @@ body .section-marign-all div .row-nth .div-start {
     //         text-align: center;
     //     }
 
-    //     .integration_text {
-    //         font-size: 12px !important;
-    //     }
-
     //     body main section .container .row div div .shadowRadius {
     //         height: 150px;
     //     }
@@ -954,14 +922,10 @@ body .section-marign-all div .row-nth .div-start {
     //     }
 
     //     body main section .container .imageBeforeandafter::after,
-    //     body main section .container .divContent::after,
-    //     body main section .container .divContent::before,
-    //     body main section .container .divWorks::after,
-    //     body main section .container .divWorks::before,
     //     body main .sectionFooter::before,
     //     body main .sectionFooter::after,
-    //     body main section .container .row div .colCircle::after,
-    //     body main section .container .row div .colCircle::before,
+    body section div div div .col-circle::after,
+    body section div div div .col-circle::before,
     .div-inline-none {
         display: none !important;
     }
@@ -1056,7 +1020,7 @@ body .section-marign-all div .row-nth .div-start {
     // }
 
     // @media (max-width: 300px) {
-    //     body main section div .row div .divHover .divImageHover img {
+    //     body main section div .row div .divHover .div-image-hover img {
     //         width: 52px !important;
     //         height: 56px !important;
     //     }

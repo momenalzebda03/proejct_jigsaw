@@ -18,6 +18,7 @@ function addEventListenerBasedOnWidth() {
     iconAnimation.addEventListener("click", scroll);
   }
 }
+
 addEventListenerBasedOnWidth();
 window.addEventListener("resize", () => {
   if (iconAnimation.removeEventListener) {
@@ -36,11 +37,6 @@ buttonMenu.onclick = () => {
     : (iconMenu.src = "/assest/images/iconMenu.svg");
 };
 
-// var video = document.getElementById("video");
-// video.onclick = () => {
-//   alert("The video has been played");
-// };
-
 var divCheck = document.querySelectorAll("#div-check");
 divCheck.forEach((element) => {
   element.addEventListener("click", function () {
@@ -49,40 +45,51 @@ divCheck.forEach((element) => {
     border_span ? border_span.classList.remove("border-right") : "";
 
     const mouse_border = element.querySelector(".div-mouse");
+
     mouse_border.classList.add("border-right");
+
     const active_span = document.querySelector(".text-active");
 
     active_span ? active_span.classList.remove("text-active") : "";
 
     const textActive = element.querySelector(".div-mouse");
+
     textActive.classList.add("text-active");
+
     const active_background = document.querySelector(".acitve-background");
+
     active_background
       ? active_background.classList.remove("acitve-background")
       : "";
+
     const acitveBackground = element.querySelector(".icon-padding");
+
     acitveBackground.classList.add("acitve-background");
+
     const activeIcon = document.querySelector(".icon-active");
+
     activeIcon ? activeIcon.classList.remove("icon-active") : "";
+
     const icoAactive = element.querySelector(".icon-all");
+
     icoAactive.classList.add("icon-active");
   });
 });
 
-// var divBox = document.querySelectorAll("#divBox");
-// var bollenIcon = true;
-// divBox.forEach((element) => {
-//   element.addEventListener("click", () => {
-//     var iconElement = element.querySelector(".imageArraow");
-//     if (bollenIcon == true) {
-//       iconElement.classList = "imageArraow activeImageArraow";
-//       bollenIcon = false;
-//     } else {
-//       iconElement.classList = "imageArraow";
-//       bollenIcon = true;
-//     }
-//   });
-// });
+var divBox = document.querySelectorAll("#divBox");
+var bollenIcon = true;
+divBox.forEach((element) => {
+  element.addEventListener("click", () => {
+    var iconElement = element.querySelector(".image-arraow");
+    if (bollenIcon == true) {
+      iconElement.classList = "image-arraow active-image-arraow";
+      bollenIcon = false;
+    } else {
+      iconElement.classList = "image-arraow";
+      bollenIcon = true;
+    }
+  });
+});
 
 var text = "“Keep your goal close, and your customer closer”";
 var idText = document.getElementById("idText");
@@ -94,30 +101,30 @@ var timeClear = setInterval(() => {
   i++;
 }, 100);
 
-// var swiper = new Swiper(".mySwiper", {
-//   effect: "coverflow",
-//   grabCursor: true,
-//   centeredSlides: true,
-//   slidesPerView: "auto",
-//   coverflowEffect: {
-//     rotate: 0,
-//     stretch: 80,
-//     depth: 400,
-//     modifier: 0.5,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   initialSlide: 3,
-// });
-// swiper.on("slideChangeTransitionEnd", function () {
-//   var slides = swiper.slides;
-//   slides.forEach(function (slide) {
-//     if (!slide.classList.contains("swiper-slide-active")) {
-//       slide.classList.add("inactive");
-//     } else {
-//       slide.classList.remove("inactive");
-//     }
-//   });
-// });
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 80,
+    depth: 400,
+    modifier: 0.5,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  initialSlide: 3,
+});
+swiper.on("slideChangeTransitionEnd", function () {
+  var slides = swiper.slides;
+  slides.forEach(function (slide) {
+    if (!slide.classList.contains("swiper-slide-active")) {
+      slide.classList.add("inactive");
+    } else {
+      slide.classList.remove("inactive");
+    }
+  });
+});
