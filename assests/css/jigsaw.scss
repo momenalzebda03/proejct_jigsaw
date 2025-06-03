@@ -6,7 +6,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 13px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -25,10 +25,6 @@ body {
     color: $colorMainTextandButton;
 }
 
-// body main section .container .imageBeforeandafter .imageAnimation .divChange::after,
-// body main section .container .imageBeforeandafter .imageAnimation .divChange::before,
-// body main section .container .imageBeforeandafter::after,
-// body main section .container .imageBeforeandafter::before,
 .div-animation,
 body .section-marign-all div div div .image-ellipase-clicle,
 body .section-main .container .row div .image-rnimation-right {
@@ -90,8 +86,34 @@ body .section-main .container .row div .image-rnimation-right {
 
 // end everyone
 // start navbar
+body .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease;
+}
+
 body nav {
-    position: fixed !important;
+    z-index: 1;
+}
+
+body .navbar.scroll-up {
+    position: fixed;
+    top: 0;
+}
+
+body .navbar.hidden {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+body .navbar.visible {
+    opacity: 1;
+    transform: translateY(0);
+    position: fixed;
+    top: 0;
 }
 
 body nav .container-respons div ul li .active {
@@ -659,192 +681,132 @@ body section div div div .shadow-radius {
 
 // start integration
 // start customers
-.swiper {
-    width: 100%;
-    height: 650px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.swiper .swiper-wrapper .swiper-slide {
+body section .swiper .swiper-wrapper .swiper-slide {
     width: 239px;
     height: 500px;
 }
 
-.swiper .swiper-wrapper .swiper-slide img {
+body section .swiper .swiper-wrapper .swiper-slide img {
     border-radius: 30px;
     display: block;
     width: 100%;
 }
 
-.swiper .swiper-wrapper .swiper-slide.inactive {
+body section .swiper .swiper-wrapper .swiper-slide.inactive {
     filter: blur(4px);
     opacity: 1;
 }
 
-.swiper .swiper-wrapper .swiper-slide-active::before {
-    content: url("/assest/images/backgroundMObile.png");
-    position: absolute;
-    top: -25px;
-    left: -22px;
-}
-
-.swiper .swiper-button-next,
-.swiper .swiper-button-prev {
+body section .swiper .swiper-button-next,
+body section .swiper .swiper-button-prev {
     color: $colorNavbarText;
     border: 2px solid $colorNavbarText;
     transition: 0.2s;
 }
 
-.swiper .swiper-button-next:hover:after,
-.swiper-rtl .swiper-button-prev:hover:after {
-    margin-left: 10px;
-}
-
-.swiper .swiper-button-prev:hover:after,
-.swiper-rtl .swiper-button-next:hover:after {
-    margin-right: 10px;
-}
-
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after,
-.swiper .swiper-button-next:after,
+body section .swiper .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
     font-size: 23px;
     transition: 0.2s;
 }
 
+body section div div .size-btn-google-apple {
+    width: 140px;
+    height: 45px;
+    object-fit: contain;
+}
+
 // end customers
 // start footer
-// body main .sectionFooter {
-//     background: -webkit-linear-gradient(87deg, rgb(27, 34, 114), rgb(26, 30, 77));
-//     background: linear-gradient(87deg, rgb(27, 34, 114), rgb(26, 30, 77));
-// }
+body .section-footer {
+    background: -webkit-linear-gradient(87deg, rgb(27, 34, 114), rgb(26, 30, 77));
+    background: linear-gradient(87deg, rgb(27, 34, 114), rgb(26, 30, 77));
+}
 
-// body main .sectionFooter::before {
-//     content: url("/assest/images/imageBackground.png");
-//     position: absolute;
-//     bottom: 50px;
-//     right: 0;
-//     animation: footerAnimation 4s infinite;
-// }
+body .section-footer .size-image-style-colors {
+    animation: footerAnimation 4s infinite;
+}
 
-// body main .sectionFooter::after {
-//     content: url("/assest/images/imageBackground1.png");
-//     position: absolute;
-//     right: 0;
-//     bottom: 50px;
-//     animation: footerAnimation1 4s infinite;
-// }
+@keyframes footerAnimation {
+    0% {
+        transform: translate(0px, 30px);
+        opacity: 1;
+    }
 
-// @keyframes footerAnimation {
-//     0% {
-//         transform: translate(0px, 30px);
-//         opacity: 1;
-//     }
+    50% {
+        transform: translate(0px, 0px);
+        opacity: 0;
+    }
 
-//     50% {
-//         transform: translate(0px, 0px);
-//         opacity: 0;
-//     }
+    100% {
+        transform: translate(0px, 30px);
+        opacity: 1;
+    }
+}
 
-//     100% {
-//         transform: translate(0px, 30px);
-//         opacity: 1;
-//     }
-// }
+body .section-footer .size-image-style-colors-1 {
+    animation: footerAnimation1 4s infinite;
+}
 
-// @keyframes footerAnimation1 {
-//     0% {
-//         transform: translate(0px, 30px);
-//         opacity: 0;
-//     }
+@keyframes footerAnimation1 {
+    0% {
+        transform: translate(0px, 30px);
+        opacity: 0;
+    }
 
-//     50% {
-//         transform: translate(0px, 0px);
-//         opacity: 1;
-//     }
+    50% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
 
-//     100% {
-//         transform: translate(0px, 30px);
-//         opacity: 0;
-//     }
-// }
+    100% {
+        transform: translate(0px, 30px);
+        opacity: 0;
+    }
+}
 
-// body main .sectionFooter div .divHr {
-//     width: 100%;
-//     height: 2px;
-// }
+body .section-footer div div div .size-logo {
+    width: 200px;
+    height: 60px;
+    object-fit: cover;
+}
 
-// body main .sectionFooter .row div ul li:nth-child(2) .lineBefore::after {
-//     display: none;
-// }
+body .section-footer div .style-hr {
+    width: 100%;
+    height: 2px;
+}
 
-// body main .sectionFooter .row div ul li .lineBefore::after {
-//     content: "";
-//     position: absolute;
-//     background-color: $colorWhite;
-//     width: 1.5px;
-//     height: 15px;
-//     margin-top: 5px;
-//     margin-left: 10.5px;
-// }
+body .section-footer div div div div ul li div .icon-media {
+    width: 25px;
+    height: 25px;
+}
 
-// body main .sectionFooter .row div ul li .lineBefore:hover {
-//     color: $colorSecondary;
-// }
+body .section-footer div div ul li:nth-child(2) .line-before::after {
+    display: none;
+}
 
-// .data_hover:hover .textColorReverse {
-//     color: $colorWhite !important;
-// }
+body .section-footer div div ul li .line-before::after {
+    content: "";
+    position: absolute;
+    background-color: $colorWhite;
+    width: 1.5px;
+    height: 15px;
+    margin-top: 5px;
+    margin-left: 10.5px;
+}
 
-// body main .sectionFooter .row div ul li .iconFooter:hover {
-//     color: $colorSecondary;
-// }
+.link-footer:hover {
+    color: $colorSecondary;
+}
 
 // end footer
 // start media
-// @media (max-width: 1200px) and (min-width: 990px) {
-//     .a_padding {
-//         padding-left: 5px !important;
-//         padding-right: 5px !important;
-//     }
-
-//     body main section div .row div .divHover {
-//         height: 170px;
-//     }
-
-//     body main section .container .row div .divHover .divBottomColor .textSize {
-//         font-size: 9px;
-//     }
-// }
-
 @media (max-width: 990px) {
     body nav {
         position: relative !important;
     }
-
-    //     .tag_40,
-    //     .size_Jigsaw {
-    //         font-size: 25px !important;
-    //     }
-
-    body .section-main {
-        height: 1150px;
-    }
-
-    //     body section .container-respons nav div ul .buttonActiveDemo:hover,
-    //     body section .container-respons nav div ul .buttonActiveLanguage:hover {
-    //         color: $colorWhite !important;
-    //     }
-
-    //     body section .container-respons nav div .buttonActiveDemo:hover {
-    //         background-color: $colorNavbarDemo;
-    //     }
-
-    //     body section .container-respons nav div .buttonActiveLanguage:hover {
-    //         background-color: $colorNavbarLanguage;
-    //     }
 
     body nav .container-respons div ul li .style-padding-navbar:hover,
     body section .container-respons nav div ul li .active {
@@ -865,65 +827,7 @@ body section div div div .shadow-radius {
         width: 100% !important;
     }
 
-    //     body main .sectionMinheight {
-    //         min-height: 0px;
-    //     }
-
-    //     .textSize {
-    //         font-size: 7px !important;
-    //     }
-
-    //     body section .container nav .collapse .divButtonRight {
-    //         margin-left: 40px;
-    //     }
-
-    //     body .section-main .container .row div .divImageBack .beforeImage .image_responsve {
-    //         width: 217px;
-    //         height: 387.6px;
-    //     }
-
-    //     .image_responsve_full,
-    //     .image_responsve_serves {
-    //         width: 70%;
-    //     }
-
-    //     body main .sectionServices .container .rowNth:nth-child(odd) div .imageChild,
-    //     body main .sectionServices .container .rowNth:nth-child(even) div .imageChild {
-    //         text-align: center;
-    //     }
-
-    //     body main section .container .row div div .shadowRadius {
-    //         height: 150px;
-    //     }
-
-    //     body main section .container .row_height {
-    //         height: 844px;
-    //     }
-
-    //     body main section .container .row_height::-webkit-scrollbar {
-    //         width: 5px;
-    //     }
-
-    //     body main section .container .row_height::-webkit-scrollbar-thumb {
-    //         background-color: #ccc;
-    //     }
-
-    //     body main .sectionServices .container .rowNth div div .divMouse .iconPadding {
-    //         width: 30px;
-    //         height: 30px;
-    //     }
-
-    //     body main .sectionServices .container .rowNth div .row_text div:nth-child(2) {
-    //         order: 5;
-    //     }
-
-    //     body main .sectionServices .container .rowNth div .row_text div:nth-child(3) {
-    //         order: 2;
-    //     }
-
-    //     body main section .container .imageBeforeandafter::after,
-    //     body main .sectionFooter::before,
-    //     body main .sectionFooter::after,
+    body .section-footer div div ul li .line-before::after,
     body section div div div .col-circle::after,
     body section div div div .col-circle::before,
     .div-inline-none {
@@ -950,84 +854,6 @@ body section div div div .shadow-radius {
     body .section-main div div div div div .image-left-main {
         left: -20px;
     }
-
-    //     body main section .container .imageBeforeandafter::before {
-    //         content: url("/assest/images/imageRes.png");
-    //         left: -4%;
-    //         top: -30px;
-    //     }
-
-    //     body main section .container .imageBeforeandafter .imageAnimation::before {
-    //         content: url("/assest/images/imageRespons.png");
-    //         bottom: 20px;
-    //         right: 78%;
-    //     }
-
-    //     body main section .container .imageBeforeandafter .imageAnimation .divChange::before,
-    //     body main section .container .imageBeforeandafter .imageAnimation .divChange::after {
-    //         content: "";
-    //         background-size: 250px 250px;
-    //         width: 250px;
-    //         height: 250px;
-    //         left: 150px;
-    //         bottom: 20px;
-    //     }
-
-    //     body main section .container .imageBeforeandafter .imageAnimation .divChange::before {
-    //         background-image: url("/assest/images/imageJiqsaw1.svg");
-    //     }
-
-    //     body main section .container .imageBeforeandafter .imageAnimation .divChange::after {
-    //         background-image: url("/assest/images/imageJiqsaw2.svg");
-    //     }
-
-    //     body main .sectionServices div .swiper {
-    //         height: 380px;
-    //     }
-
-    //     body main .sectionServices div .swiper .swiper-wrapper .swiper-slide {
-    //         width: 140.02px;
-    //         height: 296.98px;
-    //     }
-
-    //     body main .sectionServices div .swiper .swiper-wrapper .swiper-slide-active::before {
-    //         content: "";
-    //         background-image: url("/assest/images/imageBackground.png") !important;
-    //         background-size: 168.78px 327.33px;
-    //         width: 168px;
-    //         height: 327px;
-    //         top: -14px;
-    //         left: -15px;
-    //     }
-
-    //     .size_litter {
-    //         letter-spacing: 3px;
-    //     }
-    // }
-
-    // @media (max-width: 520px) {
-    //     body main .sectionMinheight div div .row .accordion div .accordion-header .accordion-button .tagSizeTitle {
-    //         font-size: 15.41px;
-    //     }
-
-    //     body main .sectionFooter .container .div_row {
-    //         flex-direction: column-reverse;
-    //     }
-
-    //     body main .sectionFooter .container .div_row div:nth-child(2) {
-    //         order: -1;
-    //     }
-    // }
-
-    // @media (max-width: 300px) {
-    //     body main section div .row div .divHover .div-image-hover img {
-    //         width: 52px !important;
-    //         height: 56px !important;
-    //     }
-
-    //     body main section .container .row div .divHover .divBottomColor {
-    //         top: 70px;
-    //     }
 }
 
 // end media

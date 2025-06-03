@@ -101,30 +101,19 @@ var timeClear = setInterval(() => {
   i++;
 }, 100);
 
-var swiper = new Swiper(".mySwiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 80,
-    depth: 400,
-    modifier: 0.5,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  initialSlide: 3,
-});
-swiper.on("slideChangeTransitionEnd", function () {
-  var slides = swiper.slides;
-  slides.forEach(function (slide) {
-    if (!slide.classList.contains("swiper-slide-active")) {
-      slide.classList.add("inactive");
-    } else {
-      slide.classList.remove("inactive");
-    }
-  });
+var lastScrollTop = 0;
+var navbar = $(".navbar");
+
+$(window).on("scroll", function () {
+  var scrollPos = $(this).scrollTop();
+
+  scrollPos > lastScrollTop
+    ? navbar.removeClass("visible").addClass("hidden")
+    : navbar.removeClass("hidden").addClass("visible");
+
+  scrollPos >= 100
+    ? navbar.addClass("scroll-up")
+    : navbar.removeClass("scroll-up");
+
+  lastScrollTop = scrollPos <= 0 ? 0 : scrollPos;
 });
